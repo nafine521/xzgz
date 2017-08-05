@@ -27,16 +27,41 @@
     <div class="row cl">
       <label class="form-label col-3"><span class="c-red">*</span>用户名：</label>
       <div class="formControls col-5">
-        <input type="text" class="input-text" value="<?php echo ($info["member_name"]); ?>" placeholder="" id="member-name" name="member_name" datatype="*2-16" nullmsg="用户名不能为空">
+        <input type="text" class="input-text" value="<?php echo ($info["user_name"]); ?>" placeholder="" id="member-name" name="user_name" datatype="*2-16" nullmsg="用户名不能为空">
+      </div>
+      <div class="col-4"> </div>
+    </div>
+    <div class="row cl">
+      <label class="form-label col-3"><span class="c-red">*</span>性别：</label>
+      <div class="formControls col-5 skin-minimal">
+        <div class="radio-box">
+          <input type="radio" id="sex-1" name="sex" datatype="*" nullmsg="请选择性别！" value="1" <?php if(($info["sex"]) == "1"): ?>checked<?php endif; ?> >
+          <label for="sex-1">男</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" id="sex-2" name="sex" value="2" <?php if(($info["sex"]) == "2"): ?>checked<?php endif; ?> >
+          <label for="sex-2">女</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" id="sex-3" name="sex" value="0" <?php if(($info["sex"]) == "0"): ?>checked<?php endif; ?> >
+          <label for="sex-3">保密</label>
+        </div>
+
       </div>
       <div class="col-4"> </div>
     </div>
 
-
+    <div class="row cl">
+      <label class="form-label col-3"><span class="c-red">*</span>邮箱：</label>
+      <div class="formControls col-5">
+        <input type="text" class="input-text" placeholder="@" name="user_email" id="email" datatype="e" nullmsg="请输入邮箱！" value="<?php echo ($info["user_email"]); ?>">
+      </div>
+      <div class="col-4"> </div>
+    </div>
     <div class="row cl">
       <label class="form-label col-3"><span class="c-red">*</span>会员权重：</label>
       <div class="formControls col-5">
-        <input type="text" class="input-text" placeholder="" name="member_level" datatype="*" nullmsg="请设置权限！" value="<?php echo ($info["email"]); ?>">
+        <input type="text" class="input-text" placeholder="@" name="rank"  datatype="*" nullmsg="请设置会员权重！" value="<?php echo ($info["rank"]); ?>">
       </div>
       <div class="col-4"> </div>
     </div>
@@ -57,14 +82,6 @@
     </div>
 
     <div class="row cl">
-      <label class="form-label col-xs-4 col-sm-2">备注：</label>
-      <div class="formControls col-xs-8 col-sm-9">
-        <textarea name="momo" cols="" rows="" class="textarea valid" > <?php echo ($info["memo"]); ?></textarea>
-        <p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p>
-      </div>
-    </div>
-
-  <!--  <div class="row cl">
       <label class="form-label col-3">所在城市：</label>
       <div class="formControls col-5"> <div id="city">
         <span class="select-box">
@@ -76,11 +93,11 @@
       </span>
       </div>
       <div class="col-4"> </div>
-    </div>-->
+    </div>
 
     <div class="row cl">
       <div class="col-9 col-offset-3">
-        <input type="hidden" name="id" value="<?php echo ($info['id']); ?>">
+        <input type="hidden" name="id" value="<?php echo ($info['uid']); ?>">
         <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
       </div>
     </div>
@@ -109,15 +126,15 @@ $(function(){
 			    layer.msg("添加用户成功",{icon:1,time:1000});
                 setTimeout(function() {
                     var index = parent.layer.getFrameIndex(window.name);//获取当前页面的索引
-                    parent.location.reload();//刷新父窗口
-                    parent.layer.close(index);//关闭当前窗口
+                    //parent.location.reload();//刷新父窗口
+                    //parent.layer.close(index);//关闭当前窗口
                 });
             }
 		}
 	});
 });
 </script>
-<!--<script type="text/javascript" src="/Public/Home/js/jquery.cityselect.js"></script>
+<script type="text/javascript" src="/Public/Home/js/jquery.cityselect.js"></script>
 <script type="text/javascript" src="/Public/Home/js/city.min.js"></script>
 <script type="text/javascript">
     $(function() {
@@ -146,6 +163,6 @@ $(function(){
         }
     });
 
-</script>-->
+</script>
 </body>
 </html>

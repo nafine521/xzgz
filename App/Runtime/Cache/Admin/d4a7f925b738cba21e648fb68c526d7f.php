@@ -32,7 +32,10 @@
 				<th width="25"><input type="checkbox" name="" value=""></th>
 				<th width="80">ID</th>
 				<th width="100">用户名</th>
-
+				<th width="40">性别</th>
+				<th width="90">头像</th>
+				<th width="150">邮箱</th>
+				<th width="">地址</th>
 				<th width="130">加入时间</th>
 				<th width="70">状态</th>
 				<th width="100">操作</th>
@@ -40,24 +43,27 @@
 		</thead>
 		<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr class="text-c">
 				<td><input type="checkbox" value="<?php echo ($v['id']); ?>" name="idDel"></td>
-				<td><?php echo ($v["id"]); ?></td>
-				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('<?php echo ($v["compellation"]); ?>','<?php echo U('Feedback/userShow',array("id"=>$v['id']));?>','360','400')">
-					<?php if(empty($v['compellation'])): echo ($v["username"]); else: echo ($v["compellation"]); endif; ?>
-
-					</u></td>
-
-				<td><?php if(empty($v['reg_time'])): ?>管理员手动添加<?php else: echo (date("Y-m-d H:i:s",$v["register"])); endif; ?> </td>
+				<td><?php echo ($v["uid"]); ?></td>
+				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('<?php echo ($v["user_name"]); ?>','<?php echo U('Feedback/userShow',array("id"=>$v['uid']));?>','360','400')">
+					<?php echo ($v["user_name"]); ?></u></td>
+				<td>
+					<?php if($v['sex'] == 1): ?>男<?php elseif($v['sex'] == 2): ?>女<?php else: ?>保密<?php endif; ?>
+				</td>
+				<td><img src="<?php echo ($v["user_headimg"]); ?>" alt=""></td>
+				<td><?php echo ($v["user_email"]); ?></td>
+				<td class="text-l"><?php echo ($v["location"]); ?></td>
+				<td><?php if(empty($v['reg_time'])): ?>管理员手动添加<?php else: echo (date("Y-m-d H:i:s",$v["reg_time"])); endif; ?> </td>
 				<td class="td-status">
-					<?php if($v['active'] == 1): ?><span class="label label-success radius">已激活</span>
+					<?php if($v['user_status'] == 1): ?><span class="label label-success radius">正常</span>
 						<?php else: ?>
-						<span class="label label-default radius">未激活</span><?php endif; ?>
+						<span class="label label-default radius">停用</span><?php endif; ?>
 				</td>
 				<td class="td-manage">
-					<?php if($v['active'] == 1): ?><a style="text-decoration:none" onClick="member_stop(this,'<?php echo ($v["id"]); ?>')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a>
-						<?php else: ?>
+					<?php if($v['user_status'] == 1): ?><a style="text-decoration:none" onClick="member_stop(this,'<?php echo ($v["id"]); ?>')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a>
+						<?php elseif($v['user_status'] == 0 ): ?>
 						<a style="text-decoration:none" onClick="member_start(this,'<?php echo ($v["id"]); ?>')" href="javascript:;" title="激活"><i class="Hui-iconfont">&#xe6e1;</i></a><?php endif; ?>
 
-					<a title="编辑" href="javascript:;" onclick="member_edit('编辑','<?php echo U('memberAdd',array('id'=>$v['id']));?>','950','')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="member_del(this,'<?php echo ($v['id']); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+					<a title="编辑" href="javascript:;" onclick="member_edit('编辑','<?php echo U('memberAdd',array('uid'=>$v['uid']));?>','950','')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="member_del(this,'<?php echo ($v['uid']); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 			</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</tbody>
 	</table>
@@ -93,13 +99,16 @@ function member_show(title,url,w,h){
 function member_stop(obj,id){
 	layer.confirm('确认要停用吗？',function(index){
 
-	    $.post("<?php echo U('Base/status');?>",{"tableName":"user","primary":"id","id":id,"fieldVal":0,"fieldName":"active"},function (res) {
+	    $.post("<?php echo U('Base/status');?>",{"tableName":"user","primary":"id","id":id,"fieldVal":0,"fieldName":"user_status1"},function (res) {
 			if (res.status=="y"){
                 $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="member_start(this,'+id+')" href="javascript:;" title="启用"><i class="Hui-iconfont">&#xe6e1;</i></a>');
                 $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已停用</span>');
                 $(obj).remove();
                 layer.msg('已停用!',{icon: 5,time:1000});
-			}
+			}else{
+
+                layer.msg('系统繁忙，请稍后重试!',{icon: 3,time:1000});
+            }
         })
 
 	});
@@ -108,12 +117,15 @@ function member_stop(obj,id){
 /*用户-启用*/
 function member_start(obj,id){
 	layer.confirm('确认要启用吗？',function(index){
-        $.post("<?php echo U('Base/status');?>",{"tableName":"member","primary":"id","id":id,"fieldVal":1,"fieldName":"active"},function (res) {
+        $.post("<?php echo U('Base/status');?>",{"tableName":"user","primary":"id","id":id,"fieldVal":1,"fieldName":"user_status1"},function (res) {
             if (res.status=="y"){
 				$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="member_stop(this,'+id+')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a>');
 				$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
 				$(obj).remove();
 				layer.msg('已启用!',{icon: 6,time:1000});
+            }else{
+
+                layer.msg('系统繁忙，请稍后重试!',{icon: 3,time:1000});
             }
         })
 	});
@@ -126,7 +138,7 @@ function member_edit(title,url,w,h){
 /*用户-删除*/
 function member_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
-	    $.post("<?php echo U('Base/comDel');?>",{"tableName":"member","id":id},function (res) {
+	    $.post("<?php echo U('Base/comDel');?>",{"tableName":"user","id":id},function (res) {
 			if (res.status=="y"){
                 $(obj).parents("tr").remove();
                 layer.msg('已删除!',{icon:1,time:1000});

@@ -45,34 +45,31 @@
 
 			<tr class="text-c">
 				<td><input type="checkbox" value="{$v['id']}" name="idDel"></td>
-				<td>{$v.id}</td>
-				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('{$v.compellation}','{:U('Feedback/userShow',array("id"=>$v['id']))}','360','400')">
-					<if condition="empty($v['compellation'])">
-						{$v.username}<else/>{$v.compellation}</if>
-
-					</u></td>
+				<td>{$v.uid}</td>
+				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('{$v.user_name}','{:U('Feedback/userShow',array("id"=>$v['uid']))}','360','400')">
+					{$v.user_name}</u></td>
 				<td>
-					<if condition="$v['sex'] eq 1">男<else/>女</if>
+					<if condition="$v['sex'] eq 1">男<elseif condition="$v['sex'] eq 2" />女<else/>保密</if>
 				</td>
-				<td><img src="__ROOT__{$v.img}" alt=""></td>
-				<td>{$v.email}</td>
-				<td class="text-l">{$v.address}{$v.detail_address}</td>
-				<td><if condition="empty($v['register'])">管理员手动添加<else/>{$v.register|date="Y-m-d H:i:s",###}</if> </td>
+				<td><img src="__ROOT__{$v.user_headimg}" alt=""></td>
+				<td>{$v.user_email}</td>
+				<td class="text-l">{$v.location}</td>
+				<td><if condition="empty($v['reg_time'])">管理员手动添加<else/>{$v.reg_time|date="Y-m-d H:i:s",###}</if> </td>
 				<td class="td-status">
-					<if condition="$v['active'] eq 1">
-					<span class="label label-success radius">已激活</span>
+					<if condition="$v['user_status'] eq 1">
+					<span class="label label-success radius">正常</span>
 						<else/>
-						<span class="label label-default radius">未激活</span>
+						<span class="label label-default radius">停用</span>
 					</if>
 				</td>
 				<td class="td-manage">
-					<if condition="$v['active'] eq 1">
+					<if condition="$v['user_status'] eq 1">
 					<a style="text-decoration:none" onClick="member_stop(this,'{$v.id}')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a>
-						<else/>
+						<elseif condition="$v['user_status'] eq 0 "/>
 						<a style="text-decoration:none" onClick="member_start(this,'{$v.id}')" href="javascript:;" title="激活"><i class="Hui-iconfont">&#xe6e1;</i></a>
 					</if>
 
-					<a title="编辑" href="javascript:;" onclick="member_edit('编辑','{:U('memberAdd',array('id'=>$v['id']))}','950','')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="member_del(this,'{$v['id']}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+					<a title="编辑" href="javascript:;" onclick="member_edit('编辑','{:U('memberAdd',array('uid'=>$v['uid']))}','950','')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="member_del(this,'{$v['uid']}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 			</tr>
 		</volist>
 		</tbody>
@@ -109,13 +106,16 @@ function member_show(title,url,w,h){
 function member_stop(obj,id){
 	layer.confirm('确认要停用吗？',function(index){
 
-	    $.post("{:U('Base/status')}",{"tableName":"user","primary":"id","id":id,"fieldVal":0,"fieldName":"active"},function (res) {
+	    $.post("{:U('Base/status')}",{"tableName":"user","primary":"id","id":id,"fieldVal":0,"fieldName":"user_status"},function (res) {
 			if (res.status=="y"){
                 $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="member_start(this,'+id+')" href="javascript:;" title="启用"><i class="Hui-iconfont">&#xe6e1;</i></a>');
                 $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已停用</span>');
                 $(obj).remove();
                 layer.msg('已停用!',{icon: 5,time:1000});
-			}
+			}else{
+
+                layer.msg('系统繁忙，请稍后重试!',{icon: 3,time:1000});
+            }
         })
 
 	});
@@ -124,12 +124,15 @@ function member_stop(obj,id){
 /*用户-启用*/
 function member_start(obj,id){
 	layer.confirm('确认要启用吗？',function(index){
-        $.post("{:U('Base/status')}",{"tableName":"user","primary":"id","id":id,"fieldVal":1,"fieldName":"active"},function (res) {
+        $.post("{:U('Base/status')}",{"tableName":"user","primary":"id","id":id,"fieldVal":1,"fieldName":"user_status"},function (res) {
             if (res.status=="y"){
 				$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="member_stop(this,'+id+')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a>');
 				$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
 				$(obj).remove();
 				layer.msg('已启用!',{icon: 6,time:1000});
+            }else{
+
+                layer.msg('系统繁忙，请稍后重试!',{icon: 3,time:1000});
             }
         })
 	});
@@ -141,7 +144,7 @@ function member_edit(title,url,w,h){
 
 /*用户-删除*/
 function member_del(obj,id){
-	layer.confirm('确认要删除吗？',function(index){
+	layer.confirm('确认要删除吗？，该操作无法撤销！',function(index){
 	    $.post("{:U('Base/comDel')}",{"tableName":"user","id":id},function (res) {
 			if (res.status=="y"){
                 $(obj).parents("tr").remove();

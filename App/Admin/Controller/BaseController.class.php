@@ -3,6 +3,7 @@ namespace Admin\Controller;
 use Think\Controller;
 class BaseController extends Controller {
     static $flash=false;
+
     public function _initialize(){
         if (!cookie("admin_cookie")) {
          //判断用户是否登录
@@ -21,6 +22,7 @@ class BaseController extends Controller {
             }
         }
         $this->cat_list=M('category')->select();
+
 
 
 

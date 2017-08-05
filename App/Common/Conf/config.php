@@ -12,7 +12,7 @@ return array(
 
 	'MODULE_ALLOW_LIST'=>array('Admin','Home'),
 	'DEFAULT_MODULE'=>'Home',
-
+    'SALT'=> "tv48l",
 
 
 	'URL_ROUTER_ON'=>true,
