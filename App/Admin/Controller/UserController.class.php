@@ -73,6 +73,13 @@ class UserController extends BaseController
         }
 
     }
+    public function userShow(){
+        $id=I("uid");
+        $info=M("user")->find($id);
+        $info['reg_time']=M("member")->
+        $this->assign("info",$info);
+        $this->display();
+    }
 
 
 }

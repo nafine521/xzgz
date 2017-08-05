@@ -44,7 +44,7 @@
 		<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr class="text-c">
 				<td><input type="checkbox" value="<?php echo ($v['id']); ?>" name="idDel"></td>
 				<td><?php echo ($v["uid"]); ?></td>
-				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('<?php echo ($v["user_name"]); ?>','<?php echo U('Feedback/userShow',array("id"=>$v['uid']));?>','360','400')">
+				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('<?php echo ($v["user_name"]); ?>','<?php echo U('userShow',array("id"=>$v['uid']));?>','360','400')">
 					<?php echo ($v["user_name"]); ?></u></td>
 				<td>
 					<?php if($v['sex'] == 1): ?>男<?php elseif($v['sex'] == 2): ?>女<?php else: ?>保密<?php endif; ?>
@@ -99,7 +99,7 @@ function member_show(title,url,w,h){
 function member_stop(obj,id){
 	layer.confirm('确认要停用吗？',function(index){
 
-	    $.post("<?php echo U('Base/status');?>",{"tableName":"user","primary":"id","id":id,"fieldVal":0,"fieldName":"user_status1"},function (res) {
+	    $.post("<?php echo U('Base/status');?>",{"tableName":"user","primary":"id","id":id,"fieldVal":0,"fieldName":"user_status"},function (res) {
 			if (res.status=="y"){
                 $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="member_start(this,'+id+')" href="javascript:;" title="启用"><i class="Hui-iconfont">&#xe6e1;</i></a>');
                 $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已停用</span>');
@@ -117,7 +117,7 @@ function member_stop(obj,id){
 /*用户-启用*/
 function member_start(obj,id){
 	layer.confirm('确认要启用吗？',function(index){
-        $.post("<?php echo U('Base/status');?>",{"tableName":"user","primary":"id","id":id,"fieldVal":1,"fieldName":"user_status1"},function (res) {
+        $.post("<?php echo U('Base/status');?>",{"tableName":"user","primary":"id","id":id,"fieldVal":1,"fieldName":"user_status"},function (res) {
             if (res.status=="y"){
 				$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="member_stop(this,'+id+')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a>');
 				$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
@@ -137,7 +137,7 @@ function member_edit(title,url,w,h){
 
 /*用户-删除*/
 function member_del(obj,id){
-	layer.confirm('确认要删除吗？',function(index){
+	layer.confirm('确认要删除吗？，该操作无法撤销！',function(index){
 	    $.post("<?php echo U('Base/comDel');?>",{"tableName":"user","id":id},function (res) {
 			if (res.status=="y"){
                 $(obj).parents("tr").remove();

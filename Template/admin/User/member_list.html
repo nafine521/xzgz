@@ -46,7 +46,7 @@
 			<tr class="text-c">
 				<td><input type="checkbox" value="{$v['id']}" name="idDel"></td>
 				<td>{$v.uid}</td>
-				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('{$v.user_name}','{:U('Feedback/userShow',array("id"=>$v['uid']))}','360','400')">
+				<td><u style="cursor:pointer" class="text-primary" onclick="member_show('{$v.user_name}','{:U('userShow',array("id"=>$v['uid']))}','360','400')">
 					{$v.user_name}</u></td>
 				<td>
 					<if condition="$v['sex'] eq 1">男<elseif condition="$v['sex'] eq 2" />女<else/>保密</if>

@@ -146,3 +146,25 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
 
+[ 2017-08-05T18:00:06+08:00 ] 127.0.0.1 /Public/Admin/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0007s ]
+ERR: 非法操作:Admin
+
+[ 2017-08-05T18:02:39+08:00 ] 127.0.0.1 /Public/Admin/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+ERR: 非法操作:Admin
+
