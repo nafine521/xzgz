@@ -27,16 +27,30 @@
     <div class="row cl">
       <label class="form-label col-3"><span class="c-red">*</span>用户名：</label>
       <div class="formControls col-5">
-        <input type="text" class="input-text" value="{$info.member_name}" placeholder="" id="member-name" name="member_name" datatype="*2-16" nullmsg="用户名不能为空">
+        <input type="text" class="input-text" value="{$info.username}" placeholder="" id="member-name" name="username" datatype="*2-16" nullmsg="用户名不能为空">
+      </div>
+      <div class="col-4"> </div>
+    </div>
+    <div class="row cl">
+      <label class="form-label col-3"><span class="c-red">*</span>性别：</label>
+      <div class="formControls col-5 skin-minimal">
+        <div class="radio-box">
+          <input type="radio" id="sex-1" name="sex" datatype="*" nullmsg="请选择性别！" value="1" <eq name="info.sex" value="1">checked</eq> >
+          <label for="sex-1">男</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" id="sex-2" name="sex" value="0" <eq name="info.sex" value="0">checked</eq> >
+          <label for="sex-2">女</label>
+        </div>
+
       </div>
       <div class="col-4"> </div>
     </div>
 
-
     <div class="row cl">
-      <label class="form-label col-3"><span class="c-red">*</span>会员权重：</label>
+      <label class="form-label col-3"><span class="c-red">*</span>邮箱：</label>
       <div class="formControls col-5">
-        <input type="text" class="input-text" placeholder="" name="member_level" datatype="*" nullmsg="请设置权限！" value="{$info.email}">
+        <input type="text" class="input-text" placeholder="@" name="email" id="email" datatype="e" nullmsg="请输入邮箱！" value="{$info.email}">
       </div>
       <div class="col-4"> </div>
     </div>
@@ -57,14 +71,6 @@
     </div>
 
     <div class="row cl">
-      <label class="form-label col-xs-4 col-sm-2">备注：</label>
-      <div class="formControls col-xs-8 col-sm-9">
-        <textarea name="momo" cols="" rows="" class="textarea valid" > {$info.memo}</textarea>
-        <p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p>
-      </div>
-    </div>
-
-  <!--  <div class="row cl">
       <label class="form-label col-3">所在城市：</label>
       <div class="formControls col-5"> <div id="city">
         <span class="select-box">
@@ -76,7 +82,7 @@
       </span>
       </div>
       <div class="col-4"> </div>
-    </div>-->
+    </div>
 
     <div class="row cl">
       <div class="col-9 col-offset-3">
@@ -117,8 +123,8 @@ $(function(){
 	});
 });
 </script>
-<!--<script type="text/javascript" src="__ROOT__/Public/Home/js/jquery.cityselect.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/Home/js/city.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/home/js/jquery.cityselect.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/home/js/city.min.js"></script>
 <script type="text/javascript">
     $(function() {
         $("#city").citySelect({
@@ -146,6 +152,6 @@ $(function(){
         }
     });
 
-</script>-->
+</script>
 </body>
 </html>
