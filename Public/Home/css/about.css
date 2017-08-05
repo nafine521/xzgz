@@ -1,0 +1,20 @@
+       .about{background:#eaedf4;overflow: hidden;}
+        .about_content{width:1200px;margin:0 auto;display:table;margin-bottom:30px;}
+        .about_cat{width:200px;float:left;margin-right:10px;}
+        .about_cat h1{width: 100%;background:linear-gradient(to bottom,#85daa7,#1eae58);padding: 20px 0px;font-size: 16px;color: #fff;text-indent: 1em;}
+        .about_cat ul{background:#fff;}
+        .about_cat li{padding:15px 0;
+    font-size: 14px;
+    text-indent: 30px;
+
+ }
+.about_cat li:hover 
+{ 
+border-left: 5px solid #38b859;
+    margin-left: -5px;
+    background: #f6f6f6; 
+}
+.about_cat .cat_cur{border-left: 5px solid #38b859;
+    margin-left: -5px;
+    background: #f6f6f6; }
+.about_cat li a{color:#666;}    

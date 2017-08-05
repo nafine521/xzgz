@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+#page a,#page span{display:inline-block;height:25px;line-height:25px;text-align:center;border:1px solid #ccc;}
+#page a.prev,#page a.next{width:50px;}
+#page span.current{width:20px;color:white;background:#5a98de;margin:0 2px;}
+#page a.num{width:20px;margin:0 2px;}
+#page a:hover{color:white;background:#5a98de;text-decoration:none;}

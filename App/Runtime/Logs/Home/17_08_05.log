@@ -1,0 +1,82 @@
+[ 2017-08-05T09:45:53+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-08-05T11:09:33+08:00 ] 127.0.0.1 /Public/home/js/jquery.cityselect.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0010s ]
+ERR: 非法操作:Home
+
+[ 2017-08-05T11:09:34+08:00 ] 127.0.0.1 /Public/home/js/city.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0006s ]
+ERR: 非法操作:Home
+
+[ 2017-08-05T11:13:50+08:00 ] 127.0.0.1 /Public/home/js/jquery.cityselect.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0006s ]
+ERR: 非法操作:Home
+
+[ 2017-08-05T11:13:51+08:00 ] 127.0.0.1 /Public/home/js/city.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0006s ]
+ERR: 非法操作:Home
+
+[ 2017-08-05T11:17:59+08:00 ] 127.0.0.1 /public/home/js/city.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+ERR: 非法操作:Home
+
+[ 2017-08-05T11:20:54+08:00 ] 127.0.0.1 /public/home/js/city.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+ERR: 非法操作:Home
+
+[ 2017-08-05T11:23:04+08:00 ] 127.0.0.1 /public/home/js/city.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+ERR: 非法操作:Home
+

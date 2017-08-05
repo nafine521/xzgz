@@ -1,0 +1,30 @@
+       .security{background:#eaedf4;overflow: hidden;}
+        .security_content{width:1200px;margin:0 auto;display:table;margin-bottom:30px;}
+        .security_cat{width:200px;float:left;margin-right:10px;}
+        .security_cat h1{width: 100%;background:linear-gradient(to bottom,#85daa7,#1eae58);padding: 20px 0px;font-size: 16px;color: #fff;text-indent: 1em;}
+        .security_cat ul{background:#fff;}
+        .security_cat li{padding:15px 0;
+    font-size: 14px;
+    text-indent: 30px;
+
+ }
+.security_cat li:hover 
+{ 
+border-left: 5px solid #38b859;
+    margin-left: -5px;
+    background: #f6f6f6; 
+}
+.security_cat .cat_cur{border-left: 5px solid #38b859;
+    margin-left: -5px;
+    background: #f6f6f6; }
+.security_cat li a{color:#666;}    
+.security_security{width:990px;float:left;background:url(../img/about_bg.png);padding:20px 20px;}
+.security_security ul li{width:300px;padding:50px 30px;margin-bottom:30px;float:left;margin-left:15px;height: 380px;transition: all 0.5s;
+    -webkit-transition: all 0.5s;}
+.security_img{border-radius:60px;background:#2e2e2e;width:100px;height:100px;margin: 0 auto;margin-top:20px;}
+.security_img i{    background: url(../img/ico-tg.png) no-repeat;display: block;width: 45px;height: 39px;margin: 0 auto;position: relative;top: 30px;}
+.security_titel{text-align:center;margin:10px 0;}
+.security_titel p{font-size:18px;}
+.security_js{text-align:center;padding:0 10px;line-height:24px;}
+.security_security li:hover{    width: 300px;background: #fff;border-top: 2px solid #1eae58;padding-top:0px;}
+.security_security li:hover .security_img{background:#1eae58;}

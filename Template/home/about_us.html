@@ -1,0 +1,41 @@
+     <!--头部-->
+<include file="Public:header" />
+
+<div class="about">
+    <div class="product_nav">
+        <i class="icon_house"></i>
+        <a href="">首页</a>
+        <i class="icon_leftarrow"></i>
+        <a href="">关于我们</a>
+        <i class="icon_leftarrow"></i>
+        <a class="nav_lj" href="">公司简介</a>        
+    </div>
+    <div class="about_content">
+        <div class="about_cat">
+            <h1>关于我们</h1>
+            <ul>
+                <li class="cat_cur"><a href="javascript:;">公司简介</a></li>
+                <li class="close"><a href="javascript:;">公司资质</a></li>
+                <li class="close"><a href="javascript:;">联系我们</a></li>
+                <li class="close"><a href="javascript:;">公司资质</a></li>
+            </ul>
+        </div>
+        <div class="about_security">
+                                                        
+        </div>                                    
+    </div>    
+</div>
+<include file="Public:footer" />
+<script type="text/javascript"> 
+//选项卡切换 
+$(function () { 
+$(".about_cat li").click(function () { 
+var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+$(this).parent().find(".cat_cur").removeClass("cat_cur").addClass("close"); //选项卡背景处理 
+$(this).removeClass("close").addClass("cat_cur"); 
+var content_obj = $(".about_security") //内容节点 
+content_obj.hide(); 
+content_obj.eq(index_tab).show(); 
+}); 
+}); 
+</script> 

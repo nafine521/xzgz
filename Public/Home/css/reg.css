@@ -1,0 +1,63 @@
+ input{border:none;outline: none;}
+ ::-webkit-input-placeholder {/*Chrome/Safari*/
+    color:#cbead8;
+    }
+    : :-moz-placeholder {/*Firefox*/
+    color:#cbead8;
+    }
+    　: :-ms-input-placeholder {/*IE*/
+       color:#cbead8;
+    }
+.reg_bg{background: url(../img/reg.jpg) no-repeat;height:875px;background-size:cover;position:relative;}
+.reg_form{background:url(../img/reg_bg.png) no-repeat;width:400px; position:absolute;top:15%;left:35%;padding: 20px;background-size: cover;    color: #777;overflow:hidden;}
+.reg_hed{border-bottom:2px solid #fff;margin:0 auto; margin-bottom:15px;width:80%;padding-bottom: 5px;}
+.reg_title{font-size:16px;}
+.reg_title1{width: 76%;display: inline-block;text-align: right;font-size: 12px;}
+.reg_box{border-bottom:1px solid #fff;margin:0 auto; margin-bottom:15px;width:80%} 
+.reg_input{background:none;color:#fff;padding:5px 10px;}
+.reg_codes{background:none;color:#fff;padding:5px 10px;width:50%}
+ .reg_ph{background-image: url(../img/icon-phone.png);
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;margin-top: 8px;}
+.reg_code{background-image: url(../img/code.png);
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;margin-top: 8px;}
+.reg_psword{background-image: url(../img/psword.png);
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;margin-top: 8px;}   
+.reg_name{background-image: url(../img/name.png);
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;margin-top: 8px;}    
+.reg_tj{background-image: url(../img/icon-rcer.png);
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;margin-top: 8px;}
+.reg_hq{float: right;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    line-height:23px;
+    height: 23px;
+    width: 100px;
+    text-align: center;}
+    .reg_zhuce{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    }
+
+    .reg_zhuce input{    width: 100%;
+    padding: 5px 0;
+    color: #fff;
+    background: rgba(146, 140, 140, 0.68);
+}       
+    .reg_zhuce input:hover{background:rgba(78, 76, 76, 0.68)}
