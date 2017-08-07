@@ -55,15 +55,18 @@ class PublicController extends Controller {
         } elseif($info['user_status']==0){
             $b="4";
         }else{
-            $b=1;
+
             $res["info"]=$info;
-            $session_ticket=md5($info['uid'].$info['user_name']);
+            $session_ticket=md5($info['uid'].time());
             cookie("session_user_ticket",$session_ticket);
             $b=M("session")->add([
                 "session_ticket"=>$session_ticket,
                 "uid" => $info['uid'],
                 "expression" => time()+3600,
                 "user_ip" => get_client_ip(),
+            ]);
+            if(!$b)$this->ajaxReturn([
+                "msg" => "系统繁忙，请稍后重试！"
             ]);
         }
         $res["info"]=$info;
