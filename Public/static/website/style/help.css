@@ -1,0 +1,339 @@
+@charset "utf-8";
+.crumbs {
+  width: 1000px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  color: #666;
+  margin: 0 auto;
+}
+.crumbs .icon-house {
+  margin-top: 21px;
+  float: left;
+  margin-right: 15px;
+  margin-left: 5px;
+  position: relative;
+  *top:6px;
+}
+.crumbs-content a {
+  color: #666;
+}
+.crumbs-content a:hover {
+  color: #1eae58;
+}
+.crumbs .icon-leftarrow {
+  margin-top: 21px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  *top:-3px;
+}
+.help-page {
+  width: 1000px;
+  margin: 0 auto;
+  height: auto;
+  min-height: 720px;
+  zoom: 1;
+}
+.help-page:after {
+  display: table;
+  content: " ";
+  visibility: hidden;
+  clear: both;
+}
+.help-nav {
+  width: 180px;
+  height: auto;
+  float: left;
+  background: #2d3e50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav-list {
+  width: 180px;
+  height: auto;
+  background: #2d3e50;
+}
+.nav-list li {
+  width: 180px;
+  height: auto;
+}
+.nav-list > li {
+  margin-bottom: 2px;
+  position: relative;
+}
+.child-nav-list {
+  display: none;
+  position: relative;
+  background: #18293a;
+  overflow: hidden;
+}
+.child-nav-list li {
+  width: 180px;
+  line-height: 45px;
+  margin-top: 1px;
+}
+.child-nav-list li a {
+  height: 45px;
+  line-height: 45px;
+  color: #c9ced2;
+  padding-left: 55px;
+}
+.child-nav-list li a:hover,
+.child-nav-list li.active a {
+  color: #fff;
+}
+.nav-list li a {
+  display: block;
+  color: #c9ced2;
+  width: 180px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 45px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+.nav-list li a i {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+.nav_list_a:hover,
+.nav-list > li.active > a {
+  background: url(../images/personal_center/per_hov.png) no-repeat;
+  color: #fff;
+}
+.nav_list_a1:hover > i {
+  background-position: -1px -1px;
+}
+.nav_list_a2:hover > i {
+  background-position: -1px -24px;
+}
+.nav_list_a3:hover > i {
+  background-position: -1px -43px;
+}
+.nav_list_a4:hover > i {
+  background-position: -1px -65px;
+}
+.nav_list_a5:hover > i {
+  background-position: -3px -88px;
+}
+.nav_list_a6:hover > i {
+  background-position: -1px -112px;
+}
+.nav_list_a7:hover > i {
+  background-position: -1px -138px;
+}
+.nav_list_a8:hover > i {
+  background-position: -1px -163px;
+}
+/*小图标*/
+.icon_problem {
+  background: url(../images/help/help_icon.png) no-repeat -27px -1px;
+  width: 20px;
+  height: 18px;
+  margin-top: 13px;
+}
+.icon_piggz {
+  background: url(../images/help/help_icon.png) no-repeat -27px -24px;
+  width: 20px;
+  height: 15px;
+  margin-top: 15px;
+}
+.icon_transactions {
+  background: url(../images/help/help_icon.png) no-repeat -27px -43px;
+  width: 20px;
+  height: 18px;
+  margin-top: 13px;
+}
+.icon_management {
+  background: url(../images/help/help_icon.png) no-repeat -27px -65px;
+  width: 20px;
+  height: 18px;
+  margin-top: 13px;
+}
+.icon_sale {
+  background: url(../images/help/help_icon.png) no-repeat -29px -88px;
+  width: 20px;
+  height: 19px;
+  margin-top: 13px;
+}
+.icon_capital {
+  background: url(../images/help/help_icon.png) no-repeat -27px -112px;
+  width: 20px;
+  height: 20px;
+  margin-top: 11px;
+}
+.icon_anb {
+  background: url(../images/help/help_icon.png) no-repeat -27px -138px;
+  width: 20px;
+  height: 18px;
+  margin-top: 13px;
+}
+.icon_noun {
+  background: url(../images/help/help_icon.png) no-repeat -27px -163px;
+  width: 20px;
+  height: 19px;
+  margin-top: 13px;
+}
+.icon_problem.active {
+  background: url(../images/help/help_icon.png) no-repeat -1px -1px;
+}
+.icon_piggz.active,.active .icon_piggz{
+  background: url(../images/help/help_icon.png) no-repeat -1px -24px;
+}
+.icon_transactions.active {
+  background: url(../images/help/help_icon.png) no-repeat -1px -43px;
+}
+.icon_management.active {
+  background: url(../images/help/help_icon.png) no-repeat -1px -65px;
+}
+.icon_sale.active {
+  background: url(../images/help/help_icon.png) no-repeat -3px -88px;
+}
+.icon_capital.active {
+  background: url(../images/help/help_icon.png) no-repeat -1px -112px;
+}
+.icon_anb.active {
+  background: url(../images/help/help_icon.png) no-repeat -1px -138px;
+}
+.icon_noun.active {
+  background: url(../images/help/help_icon.png) no-repeat -1px -163px;
+}
+.icon_p2p,.icon_net,.icon_bank,.icon_credit,.icon_borrow,.icon_fund{
+  background: url(../images/help/help_icon.png) no-repeat -64px -119px;
+  width:18px;
+  height: 18px;
+  margin-top:13px;
+}
+.nav_list_a:hover .icon_p2p,.icon_p2p:hover,.active .icon_p2p{
+  background-position: -64px -143px;
+}
+.icon_net{
+  background-position: -91px -119px;
+}
+.nav_list_a:hover .icon_net,.icon_net:hover,.active .icon_net{
+  background-position: -91px -143px;
+}
+.icon_bank{
+  background-position: -118px -119px;
+}
+.nav_list_a:hover .icon_bank,.icon_bank:hover,.active .icon_bank{
+  background-position: -118px -143px;
+}
+.icon_credit{
+  background-position: -144px -119px;
+}
+.nav_list_a:hover .icon_credit,.icon_credit:hover,.active .icon_credit{
+  background-position: -144px -143px;
+}
+.icon_borrow{
+  background-position: -169px -119px;
+}
+.nav_list_a:hover .icon_borrow,.icon_borrow:hover,.active .icon_borrow{
+  background-position: -169px -143px;
+}
+.icon_fund{
+  background-position: -193px -119px;
+}
+.nav_list_a:hover .icon_fund,.icon_fund:hover,.active .icon_fund{
+  background-position: -193px -143px;
+}
+.helpicon-minus,
+.helpicon-plus {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url(../images/help/help_icon.png) no-repeat -1px -206px;
+}
+.helpicon-minus,
+.helpicon-plus.reverse {
+  background-position: -1px -188px;
+}
+/*右侧*/
+.help-content {
+  width: 818px;
+  float: left;
+  background: #fff;
+  height: auto;
+  min-height: 720px;
+  border: #dfdfdf 1px solid;
+}
+.help-content .xz-widget-header {
+  padding: 30px 50px 0 50px;
+}
+.help-content .xz-widget-header h3 {
+  height: 35px;
+  border-bottom: 2px solid #e4e4e4;
+  position: relative;
+}
+.help-content .xz-widget-header h3 em {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 30px;
+  border-bottom: 2px solid #1eae58;
+  color: #1eae58;
+  font-size: 20px;
+}
+.help-content .xz-widget-body,
+.help-content .xz-widget-footer {
+  padding: 0px 50px;
+}
+.help-content .question-list li {
+  border-bottom: 1px dashed #dfdfdf;
+  font-size: 14px;
+  padding: 22px 0;
+  position: relative;
+  cursor: pointer;
+}
+.help-content .question-list li span {
+  margin-left: 27px;
+  line-height: 14px;
+}
+.help-content .question-list li div {
+  display: none;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.help-content .question-list li p {
+  line-height: 25px;
+  text-indent: 3em;
+  color: #999999;
+  cursor: default;
+}
+.help-content .question-list li .show {
+  display: block;
+}
+.help-content .question-list li .show p {
+  text-indent: 0;
+  margin-left: 27px;
+}
+.help-content .question-list li a {
+  margin-left: 27px;
+  font-size: 18px;
+  color: #333333;
+}
+.help-content .question-list li a:hover {
+  color: #1eae58;
+}
+.help-content .question-list li i {
+  position: relative;
+  top: 2px;
+  *top: -2px;
+  left: 5px;
+}
+.help-content .question-list .helpicon-plus {
+  position: absolute;
+  top: 25px;
+  left: 2px;
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}

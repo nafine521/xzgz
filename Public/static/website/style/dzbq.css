@@ -1,0 +1,532 @@
+@charset "utf-8";
+/* CSS Document */
+
+.section1{ background:#ffb30f;}
+.section2{ background:url(../images/special_subject/electronic_security/bzbq_twobg.jpg);}
+.section3{ background:#0f8aff;}
+.section4{ background:url(../images/special_subject/electronic_security/bzbq_twobg.jpg);}
+.section5{ background:#3ac887;}
+.section6{ background:url(../images/special_subject/electronic_security/bzbq_twobg.jpg);}
+/*第一屏*/
+.dzbq_first{ width:850px; height:650px; left:50%; position:absolute; top:50%;background:url(../images/special_subject/electronic_security/dzbq_bg1.jpg) no-repeat; margin-left:-430px; margin-top:-380px;}
+.dzbq_first div{position: absolute;}
+.dzbq_dun1{ width: 515px; height: 555px; left: 75px; top: 45px; z-index: 1; background:url(../images/special_subject/electronic_security/dzbq_d1.png) no-repeat; }
+.dzbq_dun2{ width: 460px; height: 485px; left: 30px; top: 35px;  z-index: 2;background:url(../images/special_subject/electronic_security/dzbq_d2.png) no-repeat; }
+.dzbq_dun3{ width: 390px; height: 415px; left: 35px; top: 35px;  z-index: 3;background:url(../images/special_subject/electronic_security/dzbq_d3.png) no-repeat; }
+.dzbq_dun4{ width: 310px; height: 330px; left: 40px; top: 35px;  z-index: 4;background:url(../images/special_subject/electronic_security/dzbq_d4.png) no-repeat; }
+.dzbq_dun5{ width: 174px; height: 172px; left: 76px; top: 80px;  z-index: 5;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -731px -1028px; }
+.dzbq_wr{width: 370px; height: 170px; left: 158px; z-index: 5; top:141px;}
+.dzbq_wr i{width: 64px; height: 64px;position: absolute;}
+.dzbq_yq1{top: 100px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -545px 0;}
+.dzbq_yq2{left: 83px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -614px 0;}
+.dzbq_yq3{left: 214px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -684px 0;}
+.dzbq_yq4{top: 100px; left: 293px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -757px 0;}
+.dzbq_wz{ font-size: 24px; color: #fff; font-weight: bold; width: 418px; height: 30px; line-height: 30px;  left: 126px; top:460px; z-index: 5;}
+.dzbq_tz{cursor: pointer; width: 157px; height: 50px; line-height: 50px; left: 258px; top:529px; z-index: 5;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -213px 0;}
+.dzbq_tz:hover{ background-position: -378px 0; }
+.dzbq_st{ width: 110px; height: 69px; left: 573px; top: 43px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -84px 0;}
+.dzbq_jq{ height: 410px; width: 255px; left: 585px; top:215px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat 0 -162px;}
+.dzbq_fk{ height: 70px; width: 73px; left: 772px; top:570px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -1px -1px;}
+/*第一屏弹窗*/
+.dzbq_frist_tc{ height: 245px;*height: 270px; width: 800px;*width: 820px; overflow: hidden;position: absolute;z-index:201;left:50%;top:50%;margin-left:-400px;margin-top:-125px;display: none;}
+.dzbq_frist_tc div{padding-top: 25px; padding-left: 15px; line-height: 25px; border:5px solid #21c178; width: 760px; height: 235px; float: left; background: #fff; font-size: 14px; color: #666;}
+.dzbq_frist_tc div em{ color:#1eae58;}
+.dzbq_close{ background: #21c178; width: 34px;height: 34px; font-size: 34px; color: #fff; text-align: center; line-height: 30px; float: left; margin-top: 15px; cursor: pointer;}
+
+
+.section1.active .dzbq_dun1{animation: dx 1s;-webkit-animation: dx 1s;}
+.section1.active .dzbq_dun2{animation: dx 1.5s;-webkit-animation: dx 1.5s;}
+.section1.active .dzbq_dun3{animation: dx 2s;-webkit-animation: dx 2s;}
+.section1.active .dzbq_dun4{animation: dx 2.5s;-webkit-animation: dx 2.5s;}
+.section1.active .dzbq_dun5{animation: dx 3s;-webkit-animation: dx 3s;}
+.section1.active .dzbq_yq1{animation: fil 3s;-webkit-animation: fil 3s;}
+.section1.active .dzbq_yq2{animation: fil 3.5s;-webkit-animation: fil 3.5s;}
+.section1.active .dzbq_yq3{animation: fil 4s;-webkit-animation: fil 4s;}
+.section1.active .dzbq_yq4{animation: fil 4.5s;-webkit-animation: fil 4.5s;}
+.section1.active .dzbq_wz{animation: fil 4s;-webkit-animation: fil 4s;}
+.section1.active .dzbq_tz{animation: fil 4s;-webkit-animation: fil 4s;}
+.section1.active .dzbq_st{animation: dax 0.5s linear;-webkit-animation: dax 0.5s linear;}
+.section1.active .dzbq_jq{animation: fd 1.2s ease-out infinite alternate;-webkit-animation: fd 1.2s ease-out infinite alternate;}
+.section1.active .dzbq_fk{animation: fd 1.3s ease-out infinite alternate;-webkit-animation: fd 1.3s ease-out infinite alternate;}
+
+
+/*第二屏*/
+.dzbq_two{ width:940px; height:390px;left:50%; position:absolute; top:50%; margin-left:-480px; margin-top:-210px;}
+.dzbq_two div{ position: absolute;}
+.dzbq_two_by{ width: 290px; height: 175px; left: 15px; top: 60px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -267px -162px;}
+.dzbq_two_left{ width: 330px; height: 315px; }
+.dzbq_two_left i{position: absolute;display: block;color: #333; font-size: 16px;}
+.dzbq_two_tb1{ height: 61px; width: 61px;left: 129px;top:35px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -1px -82px;}
+.dzbq_two_tb2{ height: 61px; width: 61px; top:195px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -69px -82px; }
+.dzbq_two_tb3{ height: 61px; width: 61px;top:195px; left: 129px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -137px -82px;}
+.dzbq_two_tb4{ height: 61px; width: 61px; top:195px; left: 260px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -206px -82px;}
+.dzbq_two_ww1{ width: 70px;height: 20px; line-height: 20px; left: 128px;top:5px; }
+.dzbq_two_ww2{ width: 70px;height: 20px; line-height: 20px; top:270px; }
+.dzbq_two_ww3{ width: 70px;height: 20px; line-height: 20px; top:270px;left: 127px; }
+.dzbq_two_ww4{ width: 70px;height: 20px; line-height: 20px; top:270px;left: 258px; }
+.dzbp_two_ct{ width: 220px; font-size: 24px; color: #333; height: 30px;line-height: 30px; left: 85px; top:335px;}
+.dzbp_two_ct1{left:670px;}
+.dzbp_two_center{ height: 105px; width: 265px; left: 335px; top:135px;}
+.dzbp_two_center i{display: block; position: absolute;}
+.dzbq_two_pig1{ width: 103px; height: 105px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -267px -359px;}
+.dzbq_two_pig2{left: 105px; top:35px; width: 65px; height: 45px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -371px -396px; }
+.dzbq_two_pig3{left: 173px; width: 86px; height: 105px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -441px -359px;}
+.dzbq_two_right{ height: 300px; width: 300px; top:25px; left: 633px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -585px -162px;}
+.dzbq_two_right div{ height: 61px; width: 61px; cursor: pointer;}
+.dzbq_two_qq1{top:13px;left:14px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -278px -82px;}
+.dzbq_two_qq1:hover{ background-position: -630px -82px;}
+.dzbq_two_qq1.active{ background-position: -630px -82px;}
+.dzbq_two_qq2{top:13px; left:209px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -488px -82px;}
+.dzbq_two_qq2:hover{ background-position: -557px -82px;}
+.dzbq_two_qq2.active{ background-position: -557px -82px;}
+.dzbq_two_qq3{top:215px; left:14px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -348px -82px;}
+.dzbq_two_qq3:hover{ background-position: -770px -82px;}
+.dzbq_two_qq3.active{ background-position: -770px -82px;}
+.dzbq_two_qq4{top:215px; left:209px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -418px -82px;}
+.dzbq_two_qq4:hover{ background-position: -701px -82px;}
+.dzbq_two_qq4.active{ background-position: -701px -82px;}
+.dzbq_two_right div em{display: none; position: absolute; width: 160px; height: 140px; line-height: 25px; font-size: 14px; color: #666; text-align:center; }
+.dzbq_two_right div em i{color: #333; font-size: 18px; display: block; line-height: 25px; height: 25px; margin-bottom: 10px;}
+.dzbq_two_right div em.active{display: block;}
+.dzbq_two_qq1 em{left: 50px; top: 75px;}
+.dzbq_two_qq2 em{left: -145px; top: 75px;}
+.dzbq_two_qq3 em{left: 50px; top: -140px;}
+.dzbq_two_qq4 em{left: -145px; top: -125px;}
+
+.section2.active .dzbq_two_by{animation: dx 1s;-webkit-animation: dx 1s;}
+.section2.active .dzbq_two_right{animation: dx 1s;-webkit-animation: dx 1s;}
+.section2.active .dzbq_two_tb1,.dzbq_two_ww1{animation: fil 1.5s;-webkit-animation: fil 1.5s;}
+.section2.active .dzbq_two_tb2,.dzbq_two_ww2{animation: fil 2s;-webkit-animation: fil 2s;}
+.section2.active .dzbq_two_tb3,.dzbq_two_ww3{animation: fil 2.5s;-webkit-animation: fil 2.5s;}
+.section2.active .dzbq_two_tb4,.dzbq_two_ww4{animation: fil 3s;-webkit-animation: fil 3s;}
+.section2.active .dzbq_two_qq1{animation: fil 1.5s;-webkit-animation: fil 1.5s;}
+.section2.active .dzbq_two_qq2{animation: fil 2s;-webkit-animation: fil 2s;}
+.section2.active .dzbq_two_qq3{animation: fil 2.5s;-webkit-animation: fil 2.5s;}
+.section2.active .dzbq_two_qq4{animation: fil 3s;-webkit-animation: fil 3s;}
+.section2.active .dzbq_two_pig1{animation: fdd 2s;-webkit-animation: fdd 2s;}
+.section2.active .dzbq_two_pig3{animation: fdy 2s;-webkit-animation: fdy 2s;}
+.section2.active .dzbq_two_pig2{animation: dxx 3s;-webkit-animation: dxx 3s;}
+
+
+/*第三屏*/
+.dzbq_three{ width:980px; height:500px;left:50%; position:absolute; top:50%; margin-left:-480px; margin-top:-265px;}
+.dzbq_three div{ position: absolute;}
+.dzbq_three_frist{z-index: 2; font-size: 14px; color: #5d431f; line-height: 24px; padding-top: 20px;  width: 337px; height: 141px;*height: 121px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -270px -473px;}
+.dzbq_three_line{z-index: 1; width: 293px; height: 48px; left: 337px; top:40px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -308px -1107px;}
+.dzbq_three_two{z-index: 2; background-position: -619px -473px; left: 630px;  padding-top: 30px;}
+.dzbq_three_line1{z-index: 1; height: 137px; width: 137px; left: 523px; top: 113px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -729px -631px;}
+.dzbq_three_three{z-index: 2; width: 452px;padding-top: 145px;line-height: 25px; height: 250px;*height: 100px; text-align: center; font-size: 14px; color: #333; left: 260px; top:227px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -270px -631px;}
+.dzbq_three_three em{ color: #21c178;}
+.dzbq_three_pig{ width: 210px; height: 300px; left: 65px; top:182px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat 0 -587px;}
+
+.section3.active .dzbq_three_frist1{animation: trehei 1s;-webkit-animation: trehei 1s;}
+.section3.active .dzbq_three_line{animation: trehey 1.2s;-webkit-animation: trehey 1.2s;}
+.section3.active .dzbq_three_two{animation: trehef 2s;-webkit-animation: trehef 2s;}
+.section3.active .dzbq_three_line1{animation: trehee 2.2s;-webkit-animation: trehee 2.2s;}
+.section3.active .dzbq_three_three{animation: trehew 2.8s;-webkit-animation: trehew 2.8s;}
+.section3.active .dzbq_three_pig{animation: fddq 3s;-webkit-animation: fddq 3s;}
+
+/*第四屏*/
+.dzbq_four{ width:770px; height:500px;left:50%; position:absolute; top:50%; margin-left:-400px; margin-top:-265px;}
+.dzbq_four div{position: absolute;}
+.dzbq_four_fis1,.dzbq_four_fis2,.dzbq_four_fis3{color: #666; font-size: 14px;line-height: 20px;height: 20px;}
+.dzbq_four_fis1{ top:68px; }
+.dzbq_four_fis2{ top:68px; left: 514px;}
+.dzbq_four_fis3{ top:325px;left: 282px;}
+.dzbq_four_tb1,.dzbq_four_tb2,.dzbq_four_tb3{height: 61px; width: 61px;z-index: 2; }
+.dzbq_four_tb1{top:50px;left: 200px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -827px -1px;}
+.dzbq_four_tb2{top:50px;left: 447px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -896px -1px;}
+.dzbq_four_tb3{top:257px;left: 329px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -840px -82px;}
+.dzbq_four_dy{transition:transform 1s; transform-origin:center;z-index: 1; height: 292px; width: 292px; left: 208px;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat 0 -893px;}
+.dzbq_four_lan{ color: #0f8aff; font-weight: bold; font-size: 18px; line-height: 30px; height: 30px; left: -15px; top:370px;}
+.dzbq_four_anwer{cursor: pointer; width: 216px; height: 55px; left: 132px; top:422px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -728px -776px;}
+.dzbq_four_anwer:hover{ background-position: -728px -963px;}
+.dzbq_four_anwer1{cursor: pointer; width: 216px; height: 55px; left: 373px; top:422px;}
+.dzbq_four_anwer1 a{ display: block;width: 216px; height: 55px; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -728px -838px;}
+.dzbq_four_anwer1 a:hover{ background-position: -728px -900px;}
+/*第四屏弹窗*/
+.dzbq_four_tc{z-index: 201; width: 770px;*width: 725px; height: 446px;*height: 400px;padding-top: 25px;padding-left: 30px; padding-bottom: 19px; background: #fff; padding-right:7px;  border:5px solid #21c178; position:absolute; left:50%;top:50%;margin-left:-385px;margin-top:-210px;display: none;}
+.dzbq_four_tc div{overflow: hidden;width: 723px; height: 385px; float: left; font-size: 14px; color: #666;}
+.dzbq_four_tc .dzbq_close1{margin-left: 12px;position: absolute;margin-top: 0px; top:15px;}
+.dzbq_four_ques{  line-height: 30px; margin-bottom: 15px; width: 695px; color: #333; font-size: 18px;}
+.dzbq_four_ques em{ font-size: 24px; color: #00a1f1;}
+.dzbq_four_ques i{ font-size: 18px; color: #00a1f1;}
+.dzbq_four_ques1{ margin-bottom: 25px;  line-height: 25px; width: 695px;  color: #666; font-size: 14px;}
+.dzbq_four_ques1 em{ font-size: 24px; color: #f65314;}
+.dzbq_four_ques1 i{color: #0f8aff;}
+.dzbq_four_ques1 label{ font-size: 18px; color: #f65314;}
+
+.dzbq_four_dy:hover{transform:rotate(360deg);}
+
+.section4.active .dzbq_four_dy{animation: xzw 1s;-webkit-animation: xzw 1s;transform-origin:center;}
+.section4.active .dzbq_four_tb1{animation: fil 1.5s;-webkit-animation: fil 1.5s;}
+.section4.active .dzbq_four_tb2{animation: fil 2s;-webkit-animation: fil 2s;}
+.section4.active .dzbq_four_tb3{animation: fil 2.5s;-webkit-animation: fil 2.5s;}
+.section4.active .dzbq_four_fis1{animation: fil 1.5s;-webkit-animation: fil 1.5s;}
+.section4.active .dzbq_four_fis2{animation: fil 2s;-webkit-animation: fil 2s;}
+.section4.active .dzbq_four_fis3{animation: fil 2.5s;-webkit-animation: fil 2.5s;}
+.section4.active .dzbq_four_anwer{animation: dxx 3s;-webkit-animation: dxx 3s;}
+.section4.active .dzbq_four_anwer1{animation: dxx 3s;-webkit-animation: dxx 3s;}
+.section4.active .dzbq_four_lan{animation: fil 3s;-webkit-animation: fil 3s;}
+
+
+/*第五屏*/
+.dzbq_five{ width:800px; height:480px;left:50%; position:absolute; top:50%; margin-left:-400px; margin-top:-265px;}
+.dzbq_five div{ position: absolute;}
+.dzbq_five_title{ font-size: 30px; color: #fff;height: 35px; line-height: 35px; left: 115px;}
+.dzbq_five_t1{ top:110px; width: 210px; height: 300px; overflow: hidden;}
+.dzbq_five_t2{ top:130px;left: 420px; width: 370px; height: 250px; overflow: hidden;}
+.dzbq_five_t3{ font-size: 16px; color: #fff; height: 20px; line-height: 20px;top:440px; left: 38px;}
+.dzbq_five_t3 i{display: block; margin-top: -18px;  margin-left: 135px; cursor: pointer; width:17px; height:17px;vertical-align: middle; background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -912px -82px;}
+.dzbq_five_t4{ font-size: 16px; color: #fff; height: 20px; line-height: 20px;top:440px; left: 434px;}
+.dzbq_five_t3 i em{position: absolute;  left: -25px; top:-203px; height: 202px; width: 330px; display: none;background:url(../images/special_subject/electronic_security/electronic_security.png) no-repeat -308px -893px;}
+.dzbq_five_t3 i:hover em{ display: block;}
+
+.section5.active .dzbq_five_t1,.section5.active .dzbq_five_t3{animation: dx 1.5s;-webkit-animation: dx 1.5s;}
+.section5.active .dzbq_five_t2,.section5.active .dzbq_five_t4{animation: dx 1.5s;-webkit-animation: dx 1.5s;}
+.section5.active .dzbq_five_title{animation: dx 1s;-webkit-animation: dx 1s;}
+
+
+/*第六屏*/
+.dzbq_six{ width: 1000px; height: 530px;left:50%; position:absolute; top:50%; margin-left:-500px; margin-top:-300px;}
+.dzbq_six div{ position: absolute;}
+.dzbq_six_title{ height: 35px; line-height: 35px; color: #333;font-size: 30px; left: 414px;}
+.dzbq_six_center{ width: 1000px; background: #fff; height: 430px; top: 90px;}
+.dzbq_six_xx{z-index: 3; width: 330px; height: 42px; line-height: 42px; border :1px solid #21c178; border-radius: 5px; top:26px; left: 335px; overflow:hidden; }
+.dzbq_six_xx i{ width: 50%; float:left;height: 40px; line-height: 40px; *height: 42px; *line-height: 42px; font-size: 18px; color: #21c178; background: #fff; text-align: center; cursor: pointer;}
+.dzbq_six_xx i em{ position: absolute; display: block; width: 50%; height: 40px; line-height: 40px; *height: 42px; *line-height: 42px;}
+.dzbq_six_em{ right: 0;}
+.dzbq_six_em1{ left: 0;}
+.dzbq_six_xx i.active{animation: shem 0.5s;-webkit-animation: shem 0.5s; color: #fff; background: #21c178;}
+.dzbq_six_tb{ width: 850px; height: 280px; top:110px; left: 65px; display: block; overflow: hidden;}
+.dzbq_six_tb.active{ display: block;}
+.dzbq_six_tb img{ float: left;}
+.ml152{ margin-left: 152px;}
+.ml107{ margin-left: 107px;}
+.ml116{ margin-left: 116px;}
+.ml75{ margin-left: 75px;}
+.dzbq_six_tb p{ height: 20px; line-height: 20px; color: #333; font-size: 14px; float: left; margin-top: 30px;}
+.dzbq_six_tb1{float:left; margin-left: 20px; width: 960px; height: 310px;  margin-top: 100px; display: none; overflow: hidden;}
+.dzbq_six_tb1.active{ display: block;}
+.dzbq_six_tb1 img{ float: left;}
+.dzbq_six_tb1 p{ height: 20px; float: left; line-height: 20px; color: #333; font-size: 14px; margin-top: 30px;}
+
+.aboutus-shadow {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  left: 0;
+  top: 0;
+  z-index: 199;
+}
+
+/*右侧小圆点*/
+#fp-nav ul, .fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+  background: #000;
+  filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  top: 2px;
+  left: 2px;
+  width: 9px;
+  height: 9px;
+  border: 2px solid #000;
+  filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+
+@keyframes shem {
+ from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@-webkit-keyframes shem {
+ from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+
+@keyframes fd{
+  0%{transform:translate(0,30px);}
+  100%{transform:translate(0,0);}
+}
+@-webkit-keyframes fd{
+  0%{-webkit-transform:translate(0,30px);}
+  100%{-webkit-transform:translate(0,0);}
+}
+
+@keyframes fdd{
+from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@-webkit-keyframes fdd{
+ from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes fdy{
+ from {
+    margin-left: 200px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@-webkit-keyframes fdy{
+  from {
+    margin-left: 200px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+
+@keyframes fddq{
+from {
+    margin-left: -500px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@-webkit-keyframes fddq{
+ from {
+    margin-left: -500px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes trehei{
+ from {
+    width: 0;
+  }
+  to {
+    width: 337px;
+  }
+}
+@-webkit-keyframes trehei{
+  from {
+    width: 0;
+  }
+  to {
+    width: 337px;
+  }
+}
+
+@keyframes trehey{
+ 0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100%{
+    width: 293px;
+  }
+}
+@-webkit-keyframes trehey{
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100%{
+    width: 293px;
+  }
+}
+
+@keyframes trehef{
+ 0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100%{
+    width: 337px;
+  }
+}
+@-webkit-keyframes trehef{
+ 0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100%{
+    width: 337px;
+  }
+}
+
+@keyframes trehee{
+ 0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100%{
+    width: 137px;
+  }
+}
+@-webkit-keyframes trehee{
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100%{
+    width: 137px;
+  }
+}
+
+
+@keyframes trehew{
+ 0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100%{
+    width: 452px;
+  }
+}
+@-webkit-keyframes trehew{
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100%{
+    width: 452px;
+  }
+}
+
+
+@keyframes fil {
+   0%{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0;}
+   50%{filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+   100%{filter:alpha(opacity=100); -moz-opacity:1; opacity:1;}
+}
+@-webkit-keyframes fil {
+   0%{ filter:alpha(opacity=0); -moz-opacity:0; opacity:0;}
+   50%{filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+   100%{filter:alpha(opacity=100); -moz-opacity:1; opacity:1;}
+}
+
+
+@keyframes dax{
+  0%{transform:translate(250px,-200px);}
+  100%{transform:translate(0,0);}
+}
+@-webkit-keyframes dax{
+  0%{-webkit-transform:translate(250px,-200px);}
+  100%{-webkit-transform:translate(0,0);}
+}
+
+
+@keyframes dx{
+	 0%{transform:scale(0);}
+	 50%{transform:scale(0);}
+	 100%{filter:alpha(opacity=100); -moz-opacity:1; opacity:1; transform:scale(1);}
+
+}
+@-webkit-keyframes dx{
+   0%{-webkit-transform:scale(0);}
+   50%{-webkit-transform:scale(0);}
+   100%{filter:alpha(opacity=100); -moz-opacity:1; opacity:1; -webkit-transform:scale(1);}
+
+}
+
+@keyframes dxx{
+   0%{transform:scale(3);filter:alpha(opacity=0); -moz-opacity:0; opacity:0;}
+   50%{transform:scale(3);filter:alpha(opacity=0); -moz-opacity:0; opacity:0;}
+   100%{filter:alpha(opacity=100); -moz-opacity:1; opacity:1; transform:scale(1);}
+
+}
+@-webkit-keyframes dxx{
+   0%{-webkit-transform:scale(3);filter:alpha(opacity=0); -moz-opacity:0; opacity:0;}
+   50%{-webkit-transform:scale(3);filter:alpha(opacity=0); -moz-opacity:0; opacity:0;}
+   100%{filter:alpha(opacity=100); -moz-opacity:1; opacity:1; -webkit-transform:scale(1);}
+
+}
+
+
+@keyframes zt{
+ 0% {
+    opacity: 0;
+    -webkit-transform: translateX(700px);
+    transform: translateX(700px);
+  }
+   50% {
+    opacity: 0;
+    -webkit-transform: translateX(700px);
+    transform: translateX(700px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes xzw{
+  0% {
+    transform:rotate(360deg) scale(0);
+  }
+   50% {
+    transform: rotate(360deg) scale(0);
+  }
+
+  100% {
+     transform: rotate(360deg) scale(1);
+}
+}
+@-webkit-keyframes xzw{
+ 0% {
+    -webkit-transform:rotate(360deg) scale(0);
+  }
+   50% {
+    -webkit-transform: rotate(360deg) scale(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+  {
+}

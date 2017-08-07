@@ -1,0 +1,106 @@
+@charset "utf-8";
+.section1{ background:url(../images/special_subject/new_xs_green.png);}
+.section2{ background:url(../images/special_subject/new_xs_blue.png);}
+.section3{ background:url(../images/special_subject/new_xs_violet.png);}
+.section4{ background:url(../images/special_subject/new_xs_orange.png);}
+.section5{ background:url(../images/special_subject/new_xs_deepblue.png)}
+.section6{ background:url(../images/special_subject/new_xs_sky.jpg);}
+div{ cursor:default;}
+/*第一屏*/
+.nov_first{ width:950px; height:100%; margin:0 auto;margin-top:9%;}
+.nov_why{ width:950px; height:55px; line-height:55px; text-align:center; color:#fff; font-size:48px;}
+.nov_why1{ width:416px; margin:0 auto; height:35px; line-height:35px; margin-top:8px; text-align:center; color:#1abb6b;font-size:24px; background:url(../images/special_subject/nov.png) no-repeat -1078px -54px;}
+.nov_xia{ width:950px; float:left; height:430px; padding-top:140px; color:#fff; font-size:16px;}
+.nov_dn{ display:block; height:255px; position:relative; z-index:1; width:318px; background:url(../images/special_subject/nov.png) no-repeat -1px -1px; float:left;}
+.nov_fdj{ width:195px; height:170px; display:block; float:left; margin-top:75px; margin-left:-130px;background:url(../images/special_subject/nov.png) no-repeat -335px -2px; float:left; position:relative; z-index:2;}
+.nov_wz{ width:496px; height:375px; float:right; display:block; line-height:25px; overflow:hidden;}
+.nov_wz label{ color:#f6ff00; font-weight:bold;} 
+
+/*第二屏*/
+.nov_why2{ width:416px; margin:0 auto; height:35px; line-height:35px; margin-top:8px; text-align:center; color:#44bfff;font-size:24px; background:url(../images/special_subject/nov.png) no-repeat -1078px -54px;}
+.nov_xia1{ width:950px; float:left; height:465px; padding-top:50px; color:#fff; font-size:16px;}
+.nov_ys{ width:160px; height:164px; display:block; float:left; position:relative; z-index:1; background:url(../images/special_subject/nov.png) no-repeat -1181px -507px;}
+.nov_dq{width:360px; height:360px;display:block; float:left; position:relative; z-index:2;background:url(../images/special_subject/nov.png) no-repeat -1139px -103px; margin-left:-140px; margin-top:50px;}
+.nov_wz1{ width:496px; height:230px; float:right; display:block; line-height:25px; overflow:hidden; margin-top:110px;}
+.nov_wz1 b{ font-size:18px;}
+.nov_hj{width:80px; height:126px;display:block; float:left; position:relative; z-index:3;background:url(../images/special_subject/nov.png) no-repeat -1384px -530px; margin-left:-128px; }
+
+/*第三屏*/
+.nov_why3{ width:540px; margin:0 auto; height:35px; line-height:35px; margin-top:8px; text-align:center; color:#8644ff;font-size:24px; background:url(../images/special_subject/nov.png) no-repeat -959px -4px;}
+.nov_xia2{ width:950px; float:left; height:465px; padding-top:94px; color:#fff; font-size:16px;}
+.nov_wz2{ width:496px; height:350px; float:right; display:block; line-height:24px; overflow:hidden;}
+.nov_wz2 b{ font-size:18px;}
+.nov_jb{width:138px; height:180px;display:block; float:left; position:relative; z-index:2;background:url(../images/special_subject/nov.png) no-repeat -203px -404px; margin-top:150px;}
+.nov_bigpc{width:342px; height:285px;display:block; float:left; position:relative; z-index:1;background:url(../images/special_subject/nov.png) no-repeat -570px -2px; margin-left:-100px; margin-top:30px; }
+.nov_jd{width:125px; height:140px;display:block; float:left; position:relative; z-index:2;background:url(../images/special_subject/nov.png) no-repeat -15px -407px; margin-left:-106px; margin-top:175px;}
+
+/*第四屏*/
+.nov_three{ width:1000px; height:100%; margin:0 auto;margin-top:9%;}
+.nov_why4{width:1000px; height:60px; line-height:60px; text-align:center; color:#fff; font-size:55px;}
+.nov_xia3{ width:1000px; float:left; height:465px; padding-top:90px; color:#fff; font-size:18px;}
+.nov_tzr{ width:106px; height:460px; line-height:20px; float:left; text-align:center;}
+.nov_tzr_i{ display:block; width:106px; height:106px;background:url(../images/special_subject/nov.png) no-repeat -5px -1274px; margin-top:165px;}
+.nov_jt{ width:300px; height:460px; line-height:30px; float:left; text-align:center; margin-left:-10px;}
+.nov_wq{ display:block;width:303px; height:154px;background:url(../images/special_subject/nov.png) no-repeat -9px -756px; margin-top:30px; }
+.nov_lh{display:block;width:260px; height:32px;background:url(../images/special_subject/nov.png) no-repeat -10px -1207px; margin-left:17px;}
+.nov_db{ display:block;width:303px; height:154px;background:url(../images/special_subject/nov.png) no-repeat -25px -982px;}
+.nov_xzgz{width:195px; height:460px;  float:left; text-align:center; }
+.nov_hftx{ width:140px; height:65px; display:block;background:url(../images/special_subject/nov.png) no-repeat -220px -630px;margin-left:25px;*margin-left:0px;}
+.nov_zj{ width:195px; height:70px; display:block;background:url(../images/special_subject/nov.png) no-repeat -6px -631px; margin-top:125px;}
+.nov_dbgs{ width:100px; height:100px; display:block;background:url(../images/special_subject/nov.png) no-repeat -130px -1277px; margin-top:95px;margin-left:40px;*margin-left:0px;}
+.nov_wq1{ display:block;width:303px; height:154px;background:url(../images/special_subject/nov.png) no-repeat -387px -755px; margin-top:30px;*margin-left:0px;}
+.nov_db1{ display:block;width:303px; height:154px;background:url(../images/special_subject/nov.png) no-repeat -378px -975px;}
+.nov_tzr1{ width:106px; height:460px; line-height:20px; float:left; text-align:center;}
+.nov_tzr_i1{ display:block; width:106px; height:106px;background:url(../images/special_subject/nov.png) no-repeat -265px -1273px; margin-top:165px; margin-left:-10px;}
+
+/*第五屏*/
+.new_banner{width:961px;height:533px;position:relative; margin:0 auto;margin-top:9%;}
+.rslides{width:100%;position:relative;list-style:none;padding:0; overflow:hidden;}
+.rslides_nav{ width:36px; height:36px;background:url(../images/special_subject/banner_new.png); display:block; position:absolute;  text-indent:-10em; overflow:hidden;}
+.prev{ background-position:0 0;left:-55px; top:220px;}
+.prev:hover{ background-position:0 -36px;}
+.next{ background-position:-36px 0;right:-55px; top:220px;}
+.next:hover{ background-position:-36px -36px;}
+.rslides_tabs{ position:absolute; left:450px; top:370px;clear:both;text-align:center; z-index:99999;}
+.rslides_tabs li{display:inline;float:none;_float:left;*float:left;margin-right:5px}
+.rslides_tabs,.rslides1_tabs{ display:none;}
+
+/* 第六屏 */
+.section6 .p6-c1 {
+  width: 340px;
+  height: 340px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -170px;
+  margin-top: -170px;
+  animation: shake 1.2s ease-out infinite alternate;
+}
+.section6 .p6-s1 {
+  display: block;
+  width: 341px;
+  height: 330px;
+  background:url(../images/special_subject/nov.png) no-repeat -1141px -769px;
+}
+.section6 a {
+  display: block;
+  width: 105px;
+  height: 30px;
+  line-height: 26px;
+  position: absolute;
+  right: -115px;
+  top: 145px;
+  color: #ffffff;
+  font-size: 24px;
+}
+.section6 a:hover {
+  text-decoration: underline;
+}
+@keyframes shake {
+  from {
+    margin-top: -150px;
+  }
+  to {
+    margin-top: -190px;
+  }
+}

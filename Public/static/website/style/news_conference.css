@@ -1,0 +1,213 @@
+html{ background: #0b0d1e; font-family: "\5FAE\8F6F\96C5\9ED1"}
+body{ background: url(../images/activity/news_conference/star.png) no-repeat; width: 100%; background-size: 100%; min-height: 2500px}
+.bg_ico{background: url(../images/activity/news_conference/bg_ico.png) no-repeat;}
+.w1100{width: 1100px; margin: 0 auto; min-height: 500px;}
+.hidden{ display: none; }
+/*导航*/
+.fixed{ width: 110px; position: fixed; top: 100px; right: 100px }
+.fixed h3{ width: 110px; height: 101px; background-position: 11px 0; cursor: pointer; }
+.fixed li{ background: #27509b; height: 32px; width: 100%; color: #e8eaff; cursor: pointer; text-align: center; line-height: 32px; margin-top: 8px; font-size: 16px;transition: all 1s;-webkit-transition: all 1s;}
+.fixed li:hover{background: #0461da;color: #fff }
+.fixed .getTop{ display: block; width: 42px; height: 42px; background-position:-23px -349px; margin: 8px auto; cursor: pointer;}
+.fixed .active{ background: #0461da}
+/*精彩演讲*/
+.good_lecture .player_list{ width: 1000px; height: 422px; margin: 20px auto 50px; background: #071630 }
+.good_lecture .player_list .player{ width: 760px; float: left; }
+.good_lecture .player_list ul{ float: left;width: 230px; margin-left: 8px; height: 422px; overflow-y: auto;}
+.good_lecture .player_list ul li{ width: 220px; height: 120px; border: 2px solid #215291; margin-bottom: 8px; position: relative; cursor: pointer}
+.good_lecture .player_list ul li.active{ border: 3px solid #006fff; }
+.good_lecture .player_list ul li.active img{ width:214px; height:114px }
+.good_lecture .player_list ul li em{
+transition:all 1s;
+-moz-transition:all 1s; /* Firefox 4 */
+-webkit-transition:all 1s; /* Safari and Chrome */
+-o-transition:all 1s; /* Opera */}
+.good_lecture .player_list ul li:hover em{ display: block; width: 100%; height: 100%; position: absolute; top:-10px}
+.good_lecture .player_list ul li small{ position: absolute; bottom: 0; display: block; height: 28px; width: 100% ;font-size: 12px; color: #fff; background: url(../images/activity/news_conference/bg_ico.png) repeat-x; background-position: 0 -192px; line-height: 28px; text-align: center;}
+/*嘉宾致辞*/
+.to_2 .btnBox{width: 1000px; margin: 20px auto; overflow: hidden;}
+.to_2 .btnBox .img-widget-list{width: 926px;height: 162px; overflow: hidden;float: left;}
+.to_2 .btnBox ul{height: 162px; }
+.to_2 .btnBox ul li{ width: 148px; height: 148px; border: 3px solid #fff; border-radius: 74px; overflow: hidden; float: left; margin: 5px 40px 80px; cursor: pointer; }
+.to_2 .btnBox ul li img{ width: 148px; height: 148px; }
+.to_2 .btnBox ul li.active img{ width: 158px; height: 158px; }
+.to_2 .btnBox a{ float: left; display: block; width: 27px; height: 51px; margin-top: 50px; cursor: pointer;transition: transform 0.2s;
+-webkit-transition: transform 0.2s;}
+.to_2 .btnBox a:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+.pnBtn{
+	transition: transform 0.2s;
+	-webkit-transition: transform 0.2s;
+}
+.pnBtn:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+.to_2 .btnBox ul li.active,
+.to_2 .btnBox ul li:hover {
+  transform: translate(0, 5px);
+  -webkit-transform: translate(0, 5px);
+  border: 4px solid #006fff; width: 162px; height: 162px; border-radius: 81px; margin-top: -5px;
+}
+
+.to_2 .btnBox a.leftBtn{ background-position: -30px -125px; }
+.to_2 .btnBox a.rightBtn{ background-position: 0 -125px; }
+.to_2 .description{ width: 860px; overflow: hidden;position: relative; height: 500px; margin: 40px auto}
+.to_2 .description div.img{ width: 380px; height: 500px; background: #061949; float: left; position: absolute; top: 0; left: 0; z-index: 2}
+.to_2 .description div.text{ width: 600px; height: 380px; border: 2px solid #217bea; float: right; position: absolute; top: 60px; right: 0}
+.to_2 .description div.text dl{ width: 380px; height: 500px; float: right; margin-right: 50px }
+.to_2 .description div.text dl dt{ margin-top: -17px; }
+.to_2 .description div.text dl dd{ color: #fff; font-size: 14px; line-height: 28px; }
+.to_2 .description div.text dl dd em{ font-size: 20px; margin: 10px 0 30px; display: block; }
+/*精彩瞬间*/
+
+/*插件样式*/
+.poster-main{overflow: hidden; zoom: 1; position: relative; width: 1080px; margin: 0 auto; height: 550px;}
+.poster-main a,.poster-main img{display:block;}
+.poster-main .poster-list{width: 900px;height: 480px !important}
+.poster-main .poster-list .poster-item{position: absolute;left: 0px;top: 0px}
+.poster-main .poster-btn{position: absolute; z-index: 10;opacity: 1; cursor: pointer;}
+/*.poster-main .poster-btn:hover{ background: #000; opacity: 0.5 }*/
+.poster-main .prev,.next{ position: absolute; z-index: 10; top: 205px; width:37px !important;height:71px !important; display:block}
+.poster-main .prev{ left: 30px; background-position: -37px -241px}
+.poster-main .next{ right: 30px; background-position: 0 -241px }
+
+.poster-main .mask-left, .poster-main .mask-right{ background: #000; padding: 0px; z-index: 10; position: absolute; top: 0; left: 0; width: 900px; height: 480px; overflow: hidden; left: 1920px; }
+.poster-main .mask-right, .poster-main .mask-left { z-index: 7; left: -809px; filter: alpha(Opacity=50); opacity: .5; background: #000; overflow: hidden; height: 480px; }
+.poster-main .mask-right { left: 990px; }
+.poster-main .poster-list .poster-item p{ background: #000; position: absolute; bottom: 0; width: 100%; font-size: 16px; color: #fff; text-align: center; opacity: 0.6;line-height: 2 }
+
+/*#media-widget {overflow: hidden; zoom: 1; position: relative; width: 1080px; margin: 0 auto; height: 550px;}
+#index_b_hero { width: 900px; height: 480px; margin: auto; position: relative; }
+#index_b_hero img { width: 900px; height: 480px; }
+
+#index_b_hero .heros li {width:825px;height:440px; margin-top: 20px;  }
+#index_b_hero .heros li.cur {width:900px; height:480px; margin-top: 0; }
+
+#index_b_hero .heros { width: 900px; height: 480px; }
+#index_b_hero .hero-wrap { overflow: visible; position: absolute; }
+#index_b_hero .next, #index_b_hero .prev { filter: alpha(Opacity=86); opacity: .86; position: absolute; z-index: 5; }
+#index_b_hero .prev { left:  -22px;}
+#index_b_hero .next { right: -22px; }
+#index_b_hero .disabled { background-color: #eee; }
+#index_b_hero .mask-left, #index_b_hero .mask-right, #index_b_hero .hero { background: #000; padding: 0px; z-index: 1; position: absolute; top: 0; left: 0; width: 900px; height: 480px; overflow: hidden; left: 1920px; }
+#index_b_hero .mask-right, #index_b_hero .mask-left { z-index: 4; left: -900px; filter: alpha(Opacity=86); opacity: .86; background: #000; overflow: hidden;  height: 480px; }
+#index_b_hero .mask-right { left: 900px; }
+#index_b_hero .active { z-index: 2; left: 0; }
+*/
+
+/*投资方介绍 */
+.to_4 .bg_0d1d3d{ background:#0d1d3d; width: 1000px; margin: 40px auto; overflow: hidden;  }
+.to_4 .bg_0d1d3d ul{width: 760px; float: left; margin-top: 30px;}
+.to_4 .bg_0d1d3d ul li{ color: #fff; font:14px/24px "\5FAE\8F6F\96C5\9ED1"; text-indent: 2em; margin-top: 15px; padding-left:20px; padding-right: 10px;}
+.to_4 .bg_0d1d3d .img{ float: left; width: 240px; }
+/*媒体报道*/
+.cooperate ul,.media ul{ width: 982px; margin: 0 auto; overflow: hidden;}
+.cooperate ul li,.media ul li{ float: left; margin-left: 33px; margin-bottom: 15px;  }
+.cooperate ul li:nth-child(4n - 3),.media ul li:nth-child(4n - 3){ margin-left: 51px; }
+.media ul li cite{color: #fff; font-size: 14px; display: block; line-height: 30px;}
+.media ul li a:hover cite{color: #217bea;}
+.media ul li em{background:url(../images/activity/news_conference/media.png) no-repeat; width: 200px; height: 76px; display: block;}
+.media ul li[index="1"] em{ background-position: 0 0 }
+.media ul li[index="2"] em{ background-position: -233px 0 }
+.media ul li[index="3"] em{ background-position: -466px 0 }
+.media ul li[index="4"] em{ background-position: -699px 0 }
+.media ul li[index="5"] em{ background-position: 0 -100px }
+.media ul li[index="6"] em{ background-position: -233px -100px }
+.media ul li[index="7"] em{ background-position: -466px -100px }
+.media ul li[index="8"] em{ background-position: -699px -100px }
+.media ul li[index="9"] em{ background-position: 0 -195px }
+.media ul li[index="10"] em{ background-position: -233px -195px }
+.media ul li[index="11"] em{ background-position: -466px -195px }
+.media ul li[index="12"] em{ background-position: -699px -195px }
+
+/*合作单位*/
+.cooperate {position: relative;}
+.cooperate ul li{margin-top: 20px; margin-bottom: 0; background:url(../images/activity/news_conference/media.png) no-repeat; width: 200px; height: 76px; }
+.footer{ margin-top: -100px }
+.cooperate ul li[index="1"]{ background-position: 0 -288px }
+.cooperate ul li[index="2"]{ background-position: -233px -288px }
+.cooperate ul li[index="3"]{ background-position: -466px -288px }
+.cooperate ul li[index="4"]{ background-position: -699px -288px }
+.cooperate ul li[index="5"]{ background-position: 0 -384px }
+.cooperate ul li[index="6"]{ background-position: -233px -384px }
+.cooperate ul li[index="7"]{ background-position: -466px -384px }
+.cooperate ul li[index="8"]{ background-position: -699px -384px }
+.cooperate ul li[index="9"]{ background-position: 0 -480px }
+.cooperate ul li[index="10"]{ background-position: -233px -480px }
+.cooperate ul li[index="11"]{ background-position: -466px -480px }
+.cooperate ul li[index="12"]{ background-position: -699px -480px }
+
+/*发布会议程*/
+.plan .dis-no{ width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: #000; opacity: .7; z-index: 10 }
+.plan .dis{ width: 520px; height: 600px; background: #013c88; position: fixed; top: -600px; z-index: 12;transition: all 1s;-webkit-transition: all 1s;
+	background:url(../images/activity/news_conference/plan.jpg) no-repeat;
+}
+.plan .dis a{ width: 20px; height: 20px; display: block; background-position: 0 -324px; position: absolute; top: 10px; right: 10px; 
+-moz-transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
+-ms-transition: all 0.8s ease-in-out;
+transition: all 0.8s ease-in-out;
+}
+.plan .dis a:hover{
+	-moz-transform: rotate(360deg); 
+	-webkit-transform: rotate(360deg); 
+	-o-transform: rotate(360deg); 
+	-ms-transform: rotate(360deg); 
+	transform: rotate(360deg); 
+}
+
+
+
+
+@keyframes shake{ to { transform: scale( .7 ); opacity: .1; } }
+@-webkit-keyframes shake{ to { -webkit-transform: scale( .7 ); opacity: .1; } }
+
+@keyframes move{
+	from {top: 120px}
+	to {top: -10px}
+}
+@-webkit-keyframes move{
+	from {top: 120px}
+	to {top: -10px}
+}
+@-moz-keyframes move{
+	from {top: 120px}
+	to {top: -10px}
+}
+@-o-keyframes move{
+	from {top: 120px}
+	to {top: -10px}
+}
+
+/*---滚动条默认显示样式--*/  
+::-webkit-scrollbar-thumb{  
+   background-color:#496cab;  
+   height:50px;  
+   outline-offset:-2px;  
+   /*outline:2px solid #006fff;  */
+   -webkit-border-radius:4px;  
+/*   border: 2px solid #fff;  */
+}  
+ 
+/*---鼠标点击滚动条显示样式--*/  
+::-webkit-scrollbar-thumb:hover{  
+   background-color:#496cab;  
+   height:50px;  
+   -webkit-border-radius:4px;  
+}  
+ 
+/*---滚动条大小--*/  
+::-webkit-scrollbar{  
+   width:5px;  
+   height:5px;  
+}  
+ 
+/*---滚动框背景样式--*/  
+::-webkit-scrollbar-track-piece{  
+   background-color:#0b0d1e;  
+   -webkit-border-radius:0;  
+}

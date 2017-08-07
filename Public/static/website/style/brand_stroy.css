@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+.bra_box{ width:100%; height:1795px; background:#111c34 url(../images/special_subject/story_bg.jpg) no-repeat; position:absolute;}
+.bra_font{ font-size:45px; text-align:center; width:984px; margin:0 auto; color:#fff; height:60px; line-height:60px; margin-bottom:50px; margin-top:60px;}
+.bra_ban{ width:984px; height:627px; margin:0 auto; background:url(../images/special_subject/story_phone.png) no-repeat; padding-top:44px;}
+.bra_ban2{ width:802px; height:539px; margin:0 auto;}
+.banner {
+  width: 100%;
+  height: 539px;
+  overflow: hidden;
+  margin-left:-2px;
+}
+.banner .flexslider {
+  position: relative;
+  height: 539px;
+  overflow: hidden;
+  background: url(../images/loading.gif) 50% no-repeat;
+}
+.banner .slides {
+  position: relative;
+  z-index: 1;
+}
+.banner .slides li {
+  height: 539px;
+  cursor: pointer;
+}
+.banner .slides li a {
+  display: block;
+  height: 100%;
+}
+.banner .flex-control-nav a {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 40px;
+  overflow: hidden;
+  background: url(../images/dot.png) right 0 no-repeat;
+  cursor: pointer;
+}
+.banner .flex-control-nav .flex-active {
+  background-position: 0 0;
+}
+.banner .flex-direction-nav {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 45%;
+}
+.banner .flex-direction-nav li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+}
+.banner .flex-direction-nav li a.flex-prev {
+  left: 5px;
+  background:url(../images/special_subject/prev1.png) center center no-repeat;
+}
+.banner .flex-direction-nav li a.flex-next {
+  right: 5px;
+  background:url(../images/special_subject/next1.png) center center no-repeat;
+}
+.bra_projector{ width:1230px; margin:0 auto; height:320px; margin-top:-214px;}
+.bra_projector div{ width:360px; height:320px; float:right;}
+.bra_projector div sapn{ width:350px; height:320px; float:left; display:block; position:relative;}
+.bra_projector div i{ width:124px; height:118px; margin-top:-78px; display:block; float:right;}
+.bra_ano{ width:815px; height:420px;margin:0 auto; position:relative; top:250px;}
+.bra_anologo{ width:298px; height:335px; float:left; font-weight:bold; font-size:40px; color:#fff; text-align:center;}
+.bra_jianj{ width:405px; height:395px; font-size:18px; color:#fff; float:right;text-align:left; line-height:36px;}
+

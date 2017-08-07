@@ -1,0 +1,295 @@
+@charset "utf-8";
+.color-1{ color: #485c8d; }
+body{
+  min-width: 1200px;
+}
+.banner{
+  background: url('../images/activity/bank_custody/banner.jpg') no-repeat;
+  background-size: 100%;
+  width: 100%;
+  padding-top: 30.20833%
+}
+
+.custody{
+  width: 100%;
+  height: 480px;
+  background: #f5f5f5;
+  overflow: hidden;
+  position: relative;
+}
+.custody .content{ line-height: 1.5; }
+.custody .w770{ width: 770px; margin:50px auto 0; overflow: hidden;}
+.custody .icon-custody{
+  width: 250px;
+  height: 190px;
+  background: url('../images/activity/bank_custody/custody.png') no-repeat; 
+  float: left;
+}
+.custody em{
+  display: block;
+  width: 440px;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #666;
+  float: left;
+  margin-left: 80px;
+  margin-top: 45px;
+}
+
+/* 银行存管的好处？ */
+.custody-2{
+  background: url('../images/activity/bank_custody/advantage.png') no-repeat; 
+  background-size: 100%;
+  width: 100%;
+  height: 691px;
+}
+.custody-2 .contents{
+  width: 975px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-top: 45px;
+}
+.custody-2 ul{
+  width: 245px;
+  float: left;
+  color: #666;
+}
+.custody-2 ul li{
+  font-size: 16px;
+  line-height: 2;
+}
+.custody-2 ul li em{
+  width: 100%;
+  font-size: 24px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+.custody-2 ul.center{
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.icon-advantage{
+  background: url('../images/activity/bank_custody/icon_advantage.png') no-repeat; 
+  width: 93px;
+  height: 107px;
+  margin: 0 auto;
+  display: block;
+}
+.icon-advantage-2{ background-position: -93px 0; }
+.icon-advantage-3{ background-position: -186px 0; }
+
+/* 存管银行介绍 */
+.custody-3{
+  background: url('../images/activity/bank_custody/introduct.jpg') no-repeat; 
+  /* background-size: 100%; */
+  width: 100%;
+  height: 500px;
+}
+.custody-3 .tips .content,
+.custody-5 .tips .content {
+  color: #ffffff;
+  text-align: center;
+}
+.custody-3 .contents{
+  width: 865px;
+  margin: 80px auto 0;
+  overflow: hidden;
+}
+.custody-3 .contents em{
+  color: #fff;
+  margin-top: 0;
+  margin-left: 35px;
+  width: 485px;
+}
+.icon-logo{
+    width: 330px;
+    height: 151px;
+    background: url('../images/activity/bank_custody/logo.png') no-repeat; 
+    float: left;
+}
+.custody-4{
+  height: 648px;
+}
+.custody-4 .tips .content{
+  text-align: center;
+}
+
+.custody-5 {
+  background: url('../images/activity/bank_custody/process.jpg') no-repeat; 
+  /* background-size: 100%; */
+  width: 100%;
+  height: 710px;
+  /* padding-top: 39.53125%; */
+}
+
+.tips{
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tips .icon-tips-1{ 
+  background: url('../images/activity/bank_custody/tips-1.png') no-repeat; 
+  width: 248px;
+  height: 29px;
+}
+.tips .icon-tips-2{ 
+  background: url('../images/activity/bank_custody/tips-2.png') no-repeat; 
+  width: 248px;
+  height: 30px;
+}
+.tips .icon-tips-3{ 
+  background: url('../images/activity/bank_custody/tips-3.png') no-repeat; 
+  width: 248px;
+  height: 30px;
+  margin-left: 8px;
+}
+.tips .icon-tips-4{ 
+  background: url('../images/activity/bank_custody/tips-4.png') no-repeat; 
+  width: 248px;
+  height: 30px;
+  margin-left: 8px;
+}
+.tips .icon-tips-5{ 
+  background: url('../images/activity/bank_custody/tips-5.png') no-repeat; 
+  width: 248px;
+  height: 30px;
+  margin-left: 8px;
+}
+.tips .content{
+  font-size: 32px;
+}
+.tips .icon-line-ccc{
+  background: url('../images/activity/bank_custody/line-ccc.png') no-repeat; 
+  width: 248px;
+  height: 8px;
+}
+.tips .icon-line-d5d9e1{
+  background: url('../images/activity/bank_custody/line-d5d9e1.png') no-repeat; 
+  width: 248px;
+  height: 8px;
+}
+
+
+/* 去除底部投影 */
+.xz-bottom{ box-shadow: none;  }
+
+.honour-box{
+  width: 942px;
+  margin: 50px auto 0;
+}
+.honour-card {
+  width: 240px;
+  height: 340px;
+  background: #e6e3e3;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.honour-card img{
+  width: 224px;
+  height: 324px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.imgwall_shadow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  opacity: .4;
+  filter: alpha(opacity=40);
+  z-index: 109;
+  display: none;
+}
+.img_wall {
+  display: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  width: 1000px;
+  height: 680px;
+  position: fixed;
+  z-index: 201;
+}
+.img_wall .img_wall_close {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: url(../images/special_subject/fancybox_sprite.png) no-repeat;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  cursor: pointer;
+  z-index: 8;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.img_wall:hover .img_wall_close {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.img_wall img {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.img_wall img.last-img {
+  z-index: 1;
+}
+.img_wall .pre-img,
+.img_wall .next-img {
+  width: 49%;
+  height: 100%;
+  background: #ffffff;
+  background: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=1);
+  cursor: pointer;
+  z-index: 4;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+.img_wall .pre-img input[type="button"],
+.img_wall .next-img input[type="button"] {
+  width: 36px;
+  height: 34px;
+  border: none;
+  background: url(../images/special_subject/fancybox_sprite.png) no-repeat 0 -36px;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 10px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  z-index: 5;
+}
+.img_wall .pre-img:hover input[type="button"],
+.img_wall .next-img:hover input[type="button"] {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.img_wall .next-img {
+  float: right;
+}
+.img_wall .next-img input[type="button"] {
+  background-position: 0 -72px;
+  left: auto;
+  right: 10px;
+}

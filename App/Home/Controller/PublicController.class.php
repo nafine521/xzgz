@@ -26,4 +26,9 @@ class PublicController extends Controller {
 		$this->assign('js', $js);
 	}
 
+	//登陆状态返回
+    public function ogin(){
+        $this->ajaxReturn(["msg"=>0]);
+    }
+
 }

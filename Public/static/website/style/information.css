@@ -1,0 +1,79 @@
+html{ font-family: "\5FAE\8F6F\96C5\9ED1" }
+body{ background: #eaedf4; }
+
+.crumbs{ color: #1eae58; }
+.icon-home{background: url(../images/special_subject/user_info/icon-home.png) no-repeat; width: 19px; height: 18px; display: inline-block; margin:0 5px -4px 0}
+.icon-gt{ width: 6px; height: 9px; background: url(../images/special_subject/user_info/icon-gt.png) no-repeat;display: inline-block; margin: 0 5px;  }
+
+.main{ width: 1000px; margin: 0 auto;}
+.leftBox{ width: 190px; background: #fff; float: left; }
+.leftBox > h3{ width: 100%; line-height: 60px; text-indent: 1em; font-size: 16px; color: #fff;background: #38b859; }
+.leftBox .parentList{ margin-bottom: 10px;}
+.leftBox .parentList>li{ line-height: 50px; color: #333; font-size: 14px; text-indent: 30px; height: 45px; }
+.leftBox .parentList>li:hover{ background: #f6f6f6;border-left: 5px solid #38b859; margin-left: -5px;}
+.leftBox .parentList>li a{ width: 100%; height: 45px; display: block; color: #666; }
+.leftBox .parentList>li.active{ border-left: 5px solid #38b859; margin-left: -5px;background: #f6f6f6;}
+
+
+.rightBox{ float: right; width: 800px; min-height: 500px; background: #fff;}
+.data-widget{ min-height: 500px; width: 740px; padding-top: 30px; margin: 0 auto;}
+.data-widget h3{ background: url(../images/special_subject/information/bg_h3.png) repeat-x; height: 22px; }
+.data-widget h3 em{ width: 105px; display: block; font-size: 24px; color: #333; background: #fff; line-height: 1 }
+.data-widget ul{ overflow: hidden; }
+.data-widget li{ font-size: 14px; text-indent: 2em; margin-top: 20px; line-height: 1.8}
+.data-widget li a{ color: #1eae58; font-weight: bold; }
+.barcode{ width: 100%; height: 161px; background: url(../images/special_subject/information/2D_barcode.png) no-repeat; margin-top: 60px !important; }
+.data-widget li div.img{ width: 137px; text-indent: 0; margin: 0 auto}
+
+/*股东信息*/
+.shareholder{ background:url(../images/special_subject/information/shareholder.png) no-repeat; width: 100%; height: 400px; }
+.shareholder-li li,.shareholder-li li small{text-indent: 0}
+.shareholder-li li em{ font-size: 18px; color: #1eae58; text-indent: 0}
+.shareholder-li li p{ text-indent: 2em; margin-bottom: 10px;}
+.shareholder-li li small{ width: 180px; display: inline-block; font-size: 14px; text-align: left; }
+
+/*运营数据*/
+.operation{ overflow: hidden; }
+.operation li{ width: 246px; float: left; text-align: center; }
+.icon-datas{ background: url(../images/special_subject/information/icon_datas.png) no-repeat;  width: 90px; height: 90px; margin: 0 auto}
+.operation li em { font-size: 24px; color: #ff6235; }
+.operation li p{ font-size: 14px; }
+.icon-data-1{ background-position: 0 0 }
+.icon-data-2{ background-position: -236px 0 }
+.icon-data-3{ background-position: -473px 0 }
+.icon-data-4{ background-position: 0 -192px }
+.icon-data-5{ background-position: -236px -192px }
+.icon-data-6{ background-position: -473px -192px }
+.icon-data-7{ background-position: 0 -385px }
+.icon-data-8{ background-position: -236px -385px }
+
+.reports li{ width: 230px;  height: 167px; float: left; text-indent: 0; position: relative; }
+.reports li:nth-child(3n-1){ margin-left: 25px; margin-right: 25px; }
+.reports li a{ width:228px; display: block; font-size: 14px; color: #666; font-weight: normal;text-align: center; line-height: 38px; border: 1px solid #eaeaea; position: absolute; bottom: 0 }
+
+.icon-report{ background: url(../images/special_subject/information/operation.png) no-repeat; width: 100%; height: 128px; position: absolute; top: 0  }
+.icon-report-2{ background-position: -255px 0; }
+.icon-report-3{ background-position: -510px 0; }
+.icon-report-4{ background-position: 0 -188px; }
+.icon-report-5{ background-position: -255px -188px; }
+.icon-report-6{ background-position: -510px -188px; }
+
+.icon-report-7{ background-position: 0 -376px; }
+.icon-report-8{ background-position: -255px -376px; }
+.icon-report-9{ background-position: -510px -376px; }
+.icon-report-10{ background-position: 0 -564px; }
+.icon-report-11{ background-position: -255px -564px; }
+.view_more{ width: 108px; height: 34px; border: 1px solid #1eae58; color: #1eae58; font-size: 14px; line-height: 34px; display: block; margin-left: auto; margin-right: auto; text-align: center; margin-top: 60px;}
+
+.supervision li{ height: 60px; border-bottom: 1px solid #eaedf4; margin: 0; text-indent: 0 }
+.supervision li a{ font-size: 14px; line-height: 60px; font-weight: normal; color: #666; display: block;}
+.supervision li a:hover{color:#1eae58}
+.supervision li a span{ color: #999; float: right; }
+
+.honour-card{
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.color-333{ color: #333 }
+.color-999{ color: #999 }
