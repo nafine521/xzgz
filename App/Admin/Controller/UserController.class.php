@@ -15,13 +15,8 @@ class UserController extends BaseController
     public function member_list()
     {
         $db=M("user");
-        $list=$db->field("location,uid,user_name,sex,user_status,user_headimg,user_email")->where(["is_member"=>1])->select();
-        $mlist=M("member")->field("uid,reg_time")->select();
-        foreach ($list as $k=>$item) {
-            foreach ($mlist as $key=>$value) {
-                if($item['uid']==$value['uid']) $list[$k]=array_merge($list[$k],$mlist[$key]);
-            }
-        }
+        $list=$db->field("location,uid,user_name,sex,user_status,user_headimg,user_email,reg_time")->where(["is_member"=>1])->select();
+
 
         $this->assign("list",$list);
         $this->display();
@@ -41,13 +36,14 @@ class UserController extends BaseController
             $data['user_password']=md5($data['user_password'].$salt);
             $data["location"]=$data['prov'].$data['city'].$data['dist'];
             $data['is_member']=1;
+            $data['reg_time']=time();
             $db=M("user");
             if($data['id']>0){
                 $b=$db->save($data);
             }else{
                 $b=$db->add($data);
             }
-            $data['reg_time']=time();
+
 
             if($b){
                 $mdata=[
@@ -75,9 +71,8 @@ class UserController extends BaseController
     }
     public function userShow(){
         $id=I("id");
-        $info=M("user")->field("user_headimg,user_email,sex,user_tel,location")->find($id);
-        $info['reg_time']=M("member")->where(["uid"=>$id])->limit(1)->getField("reg_time");
-        //dump($info);
+        $info=M("user")->field("user_headimg,user_email,sex,user_tel,location,reg_time")->find($id);
+
         $this->assign("info",$info);
         $this->display();
     }

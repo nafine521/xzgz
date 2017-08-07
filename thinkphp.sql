@@ -292,3 +292,14 @@ CREATE TABLE `xz_member_recharge` (
   `status` varchar(255) NOT NULL DEFAULT '0' COMMENT '状态',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=16384 COMMENT='会员充值余额记录';
+
+
+-- session数据库
+CREATE TABLE `xz_session` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `session_ticket` VARCHAR(40) NOT NULL DEFAULT '' COMMENT 'session查询凭证',
+  `uid` varchar(255) NOT NULL COMMENT '用户uid',
+  `expression` INT NOT NULL DEFAULT '0' COMMENT '过期时间',
+  `user_ip` VARCHAR(100) NOT NULL DEFAULT '' COMMENT '本次登陆ip',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8  COMMENT='session凭证表';

@@ -107,7 +107,8 @@ if( !window.console ){
 	_extend( 'userIsLogin' , function( callback ){
 		$.ajax({
 			method : 'post',
-			url : 'ogin?t=' + +new Date(),
+            type:'POST',
+			url : '/Public/ogin?t=' + +new Date(),
 			success : function( res ){				
 				callback( res.msg === 1 );		
 			}
@@ -118,8 +119,9 @@ if( !window.console ){
     _extend( 'userIsLoginAsync' , function( callback ){
         $.ajax({
             method : 'post',
+            type:'POST',
             async : false,
-            url : 'ogin?t=' + +new Date(),
+            url : '/Public/ogin?t=' + +new Date(),
             success : function( res ){              
                 callback( res.msg === 1 );      
             }
@@ -613,9 +615,10 @@ if( !window.console ){
             
             $.cookie("session_user_ticket",null,{path:"/"});
 			$.ajax({
-				method : 'post',
+				type : 'POST',
+
 				data : datastr,
-				url : 'logining?t=' + +new Date(),
+				url : '/Public/logining?t=' + +new Date(),
 				success : function( res ){
 					var num = parseInt( res.msg );
 
@@ -1680,55 +1683,7 @@ $(function() {
     // 邀请有礼弹窗红包
     // redPacket();     // 活动暂时不启用
     
-    // 统计代码 
-    setTimeout(function(){
-        
-        // ga统计的代码
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-54429370-1', 'auto');
-          ga('require', 'displayfeatures');
-          ga('send', 'pageview');
 
-        // Piwik
-        _paq = _paq || [];
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-        var u="https://piwik.xiaozhu168.com/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', 1]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-        })();
-        // End Piwik Code
-
-        // 品友统计代码
-        _py = _py || [];
-        _py.push(['a', 'wQ..Bt1tXGnc9XDNzd63VYjb00']);
-        _py.push(['domain','stats.ipinyou.com']);
-        _py.push(['e','']);
-        -function(d) {
-        var s = d.createElement('script'),
-        e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
-        f = 'https:' == location.protocol;
-        s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
-        }(document);
-
-        // 360统计代码
-        // $( 'body' ).append(unescape("%3Cscript src='http://s.union.360.cn/8248.js' type='text/javascript'%3E%3C/script%3E"));
-
-        //百度统计代码
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?22d6540319e1ccf46303f97495af457f";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-        })();
-    } , 40 );
 
 });
 
@@ -1800,11 +1755,11 @@ function setThirdCookie(name, value) {
 
 
 //退出登录
-function logout() {
+function logout(url) {
     $.ajax({
         method: 'post',
         data: {},
-        url: 'logout?t=' + +new Date(),
+        url: url + '?t=' + +new Date(),
         success: function(res) {
             setThirdCookie("thirdCount", 0);
             location.href = basePath;

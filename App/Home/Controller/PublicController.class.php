@@ -31,4 +31,44 @@ class PublicController extends Controller {
         $this->ajaxReturn(["msg"=>0]);
     }
 
+    //登陆
+    public function logining(){
+        $user=M("user");
+        $data=I("post.");
+        $data['login_time']=I("t");
+        $salt=C("SALT");
+
+        $where['user_tel']= $data['paramMap_email'];
+        $userid=$user->field("uid")->where($where)->find();
+        if (empty($userid)){
+            $this->ajaxReturn(["msg"=>"3"]);
+        }
+        $where['user_password']=md5($data['paramMap_password'].$salt);
+        $info=$user->where($where)->find();
+        if(empty($info)){
+            $b="8";
+            $res["count"]=3;
+            if($res['count']==0) {
+                $user->setField("user_status",0);
+                $b="4";
+            }
+        } elseif($info['user_status']==0){
+            $b="4";
+        }else{
+            $b=1;
+            $res["info"]=$info;
+            $session_ticket=md5($info['uid'].$info['user_name']);
+            cookie("session_user_ticket",$session_ticket);
+            $b=M("session")->add([
+                "session_ticket"=>$session_ticket,
+                "uid" => $info['uid'],
+                "expression" => time()+3600,
+                "user_ip" => get_client_ip(),
+            ]);
+        }
+        $res["info"]=$info;
+        $res["msg"] =$b  ;
+        $this->ajaxReturn($res);
+    }
+
 }

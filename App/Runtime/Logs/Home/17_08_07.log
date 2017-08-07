@@ -1335,3 +1335,1848 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
 
+[ 2017-08-07T11:36:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000958s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2017-08-07T11:36:37+08:00 ] 127.0.0.1 /Public/static/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T11:36:38+08:00 ] 127.0.0.1 /Public/static/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /Public/static/img/wx_tb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /Public/static/img/ghs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-08-07T11:36:39+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-08-07T11:36:40+08:00 ] 127.0.0.1 /Public/static/js/jquery-2.1.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0007s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T11:36:41+08:00 ] 127.0.0.1 /Public/static/js/html5zoo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T11:36:42+08:00 ] 127.0.0.1 /Public/static/js/lovelygallery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T11:36:43+08:00 ] 127.0.0.1 /Public/static/js/index_1.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /Public/static/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
+.000558s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /Public/static/website/images/login/gl_qq.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/pc%20%20%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/PC%20%20btu%201920x400.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/pc%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /Public/static/img/wx_tb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /Public/static/img/ghs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-08-07T11:36:44+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2017-08-07T11:36:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000388s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2017-08-07T14:00:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000499s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000577s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2017-08-07T14:00:33+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-08-07T14:00:33+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2017-08-07T14:00:33+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-08-07T14:00:33+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-08-07T14:00:33+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2017-08-07T14:00:33+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /Public/static/website/style/index_1200,common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0007s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /Public/static/website/images/login/gl_qq.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/pc%20%20%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/pc%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/PC%20%20btu%201920x400.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2017-08-07T14:00:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2017-08-07T14:00:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000492s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2017-08-07T14:00:59+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-08-07T14:00:59+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-08-07T14:00:59+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2017-08-07T14:00:59+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2017-08-07T14:00:59+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /Public/static/website/style/index_1200,common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0003s ]
+ERR: 非法操作:static
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /Public/static/website/images/login/gl_qq.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/pc%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/PC%20%20btu%201920x400.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-08-07T14:01:00+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-08-07T14:01:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000504s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000579s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001486s ]
+
+[ 2017-08-07T14:01:34+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-08-07T14:01:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-08-07T14:01:34+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-08-07T14:01:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-08-07T14:01:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+
+[ 2017-08-07T14:01:34+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-08-07T14:01:34+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /Public/static/website/images/login/gl_qq.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /127.0.0.1upload/images/430-125.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/pc%20%20%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/pc%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/PC%20%20btu%201920x400.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+:0.000397s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-08-07T14:01:35+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-08-07T14:02:43+08:00 ] 127.0.0.1 /127.0.0.1upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-08-07T14:02:43+08:00 ] 127.0.0.1 /127.0.0.1upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-08-07T14:02:43+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2017-08-07T14:02:43+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-08-07T14:02:45+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-08-07T14:02:45+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-08-07T14:02:45+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-08-07T14:02:45+08:00 ] 127.0.0.1 /127.0.0.1upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-08-07T14:04:47+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /Public/static/website/images/login/gl_qq.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/430-125.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/banner/pc%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/banner/pc%20%20%201920-400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/banner/PC%20%20btu%201920x400.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002105s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/430-125%EF%BC%88288%EF%BC%89.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/banner/meiti.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/meitibaodao/1(1).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-08-07T14:04:48+08:00 ] 127.0.0.1 /127.0.0.1/upload/images/hezuohuoban/partner5-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2017-08-07T14:06:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000586s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-08-07T14:06:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000586s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000729s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002418s ]
+
+[ 2017-08-07T14:06:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000622s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000715s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2017-08-07T14:06:46+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-08-07T14:06:46+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2017-08-07T14:06:46+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-08-07T14:06:47+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:06:47+08:00 ] 127.0.0.1 /Public/static/website/images/login/gl_qq.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-08-07T14:06:47+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-08-07T14:06:47+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-08-07T14:06:47+08:00 ] 127.0.0.1 /Public/static/website/images/cert.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2017-08-07T14:07:11+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2017-08-07T14:07:11+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-08-07T14:07:14+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-08-07T14:07:14+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-08-07T14:07:49+08:00 ] 127.0.0.1 /Public/static/website/images/PC-logo_AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2017-08-07T14:07:49+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-08-07T14:11:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000442s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000509s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2017-08-07T14:11:22+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-08-07T14:11:23+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:11:23+08:00 ] 127.0.0.1 /Public/static/website/images/qrcode.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-08-07T14:11:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002082s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2017-08-07T14:11:41+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:18:03+08:00 ] 127.0.0.1 /ogin?t=1502086683091
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+ERR: 无法加载控制器:Ogin
+
+[ 2017-08-07T14:19:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000491s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2017-08-07T14:19:12+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:19:14+08:00 ] 127.0.0.1 /Public/ogin?t=1502086753014
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0005s ]
+
+[ 2017-08-07T14:22:27+08:00 ] 127.0.0.1 /Public/ogin?t=1502086946069
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+
+[ 2017-08-07T14:26:51+08:00 ] 127.0.0.1 /Public/ogin?t=1502087210676
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+
+[ 2017-08-07T14:33:47+08:00 ] 127.0.0.1 /Public/ogin?t=1502087626845
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0005s ]
+
+[ 2017-08-07T14:33:59+08:00 ] 127.0.0.1 /logining?t=1502087639542&paramMap.email=18773153922&paramMap.password=123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+ERR: 无法加载控制器:Logining
+
+[ 2017-08-07T14:33:59+08:00 ] 127.0.0.1 /logining?t=1502087639544&paramMap.email=18773153922&paramMap.password=123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载控制器:Logining
+
+[ 2017-08-07T14:33:59+08:00 ] 127.0.0.1 /logining?t=1502087639544&paramMap.email=18773153922&paramMap.password=123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+ERR: 无法加载控制器:Logining
+
+[ 2017-08-07T14:33:59+08:00 ] 127.0.0.1 /logining?t=1502087639543&paramMap.email=18773153922&paramMap.password=123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+ERR: 无法加载控制器:Logining
+
+[ 2017-08-07T14:34:57+08:00 ] 127.0.0.1 /logining?t=1502087697598&paramMap.email=18773153922&paramMap.password=123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载控制器:Logining
+
+[ 2017-08-07T14:34:57+08:00 ] 127.0.0.1 /logining?t=1502087697599&paramMap.email=18773153922&paramMap.password=123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+ERR: 无法加载控制器:Logining
+
+[ 2017-08-07T14:34:57+08:00 ] 127.0.0.1 /logining?t=1502087697598&paramMap.email=18773153922&paramMap.password=123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+ERR: 无法加载控制器:Logining
+
+[ 2017-08-07T14:34:57+08:00 ] 127.0.0.1 /logining?t=1502087697599&paramMap.email=18773153922&paramMap.password=123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+ERR: 无法加载控制器:Logining
+
+[ 2017-08-07T14:35:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-08-07T14:35:22+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:35:33+08:00 ] 127.0.0.1 /Public/ogin?t=1502087732773
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+
+[ 2017-08-07T14:35:53+08:00 ] 127.0.0.1 /Public/logining?t=1502087752159&paramMap.email=18773153299&paramMap.password=3213321
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+
+[ 2017-08-07T14:37:25+08:00 ] 127.0.0.1 /Public/logining?t=1502087844838&paramMap.email=18773153299&paramMap.password=3213321
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\phpStudy\WWW\App\Home\Controller\PublicController.class.php on line 36 and defined E:\phpStudy\WWW\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\phpStudy\WWW\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\phpStudy\WWW\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\phpStudy\WWW\ThinkPHP\Common\functions.php 第 339 行.
+
+[ 2017-08-07T14:37:43+08:00 ] 127.0.0.1 /Public/logining?t=1502087862895&paramMap.email=18773153299&paramMap.password=3213321
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+
+[ 2017-08-07T14:38:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000633s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000727s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2017-08-07T14:38:30+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:38:33+08:00 ] 127.0.0.1 /Public/ogin?t=1502087912615
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0010s ]
+
+[ 2017-08-07T14:38:41+08:00 ] 127.0.0.1 /Public/logining?t=1502087920848&paramMap.email=18773153299&paramMap.password=321321
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+
+[ 2017-08-07T14:40:04+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000639s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000726s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2017-08-07T14:40:04+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T14:40:09+08:00 ] 127.0.0.1 /Public/ogin?t=1502088008487
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+
+[ 2017-08-07T14:40:16+08:00 ] 127.0.0.1 /Public/logining?t=1502088015249
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+
+[ 2017-08-07T14:40:38+08:00 ] 127.0.0.1 /Public/logining?t=1502088037575
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+
+[ 2017-08-07T15:03:07+08:00 ] 127.0.0.1 /Public/ogin?t=1502089386152
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+
+[ 2017-08-07T16:04:04+08:00 ] 127.0.0.1 /Public/logining?t=1502093042938
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0111s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:04:05+08:00 ] 127.0.0.1 /Public/logining?t=1502093042937
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0046s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-07T16:04:45+08:00 ] 127.0.0.1 /Public/logining?t=1502093084393
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0123s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-08-07T16:04:46+08:00 ] 127.0.0.1 /Public/logining?t=1502093084394
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0110s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:04:50+08:00 ] 127.0.0.1 /Public/logining?t=1502093089281
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0112s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:04:51+08:00 ] 127.0.0.1 /Public/logining?t=1502093089281
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0112s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:04:52+08:00 ] 127.0.0.1 /Public/logining?t=1502093089481
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0117s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:04:53+08:00 ] 127.0.0.1 /Public/logining?t=1502093089481
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0110s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:04:54+08:00 ] 127.0.0.1 /Public/logining?t=1502093089849
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0116s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:04:55+08:00 ] 127.0.0.1 /Public/logining?t=1502093089849
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0111s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:05:29+08:00 ] 127.0.0.1 /Public/logining?t=1502093128218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0111s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-07T16:05:30+08:00 ] 127.0.0.1 /Public/logining?t=1502093128217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0119s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-07T16:09:06+08:00 ] 127.0.0.1 /Public/logining?t=1502093345642
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0078s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-08-07T16:09:07+08:00 ] 127.0.0.1 /Public/logining?t=1502093345643
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0114s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-07T16:09:24+08:00 ] 127.0.0.1 /Public/logining?t=1502093363562
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0128s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-07T16:09:25+08:00 ] 127.0.0.1 /Public/logining?t=1502093363561
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0115s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-07T16:10:22+08:00 ] 127.0.0.1 /Public/logining?t=1502093421667
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0109s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-07T16:10:23+08:00 ] 127.0.0.1 /Public/logining?t=1502093421666
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0110s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-07T16:12:58+08:00 ] 127.0.0.1 /Public/logining?t=1502093577643
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0110s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = 'e15ce6f87f066e48b4ed3ba94bb4ed77' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-07T16:12:59+08:00 ] 127.0.0.1 /Public/logining?t=1502093577642
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0111s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = 'e15ce6f87f066e48b4ed3ba94bb4ed77' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-07T16:14:24+08:00 ] 127.0.0.1 /Public/logining?t=1502093663403
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0107s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-07T16:14:25+08:00 ] 127.0.0.1 /Public/logining?t=1502093663402
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0117s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-07T16:14:30+08:00 ] 127.0.0.1 /Public/logining?t=1502093669498
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0088s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-08-07T16:14:31+08:00 ] 127.0.0.1 /Public/logining?t=1502093669499
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0111s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-07T16:17:17+08:00 ] 127.0.0.1 /Public/logining?t=1502093836218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0061s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-08-07T16:17:18+08:00 ] 127.0.0.1 /Public/logining?t=1502093836219
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0109s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-08-07T16:17:19+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-08-07T16:17:20+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000723s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000821s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-08-07T16:17:20+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T17:06:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000700s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000818s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-08-07T17:06:17+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T17:06:19+08:00 ] 127.0.0.1 /Public/ogin?t=1502096778367
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0009s ]
+
+[ 2017-08-07T17:06:35+08:00 ] 127.0.0.1 /Public/logining?t=1502096794242
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0114s ]
+SQL: SELECT `uid` FROM `xz_user` WHERE `user_tel` = '13700000000' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xz_user` WHERE `user_tel` = '13700000000' AND `user_password` = '8136a00c3df04173393ae7df62e90f04' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-07T17:06:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-08-07T17:06:36+08:00 ] 127.0.0.1 /mayActiveRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载控制器:MayActiveRank
+
+[ 2017-08-07T17:17:41+08:00 ] 127.0.0.1 /Public/ogin?t=1502097460554
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `xz_nav` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `xz_nav` WHERE `is_show` = 1 AND `nav_position` = '中间' ORDER BY nav_sort  [ RunTime:0.0008s ]
+

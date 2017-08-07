@@ -1,19 +1,22 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html class="">
 <head>
-    <title>小猪罐子_安全的P2P理财平台_合规的投资理财平台_小猪罐子【理财平台品牌排名】</title>
+    <title><?php echo ($title); ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="mobile-agent" content="format=html5;url=http://wap.xiaozhu168.com/" />
     <meta name="baidu-site-verification" content="yiIQXjlbGf" />
-    <meta name="keywords" content="小猪，小猪罐子，P2P理财，投资理财，理财平台，投资理财平台" />
-    <meta name="Description" content="小猪罐子官网-资金第三方托管的投资理财平台;安全合规的P2P理财平台，小猪罐子以36道风控工序,与华兴银行、汇付天下、连连支付等合作保障投资者资金安全，结合成熟的企业团队运营,为投资者财富增值保驾护航。" />
-    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://wap.xiaozhu168.com/" />
+    <meta name="keywords" content="<?php echo ($keywords); ?>" />
+    <meta name="Description" content="<?php echo ($description); ?>" />
+    <!--<link rel="alternate" media="only screen and (max-width: 640px)" href="http://wap.xiaozhu168.com/" />-->
     <link href="/Public/static/website/favicon.ico" type="image/x-icon" rel="shortcut icon" />
-    <link href="/Public/static/website/style/common.css" type="text/css" rel="stylesheet" />
+
+    <!--<link href="/Public/static/website/style/common.css" type="text/css" rel="stylesheet" />
     <link href="/Public/static/website/style/login_css.css" type="text/css" rel="stylesheet" />
     <link href="/Public/static/website/style/icon.css" type="text/css" rel="stylesheet" />
-    <link href="/Public/static/website/style/index_1200.css?v=2.0" type="text/css" rel="stylesheet" />
+    <link href="/Public/static/website/style/index_1200.css?v=2.0" type="text/css" rel="stylesheet" />-->
+    <?php foreach ($css as $k => $v): ?>
+    <link rel="stylesheet" href="/Public/static/website/style/<?php echo ($v); ?>.css" />
+    <?php endforeach; ?>
 </head>
 
 <body>
@@ -153,16 +156,17 @@
 <input type="hidden" id="jsLoginWinBasePath" name="jsLoginWinBasePath" value="http://www.xiaozhu168.com/"/>
 <!-- 头部 end -->
 
+
 <!-- banner start -->
 <div class="banner-box">
     <!-- 轮播图 start -->
     <div class="banner-content banner-widget">
         <ul class="banner-list">
-            <li class="active"><a target="_blank" href="<?php echo ($_SERVER['SERVER_NAME']); ?>toAnniversaryActive" _src="<?php echo ($_SERVER['SERVER_NAME']); ?>upload/images/banner/PC%20%20btu%201920x400.png"></a>
+            <li class="active"><a target="_blank" href="https://www.xiaozhu168.com/toAnniversaryActive" _src="https://www.xiaozhu168.com/upload/images/banner/PC%20%20btu%201920x400.png"></a>
             </li>
-            <li><a target="_blank" href="<?php echo ($_SERVER['SERVER_NAME']); ?>getInvitation_old_friends " _src="<?php echo ($_SERVER['SERVER_NAME']); ?>upload/images/banner/pc%20%20%201920-400.jpg"></a>
+            <li><a target="_blank" href="https://www.xiaozhu168.com/getInvitation_old_friends " _src="https://www.xiaozhu168.com/upload/images/banner/pc%20%20%201920-400.jpg"></a>
             </li>
-            <li><a target="_blank" href="<?php echo ($_SERVER['SERVER_NAME']); ?>register288.html" _src="<?php echo ($_SERVER['SERVER_NAME']); ?>upload/images/banner/pc%201920-400.jpg"></a>
+            <li><a target="_blank" href="https://www.xiaozhu168.com/register288.html" _src="https://www.xiaozhu168.com/upload/images/banner/pc%201920-400.jpg"></a>
             </li>
             <li><a target="_blank" href="http://www.xiaozhu168.com/news_conference.jsp" _src="http://www.xiaozhu168.com/upload/images/pcB1920x400.jpg"></a>
             </li>
@@ -183,7 +187,7 @@
         <div class="banner-tag visitor-banner-tag">
             <ul class="clearfix">
                 <li class="float-l"  style="display: none;">
-                    已有<strong>148,279</strong>投资者选择
+                    已有<strong>148,289</strong>投资者选择
                 </li>
                 <li class="float-r">
                     <a href="http://www.xiaozhu168.com/guide.html" target="_blank" rel="nofollow" class="guide-new">新手引导</a>
@@ -215,8 +219,8 @@
                 累计投资金额
                 <span class="increment">
                 <em class="red">15</em>亿
-                    <em class="red">4935</em>万
-                    <em class="red">9393</em>元
+                    <em class="red">4956</em>万
+                    <em class="red">3629</em>元
                 </span>
             </li>
             <li>
@@ -229,7 +233,7 @@
             <li class="last-li">
                 注册人数
                 <span style="width: 138px; visibility: visible;">
-                    <em class="red">148,279</em>人
+                    <em class="red">148,289</em>人
                 </span>
             </li>
         </ul>
@@ -348,13 +352,13 @@
             <div class="avt-banner banner-widget">
                 <ul class="banner-list">
                     <li class="active">
-                        <a target="_blank" href="<?php echo ($_SERVER['SERVER_NAME']); ?>getInvitation_old_friends " _src="<?php echo ($_SERVER['SERVER_NAME']); ?>upload/images/430-125.png"></a>
+                        <a target="_blank" href="https://www.xiaozhu168.com/getInvitation_old_friends " _src="https://www.xiaozhu168.com/upload/images/430-125.png"></a>
                     </li>
                 </ul>
             </div>
             <!-- 活动banner end -->
-            <a href="<?php echo ($_SERVER['SERVER_NAME']); ?>register288.html" target="_blank" class="newest-avt">
-                <img src="<?php echo ($_SERVER['SERVER_NAME']); ?>upload/images/430-125%EF%BC%88288%EF%BC%89.png" />
+            <a href="https://www.xiaozhu168.com/register288.html" target="_blank" class="newest-avt">
+                <img src="https://www.xiaozhu168.com/upload/images/430-125%EF%BC%88288%EF%BC%89.png" />
             </a>
         </div>
         <!-- 活动区域 end -->
@@ -457,13 +461,13 @@
             </h3>
 
             <ul class="hotest-tag-tab">
-                <li tagType="3" class="active">优质标<em>1</em>
+                <li tagType="3" class="active">优质标<em>0</em>
                 </li>
                 <li tagType="6" >普惠类<em>0</em>
                 </li>
                 <li tagType="4" >房产类<em>0</em>
                 </li>
-                <li tagType="5" >车辆类<em>2</em>
+                <li tagType="5" >车辆类<em>0</em>
                 </li>
                 <li tagType="7" >渠道区<em>0</em>
                 </li>
@@ -502,16 +506,16 @@
                 <div class="invest-tag-bottom">
                     <!-- 进度条 start -->
                     <div class="tag-progress">
-                        <div class="tag-progress-bar" progress="32.11%">
+                        <div class="tag-progress-bar" progress="100.00%">
                             <!-- 爽一发 -->
                             <em class="tag-progress-finished"></em>
                         </div>
-                        <span>32.11%</span>
+                        <span>100.00%</span>
                     </div>
                     <!-- 进度条 end -->
                     <!-- 爽一发 -->
 
-                    <a href="http://www.xiaozhu168.com/pro-details-12724.html" target="_blank" class="invest-btn" >立即投标</a>
+                    <a href="javascript:;" class="invest-btn disabled">收益中</a>
                 </div>
             </div>
             <div class="invest-tag">
@@ -736,11 +740,11 @@
         <div class="index_media_con">
             <div class="index_media_tab">
             	<span class="index_media_span mt20">
-                    <a href="http://www.xiaozhu168.com/media/details-203.html" target="_blank"><img src="<?php echo ($_SERVER['SERVER_NAME']); ?>upload/images/banner/meiti.jpg"/></a>
+                    <a href="http://www.xiaozhu168.com/media/details-203.html" target="_blank"><img src="https://www.xiaozhu168.com/upload/images/banner/meiti.jpg"/></a>
                     <em><a href="http://www.xiaozhu168.com/media/details-203.html" target="_blank">重磅！小猪罐子携手融关律所 正式开启备案...</a></em>
                 </span>
                 <span class="index_media_span mt20">
-                    <a href="http://www.xiaozhu168.com/media/details-202.html" target="_blank"><img src="<?php echo ($_SERVER['SERVER_NAME']); ?>upload/images/meitibaodao/1(1).jpg"/></a>
+                    <a href="http://www.xiaozhu168.com/media/details-202.html" target="_blank"><img src="https://www.xiaozhu168.com/upload/images/meitibaodao/1(1).jpg"/></a>
                     <em><a href="http://www.xiaozhu168.com/media/details-202.html" target="_blank">小猪罐子现身中国财富管理生态大会 共同探...</a></em>
                 </span>
                 <ul class="index_media_ul1">
@@ -873,8 +877,8 @@
             <img src="http://www.xiaozhu168.com/upload/images/hezuohuoban/dafei.jpg" title="达飞" />
         </a>
         </li>
-        <li><a href="<?php echo ($_SERVER['SERVER_NAME']); ?>footerInfo/partner_wanbang.jsp" class="partner1" alt="万邦" target="_blank" rel="nofollow">
-            <img src="<?php echo ($_SERVER['SERVER_NAME']); ?>upload/images/hezuohuoban/partner5-hover.png" title="万邦" />
+        <li><a href="https://www.xiaozhu168.com/footerInfo/partner_wanbang.jsp" class="partner1" alt="万邦" target="_blank" rel="nofollow">
+            <img src="https://www.xiaozhu168.com/upload/images/hezuohuoban/partner5-hover.png" title="万邦" />
         </a>
         </li>
         <li><a href="http://www.xiaozhu168.com/special/hengsheng.jsp" class="partner1" alt="恒胜助贷" target="_blank" rel="nofollow">
@@ -900,6 +904,8 @@
     </ul>
 </div>
 <!--合作伙伴结束-->
+
+
 
 <!-- 底部start -->
 <div style="display: block; clear: both;"></div>
@@ -929,13 +935,13 @@
                 <td><a href="http://www.xiaozhu168.com/aboutus.html" target="_blank">公司简介</a></td>
                 <td><a href="http://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a></td>
                 <td><a href="http://www.xiaozhu168.com/vip_power.html" target="_blank">会员权益</a></td>
-                <td><a href="<?php echo ($_SERVER['SERVER_NAME']); ?>forgetpassword.html" target="_blank">找回密码</a></td>
+                <td><a href="forgetpassword.html" target="_blank">找回密码</a></td>
             </tr>
             <tr>
                 <td><a href="http://www.xiaozhu168.com/aboutus.html#7" target="_blank">商务合作</a></td>
                 <td><a href="http://www.xiaozhu168.com/safety-ensure.html" target="_blank">风控体系</a></td>
                 <td><a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a></td>
-                <td><a href="<?php echo ($_SERVER['SERVER_NAME']); ?>reg.html" target="_blank">注册帐号</a></td>
+                <td><a href="reg.html" target="_blank">注册帐号</a></td>
             </tr>
             <tr>
                 <td><a href="http://www.xiaozhu168.com/aboutus.html#3" target="_blank">团队故事</a></td>
@@ -1051,7 +1057,9 @@
 <input type="hidden" value="" id="noquestion">
 <!--右侧悬浮结束-->
 <script src="https://qiyukf.com/script/c57c1e6a6ef539fba5f8066aad13ec15.js?uid=&moblie=" ></script>
+
 <script type="text/javascript" src="/Public/static/website/js/lib/jquery-1.8.3.min.js"></script>
+
 <script type="text/javascript" src="/Public/static/website/js/common.js?v=1.3"></script>
 <script type="text/javascript" src="/Public/static/website/js/jquery.poshytip.min.js"></script>
 <script type="text/javascript">
@@ -1109,50 +1117,17 @@
 <noscript><p><img src="https://piwik.xiaozhu168.com/piwik.php?idsite=1" style="border:0;display: none;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 <noscript><img src="//stats.ipinyou.com/adv.gif?a=wQ..Bt1tXGnc9XDNzd63VYjb00&e=" style="display:none;"/></noscript>
-<!-- 360统计代码 -->
-<script type="text/javascript">
-    var _mvq = _mvq || [];
-    _mvq.push(['$setAccount', 'm-146284-0']);
-    _mvq.push(['$logConversion']);
-    (function() {
-        var mvl = document.createElement('script');
-        mvl.type = 'text/javascript'; mvl.async = true;
-        mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(mvl, s);
-    })();
-</script>
 
-<!-- 百度推送代码 -->
-<script>
-    (function(){
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        }
-        else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-    $(function(){
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?22d6540319e1ccf46303f97495af457f";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    });
-</script>
+
+
 
 
 <!-- 底部end -->
-
 <script type="text/javascript" src="/Public/static/website/js/elemInScreen.js"></script>
-<script type="text/javascript" src="/Public/static/website/js/index_1.js"></script>
+<?php foreach($js as $k => $v): ?>
+<script type="text/javascript" src="/Public/static/website/js/<?php echo ($v); ?>.js"></script>
+<?php endforeach ?>
+
 <script type="text/javascript">
     var basePath = "<?php echo ($_SERVER['SERVER_NAME']); ?>";
     var basePaths = "<?php echo ($_SERVER['SERVER_NAME']); ?>";
@@ -1204,7 +1179,7 @@
 
             var html =  '<div id="active_open" style="width: 492px; height: 354px; position: fixed; z-index:9999; top:'+top+'px;left:'+left+'px;">'+
                 '<a href="<?php echo ($_SERVER['SERVER_NAME']); ?>news/details-365.html"><img src="'+ resourcesPath +'images/492_354.png"></a>'+
-                '<a href="javascript:active_close();" style="display: block; position: absolute; top:0; left:436px; width: 40px; height: 40px; background:url('+ resourcesPath +'images/492_354.png) no-repeat; background-position: -436px 0;"></a></div>';
+            '<a href="javascript:active_close();" style="display: block; position: absolute; top:0; left:436px; width: 40px; height: 40px; background:url('+ resourcesPath +'images/492_354.png) no-repeat; background-position: -436px 0;"></a></div>';
             $('.popout-shadow').after(html);
         }
     }
