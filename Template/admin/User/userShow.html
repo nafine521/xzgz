@@ -21,8 +21,8 @@
 </head>
 <body>
 <div class="cl pd-20" style=" background-color:#5bacb6">
-  <notempty name="info['img']">
-  <img class="avatar size-XL l" src="__ROOT__{$info.img}">
+  <notempty name="info['user_headimg']">
+  <img class="avatar size-XL l" src="__ROOT__{$info.user_headimg}">
   </notempty>
 
 </div>
@@ -31,7 +31,7 @@
     <tbody>
       <tr>
         <th class="text-r" width="80">性别：</th>
-        <td><eq name="info['sex']" value="1">男<else/>女</eq></td>
+        <td><if condition="$info['sex'] eq 1">男<elseif condition="$info['sex'] eq 2"/>女<else/>保密</if></td>
       </tr>
       <tr>
         <th class="text-r">手机：</th>
@@ -39,15 +39,15 @@
       </tr>
       <tr>
         <th class="text-r">邮箱：</th>
-        <td>{$info['email']}</td>
+        <td>{$info['user_email']}</td>
       </tr>
       <tr>
         <th class="text-r">地址：</th>
-        <td>{$info['address']}</td>
+        <td>{$info['location']}</td>
       </tr>
       <tr>
         <th class="text-r">注册时间：</th>
-        <td>{$info['register_time']|date="Y-m-d H:i:s",###}</td>
+        <td>{$info['reg_time']|date="Y-m-d H:i:s",###}</td>
       </tr>
 
     </tbody>

@@ -75,8 +75,8 @@ class UserController extends BaseController
     }
     public function userShow(){
         $id=I("uid");
-        $info=M("user")->find($id);
-        $info['reg_time']=M("member")->
+        $info=M("user")->field("user_headimg,user_email,sex,user_tel,location")->find($id);
+        $info['reg_time']=M("member")->where(["uid"=>$id])->limit(1)->getField("reg_time");
         $this->assign("info",$info);
         $this->display();
     }
