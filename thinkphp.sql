@@ -303,3 +303,13 @@ CREATE TABLE `xz_session` (
   `user_ip` VARCHAR(100) NOT NULL DEFAULT '' COMMENT '本次登陆ip',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8  COMMENT='session凭证表';
+
+
+-- 短信验证表
+CREATE TABLE `xz_smscod` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `sms_ticket` VARCHAR(6) NOT NULL DEFAULT '' COMMENT '短信凭证',
+  `uid` varchar(255) NOT NULL COMMENT '用户uid',
+  `expression` INT NOT NULL DEFAULT '0' COMMENT '过期时间',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8  COMMENT='短信验证表';

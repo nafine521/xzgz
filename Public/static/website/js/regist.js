@@ -31,7 +31,7 @@ $(function(){
 		width : '600px',
 		height : '450px',
 		title : '手机短信验证',
-		content : '<div class="identify-win"><p class="top-tip">手机号码是您在小猪罐子的身份凭证。<br />为了确保您的手机可用，请填写您收到的手机验证码。</p><div class="identify-list"><div class="identify-line identify-line-phone"><span>手机短信验证：</span><strong class="user-phone">18682957955</strong></div><div class="identify-line"><span>图文验证：</span><div class="identify-pic"><i class="icon-identify"></i><input type="text" class="pic-identify-ipt" placeholder="图文验证" maxLength="4" /><img id="codeNum" src="xz168imgCode?pageId=capacity" alt="图文验证码" class="identify-img" onclick="javascript:switchCode()"/></div><div class="err-line"></div></div><div class="identify-line"><span>短信验证码:</span><div class="identify-tel"><input type="text" class="tel-identify-ipt" placeholder="请输入验证码" maxLength="6" /><a href="javascript:;" class="get-identify-btn">获取验证码</a></div><div class="err-line"></div></div><a href="javascript:;" class="confirm-identify">确认</a></div></div>'
+		content : '<div class="identify-win"><p class="top-tip">手机号码是您在小猪罐子的身份凭证。<br />为了确保您的手机可用，请填写您收到的手机验证码。</p><div class="identify-list"><div class="identify-line identify-line-phone"><span>手机短信验证：</span><strong class="user-phone">18682957955</strong></div><div class="identify-line"><span>图文验证：</span><div class="identify-pic"><i class="icon-identify"></i><input type="text" class="pic-identify-ipt" placeholder="图文验证" maxLength="4" /><img id="codeNum" src="verify?pageId=capacity" alt="图文验证码" class="identify-img" onclick="javascript:switchCode();"/></div><div class="err-line"></div></div><div class="identify-line"><span>短信验证码:</span><div class="identify-tel"><input type="text" class="tel-identify-ipt" placeholder="请输入验证码" maxLength="6" /><a href="javascript:;" class="get-identify-btn">获取验证码</a></div><div class="err-line"></div></div><a href="javascript:;" class="confirm-identify">确认</a></div></div>'
 	});
 	
 	function errTip( elem , err ){
@@ -59,7 +59,7 @@ $(function(){
 	;(function(){
 		var checkPwd = /^[a-z0-9_]*(([a-z][a-z0-9_]*\w)|([a-z][a-z0-9_]*\d)|(\d[a-z0-9_]*[a-z]))[a-z0-9_]$/;
 
-		console.log( checkPwd.test('ac1232311') )
+		//console.log( checkPwd.test('ac1232311') )
 	})();
 
 
@@ -292,7 +292,7 @@ $(function(){
 		param["paramMap.pioneer"] = $("#pioneer").val();
 		param["paramMap.sys_user_id"] = getQueryString("sys_user_id");//开户后台账号id
 		
-		$.post("register", param, function(data) {
+		$.post("", param, function(data) {
 			console.log(data);
 			if (data.msg == "1") {
 				window.location.href = basePath + "approveInit?uid="+$( '.tel-ipt' ).val();

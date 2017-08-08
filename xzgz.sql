@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version: 5.5.53)
-# Date: 2017-08-07 17:56:28
+# Date: 2017-08-08 18:04:39
 # Generator: MySQL-Front 5.3  (Build 4.234)
 
 /*!40101 SET NAMES utf8 */;
@@ -438,15 +438,37 @@ CREATE TABLE `xz_session` (
   `uid` varchar(255) NOT NULL COMMENT '用户uid',
   `expression` int(11) NOT NULL DEFAULT '0' COMMENT '过期时间',
   `user_ip` varchar(100) NOT NULL DEFAULT '' COMMENT '本次登陆ip',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='session凭证表';
+  PRIMARY KEY (`id`),
+  KEY `凭证查询` (`session_ticket`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='session凭证表';
 
 #
 # Data for table "xz_session"
 #
 
 /*!40000 ALTER TABLE `xz_session` DISABLE KEYS */;
+INSERT INTO `xz_session` VALUES (1,'f56bdb1a6536b045b9f9989659eef05d','1',1502158140,'0.0.0.0'),(2,'15ae1a6c3d1f6c5ca54f522fdb5ab1e0','1',1502158141,'0.0.0.0'),(3,'71bcd938a6d39150a7d99b5b045380b7','1',1502158142,'0.0.0.0'),(4,'ae1214af234352a7345d5b0b00968128','1',1502158143,'0.0.0.0'),(5,'1602ad3162e66e8901ac1af22e1170bd','1',1502159351,'0.0.0.0'),(6,'f61167a1ac37da6ca33922fd7c1fe78f','1',1502159352,'0.0.0.0'),(7,'ba13c0c32336472ec1f989158d4214e5','1',1502159353,'0.0.0.0'),(8,'6f23ea7fad44cfc917425ee0aee7eba0','1',1502159354,'0.0.0.0'),(9,'bd455c236ff2cf0b57e716782b1a89bc','1',1502159640,'0.0.0.0'),(10,'cfac3223d9e539bfe24db798f76d56b1','1',1502159641,'0.0.0.0'),(11,'f879a16600f7edafb89fb4f63556d399','1',1502159642,'0.0.0.0'),(12,'b381cf9bcc954b9c2f181ef7e7d5d67b','1',1502159643,'0.0.0.0'),(13,'b34a9566bc924cd10a3cdfd7746cee03','1',1502165430,'0.0.0.0'),(14,'9956a6bf4d388bac13357371c1f4e349','1',1502165431,'0.0.0.0'),(15,'60fdc683d66ced7c797b354d9573b134','1',1502165842,'0.0.0.0'),(16,'52d9b67b6d620ad245becba1058aaf39','1',1502166045,'0.0.0.0'),(17,'827630835f53799dbc745e0dce8f3030','1',1502166648,'0.0.0.0'),(18,'33c47d941eb31e2c33f700107d21be8f','1',1502164555,'0.0.0.0'),(19,'ed6ce04fbeb2cff0a6227b5bc7323cac','1',1502171688,'0.0.0.0'),(20,'86b1b13fe5a39d12495d97551857a9e0','1',1502172459,'0.0.0.0'),(21,'67be16163339f1162f20825032f55eda','1',1502172460,'0.0.0.0');
 /*!40000 ALTER TABLE `xz_session` ENABLE KEYS */;
+
+#
+# Structure for table "xz_smscod"
+#
+
+DROP TABLE IF EXISTS `xz_smscod`;
+CREATE TABLE `xz_smscod` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `sms_ticket` varchar(6) NOT NULL DEFAULT '' COMMENT '短信凭证',
+  `uid` varchar(255) NOT NULL COMMENT '用户uid',
+  `expression` int(11) NOT NULL DEFAULT '0' COMMENT '过期时间',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='短信验证表';
+
+#
+# Data for table "xz_smscod"
+#
+
+/*!40000 ALTER TABLE `xz_smscod` DISABLE KEYS */;
+/*!40000 ALTER TABLE `xz_smscod` ENABLE KEYS */;
 
 #
 # Structure for table "xz_user"
@@ -485,4 +507,4 @@ CREATE TABLE `xz_user` (
 # Data for table "xz_user"
 #
 
-INSERT INTO `xz_user` VALUES (1,0,'mm3','8136a00c3df04173393ae7df62e90f04','0',1,'',0,1,'13700000000',0,'321@123.com',0,NULL,0,0,NULL,NULL,0,'',2,0,'北京东城区','牛酷用户');
+INSERT INTO `xz_user` VALUES (1,0,'mm3','8136a00c3df04173393ae7df62e90f04','0',0,'',0,1,'13700000000',0,'321@123.com',0,NULL,0,0,NULL,NULL,0,'',2,0,'北京东城区','牛酷用户');
