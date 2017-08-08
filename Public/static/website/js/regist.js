@@ -16,10 +16,7 @@ function checkTelCode( code , cb ){
 }
 // ajax end
 
-function switchCode() {
-	var timenow = new Date();
-	$("#codeNum").attr("src", "xz168imgCode?pageId=capacity&d=" + timenow);
-}
+
 
 //网站协议
 function showProtocol(){

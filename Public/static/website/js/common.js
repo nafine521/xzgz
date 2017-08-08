@@ -1755,11 +1755,11 @@ function setThirdCookie(name, value) {
 
 
 //退出登录
-function logout(url) {
+function logout() {
     $.ajax({
         method: 'post',
         data: {},
-        url: url + '?t=' + +new Date(),
+        url:  '/Public/logout?t=' + +new Date(),
         success: function(res) {
             setThirdCookie("thirdCount", 0);
             location.href = basePath;

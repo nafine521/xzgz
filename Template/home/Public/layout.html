@@ -47,19 +47,80 @@
 
         <!-- 用户登录状态 start -->
         <ul class="user-status">
-            <!-- 已登录 start -->
-            <!-- 已登录 end -->
+            <if condition="empty($user_info)">
+                <!-- 未登录 start -->
+                <li>
+                    <a href="javascript:loginWin();" class="darker">登录</a>
+                </li>
+                <li>
+                    <a href="http://www.xiaozhu168.com/reg.html" class="red">注册</a>
+                </li>
+                <!-- 未登录 end -->
 
-            <!-- 未登录 start -->
+            <else/>
+                <!-- 已登录 start -->
+                <li class="user-is-login darker">
+                    <a href="http://www.xiaozhu168.com/accountInit.html">您好，<em class="green">{$user_info['user_tel']}</em></a>
+                    <a href="javascript:logout();" class="darker logout">退出</a>
+
+                    <!-- 用户信息下拉窗 start -->
+                    <div class="user-data-win">
+                        <div class="user-win-header"></div>
+                        <div class="user-win-content">
+                            <div class="user-win-top">
+                                <a href="https://www.xiaozhu168.com/customerInfo.html">账户管理</a>|
+                                <a href="javascript:logout();">退出</a>
+                            </div>
+
+                            <div class="user-win-main clearfix">
+                                <a href="https://www.xiaozhu168.com/accountInit.html" class="user-head">
+                                    <img src="http://mer.xiaozhu168.com/static/website/images/Headportrait.jpg" alt="">
+                                </a>
+                                <em class="user-vip-level">VIP&nbsp;0</em>
+                                <a href="http://www.xiaozhu168.com/accountInit.html" class="user-nickname">{$user_info['user_tel']}</a>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="https://www.xiaozhu168.com/accountInit.html">
+                                        <i class="icon-my-account"></i><br>
+                                        我的账户
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.xiaozhu168.com/recharge.html">
+                                        <i class="icon-recharge-withdrawals"></i><br>
+                                        充值提现
+                                    </a>
+                                </li>
+                                <li>
+                                    <!-- 有新消息 start -->
+                                    <!-- 有新消息 end -->
+                                    <a href="http://www.xiaozhu168.com/myMessage.html">
+                                        <i class="icon-new-message"></i><br>
+                                        消息中心
+                                    </a>
+                                </li>
+                                <li class="last-li">
+                                    <!-- 有新奖励 start -->
+                                    <em class="new-prize-content">
+                                        4</em>
+                                    <!-- 有新奖励 end -->
+                                    <a href="http://www.xiaozhu168.com/myActivityList.html">
+                                        <i class="icon-activi-gift"></i><br>
+                                        优惠券
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 用户信息下拉窗 end -->
+                </li>
+
+                <!-- 已登录 end -->
+             </if>
             <li>
-                <a href="javascript:loginWin();" class="darker">登录</a>
-            </li>
-            <li>
-                <a href="http://www.xiaozhu168.com/reg.html" class="red">注册</a>
-            </li>
-            <!-- 未登录 end -->
-            <li>
-                <a href="javascript:loginWin('{$_SERVER['SERVER_NAME']}rechargeInit');">充值</a>
+                <a href="javascript:loginWin('{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}?{$_SERVER['QUERY_STRING']}');">充值</a>
             </li>
             <li>
                 <a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a>
@@ -381,8 +442,8 @@
 <?php endforeach ?>
 
 <script type="text/javascript">
-    var basePath = "{$_SERVER['SERVER_NAME']}";
-    var basePaths = "{$_SERVER['SERVER_NAME']}";
+    var basePath = "{$_SERVER['PHP_SELF']}";
+    var basePaths = "{$_SERVER['PHP_SELF']}";
     var resourcesPath = "__PUBLIC__website/";
 
     function needlogin() {

@@ -10,151 +10,210 @@
     <!--<link rel="alternate" media="only screen and (max-width: 640px)" href="http://wap.xiaozhu168.com/" />-->
     <link href="/Public/static/website/favicon.ico" type="image/x-icon" rel="shortcut icon" />
 
-    <!--<link href="/Public/static/website/style/common.css" type="text/css" rel="stylesheet" />
-    <link href="/Public/static/website/style/login_css.css" type="text/css" rel="stylesheet" />
-    <link href="/Public/static/website/style/icon.css" type="text/css" rel="stylesheet" />
-    <link href="/Public/static/website/style/index_1200.css?v=2.0" type="text/css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="/Public/static/website/style/common.css" />
+    <link rel="stylesheet" href="/Public/static/website/style/icon.css" />
     <?php foreach ($css as $k => $v): ?>
     <link rel="stylesheet" href="/Public/static/website/style/<?php echo ($v); ?>.css" />
     <?php endforeach; ?>
 </head>
 
 <body>
-<!-- 头部 start -->
-<!--顶部灰条div-->
-<!--[if lt IE 8]>
-<div id="kie-bar" class="kie-bar">
-    您现在使用的浏览器版本过低，可能会导致浏览效果和信息的缺失。
-    建议立即升级到
-    <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank" title="免费升级至IE8浏览器">Internet Explorer 8</a>
-    或
-    <a href="http://baoku.360.cn/soft/show/appid/100923" target="_blank" title="免费升级至360安全浏览器">360安全浏览器</a>
-    ，安全更放心！
-</div>
-<![endif]-->
-<!--[if IE 6]>
-<script src="/Public/static/website/js/ie6-png/iepngfix_tilebg.js" ></script>
-<![endif]-->
-<div class="header">
-    <div class="header-content">
-        <!-- 客服热线 start -->
-        <div class="custom-service">
-            <i class="icon-custom-service"></i>
-            客服热线：<span class="green bold">400-882-5188</span>
-            <span class="lighter">（工作日 9:00 - 22:00）</span>
-        </div>
-        <!-- 客服热线 end -->
 
-        <!-- 用户登录状态 start -->
-        <ul class="user-status">
-            <!-- 已登录 start -->
-            <!-- 已登录 end -->
-
-            <!-- 未登录 start -->
-            <li>
-                <a href="javascript:loginWin();" class="darker">登录</a>
-            </li>
-            <li>
-                <a href="http://www.xiaozhu168.com/reg.html" class="red">注册</a>
-            </li>
-            <!-- 未登录 end -->
-            <li>
-                <a href="javascript:loginWin('<?php echo ($_SERVER['SERVER_NAME']); ?>rechargeInit');">充值</a>
-            </li>
-            <li>
-                <a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a>
-            </li>
-            <li>
-                <a href="http://www.xiaozhu168.com/ask/" target="_blank">小猪问答</a>
-            </li>
-            <li class="last-li">
-                <!-- 掌上小猪 start -->
-                <div class="xiaozhu-hand">
-                    <i class="icon-phone1"></i>
-                    掌上小猪
-                    <i class="icon-down-green"></i>
-
-                    <div class="xiaozhu-hand-box">
-                        <div class="xiaozhu-hand-qrcode clearfix">
-                            <i class="icon-pointup-white"></i>
-                            <img src="/Public/static/website/images/qrcode.png" />
-                            <p>
-                                掌上投资，更加精彩<br />
-                                <span class="green">下载小猪罐子客户端</span><br />
-                                <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">
-                                </a>
-                                <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- 掌上小猪 end -->
-
-                <!-- 新浪微博 start -->
-                <a href="javascript:;" class="tencent-wechat">
-                    <em class="qrcode-hover-border"></em>
-                    <div class="qrcode-box">
-                        <div class="tencent-wechat-content qrcode-content">
-                            <span class="wechat-qrcode"></span>
-                            扫描关注<span class="green">微信</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- 新浪微博 end -->
-
-                <!-- 微信 start -->
-                <a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">
-                    <em class="qrcode-hover-border"></em>
-                    <div class="qrcode-box">
-                        <div class="weibo-qrcode-content qrcode-content">
-                            <span class="weibo-qrcode"></span>
-                            扫描关注<span class="red">微博</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- 微信 end -->
-            </li>
-        </ul>
-        <!-- 用户登录状态 end -->
-
+    <!-- 头部 start -->
+    <!--顶部灰条div-->
+    <!--[if lt IE 8]>
+    <div id="kie-bar" class="kie-bar">
+        您现在使用的浏览器版本过低，可能会导致浏览效果和信息的缺失。
+        建议立即升级到
+        <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank" title="免费升级至IE8浏览器">Internet Explorer 8</a>
+        或
+        <a href="http://baoku.360.cn/soft/show/appid/100923" target="_blank" title="免费升级至360安全浏览器">360安全浏览器</a>
+        ，安全更放心！
     </div>
+    <![endif]-->
+    <!--[if IE 6]>
+    <script src="/Public/static/website/js/ie6-png/iepngfix_tilebg.js" ></script>
+    <![endif]-->
+    <div class="header">
+        <div class="header-content">
+            <!-- 客服热线 start -->
+            <div class="custom-service">
+                <i class="icon-custom-service"></i>
+                客服热线：<span class="green bold">400-882-5188</span>
+                <span class="lighter">（工作日 9:00 - 22:00）</span>
+            </div>
+            <!-- 客服热线 end -->
 
-</div>
-<!--灰色顶部菜单栏结束-->
-<div class="common-nav">
-    <div class="nav-bar">
-        <a href="http://www.xiaozhu168.com/" class="xiaozhu-logo"><img src="/Public/static/website/images/PC-logo_AE.gif" alt="小猪logo" /></a>
+            <!-- 用户登录状态 start -->
+            <ul class="user-status">
+                <?php if(empty($user_info)): ?><!-- 未登录 start -->
+                    <li>
+                        <a href="javascript:loginWin();" class="darker">登录</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/reg.html" class="red">注册</a>
+                    </li>
+                    <!-- 未登录 end -->
 
-        <!-- 菜单 start -->
-        <div class="nav-content">
-            <ul class="common-nav-list">
-                <li class="active">
-                    <a href="http://www.xiaozhu168.com/">首页</a>
+                    <?php else: ?>
+                    <!-- 已登录 start -->
+                    <li class="user-is-login darker">
+                        <a href="http://www.xiaozhu168.com/accountInit.html">您好，<em class="green"><?php echo ($user_info['user_tel']); ?></em></a>
+                        <a href="javascript:logout();" class="darker logout">退出</a>
+
+                        <!-- 用户信息下拉窗 start -->
+                        <div class="user-data-win">
+                            <div class="user-win-header"></div>
+                            <div class="user-win-content">
+                                <div class="user-win-top">
+                                    <a href="https://www.xiaozhu168.com/customerInfo.html">账户管理</a>|
+                                    <a href="javascript:logout();">退出</a>
+                                </div>
+
+                                <div class="user-win-main clearfix">
+                                    <a href="https://www.xiaozhu168.com/accountInit.html" class="user-head">
+                                        <img src="http://mer.xiaozhu168.com/static/website/images/Headportrait.jpg" alt="">
+                                    </a>
+                                    <em class="user-vip-level">VIP&nbsp;0</em>
+                                    <a href="http://www.xiaozhu168.com/accountInit.html" class="user-nickname"><?php echo ($user_info['user_tel']); ?></a>
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        <a href="https://www.xiaozhu168.com/accountInit.html">
+                                            <i class="icon-my-account"></i><br>
+                                            我的账户
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.xiaozhu168.com/recharge.html">
+                                            <i class="icon-recharge-withdrawals"></i><br>
+                                            充值提现
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <!-- 有新消息 start -->
+                                        <!-- 有新消息 end -->
+                                        <a href="http://www.xiaozhu168.com/myMessage.html">
+                                            <i class="icon-new-message"></i><br>
+                                            消息中心
+                                        </a>
+                                    </li>
+                                    <li class="last-li">
+                                        <!-- 有新奖励 start -->
+                                        <em class="new-prize-content">
+                                            4</em>
+                                        <!-- 有新奖励 end -->
+                                        <a href="http://www.xiaozhu168.com/myActivityList.html">
+                                            <i class="icon-activi-gift"></i><br>
+                                            优惠券
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 用户信息下拉窗 end -->
+                    </li>
+
+                    <!-- 已登录 end --><?php endif; ?>
+                <li>
+                    <a href="javascript:loginWin('<?php echo ($_SERVER['HTTP_HOST']); echo ($_SERVER['PHP_SELF']); ?>?<?php echo ($_SERVER['QUERY_STRING']); ?>');">充值</a>
                 </li>
                 <li>
-                    <a href="http://www.xiaozhu168.com/pool-13-0-0-0-0-1-1.html">我要投资</a>
+                    <a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a>
                 </li>
                 <li>
-                    <a href="http://www.xiaozhu168.com/companyProfile.html">信息披露</a>
+                    <a href="http://www.xiaozhu168.com/ask/" target="_blank">小猪问答</a>
                 </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/mall/">小猪商城</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/aboutus.html">了解小猪</a>
+                <li class="last-li">
+                    <!-- 掌上小猪 start -->
+                    <div class="xiaozhu-hand">
+                        <i class="icon-phone1"></i>
+                        掌上小猪
+                        <i class="icon-down-green"></i>
+
+                        <div class="xiaozhu-hand-box">
+                            <div class="xiaozhu-hand-qrcode clearfix">
+                                <i class="icon-pointup-white"></i>
+                                <img src="/Public/static/website/images/qrcode.png" />
+                                <p>
+                                    掌上投资，更加精彩<br />
+                                    <span class="green">下载小猪罐子客户端</span><br />
+                                    <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">
+                                    </a>
+                                    <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 掌上小猪 end -->
+
+                    <!-- 新浪微博 start -->
+                    <a href="javascript:;" class="tencent-wechat">
+                        <em class="qrcode-hover-border"></em>
+                        <div class="qrcode-box">
+                            <div class="tencent-wechat-content qrcode-content">
+                                <span class="wechat-qrcode"></span>
+                                扫描关注<span class="green">微信</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 新浪微博 end -->
+
+                    <!-- 微信 start -->
+                    <a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">
+                        <em class="qrcode-hover-border"></em>
+                        <div class="qrcode-box">
+                            <div class="weibo-qrcode-content qrcode-content">
+                                <span class="weibo-qrcode"></span>
+                                扫描关注<span class="red">微博</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 微信 end -->
                 </li>
             </ul>
+            <!-- 用户登录状态 end -->
+
         </div>
-        <!-- 菜单 end -->
+
     </div>
-</div>
-<!-- 添加一个用于在loginWin 方法中使用的basePath 标识 -->
-<input type="hidden" id="jsLoginWinBasePath" name="jsLoginWinBasePath" value="http://www.xiaozhu168.com/"/>
-<!-- 头部 end -->
+    <!--灰色顶部菜单栏结束-->
+    <div class="common-nav">
+        <div class="nav-bar">
+            <a href="http://www.xiaozhu168.com/" class="xiaozhu-logo"><img src="/Public/static/website/images/PC-logo_AE.gif" alt="小猪logo" /></a>
+
+            <!-- 菜单 start -->
+            <div class="nav-content">
+                <ul class="common-nav-list">
+                    <li class="active">
+                        <a href="http://www.xiaozhu168.com/">首页</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/pool-13-0-0-0-0-1-1.html">我要投资</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/companyProfile.html">信息披露</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/mall/">小猪商城</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/aboutus.html">了解小猪</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 菜单 end -->
+        </div>
+    </div>
+    <!-- 添加一个用于在loginWin 方法中使用的basePath 标识 -->
+    <input type="hidden" id="jsLoginWinBasePath" name="jsLoginWinBasePath" value="http://www.xiaozhu168.com/"/>
+    <!-- 头部 end -->
+
 
 
 <!-- banner start -->
@@ -180,10 +239,8 @@
 
     <!-- 用户信息 start -->
     <div class="banner-tag-box">
-        <!-- 已登录 start -->
-        <!-- 已登录 end -->
 
-        <!-- 未登录 start -->
+        <?php if(empty($user_info)): ?><!-- 未登录 start -->
         <div class="banner-tag visitor-banner-tag">
             <ul class="clearfix">
                 <li class="float-l"  style="display: none;">
@@ -206,6 +263,35 @@
             </a>
         </div>
         <!-- 未登录 end -->
+            <?php else: ?>
+            <!-- 已登录 start -->
+            <div class="banner-tag login-banner-tag">
+                <div class="user-base">
+                    <a href="https://www.xiaozhu168.com/home.html" class="user-img">
+                        <img src="https://mer.xiaozhu168.com/static/website/images/Headportrait.jpg" alt="用户头像">
+                    </a>
+                    <span class="user-base-sp">
+
+                	Hi,<a href="https://www.xiaozhu168.com/accountInit.html" target="_blank"><?php echo ($user_info['user_tel']); ?></a>
+                </span>
+                    <em class="user-level">VIP0</em>
+                </div>
+                <ul class="clearfix">
+                    <li class="float-l" style="display: none;">
+                        投资者选择（人）
+                        <strong>148,471</strong>
+                    </li>
+                    <li class="float-r">
+                        <a href="https://www.xiaozhu168.com/recharge.html" target="_blank" class="yellow">前往充值&gt;&gt;</a>
+                    </li>
+                </ul>
+                <a href="https://www.xiaozhu168.com/accountInit.html" target="_blank" class="green-link-btn">我的账户</a>
+                <a href="https://www.xiaozhu168.com/myInvite.html" target="_blank" class="transparent-link-btn">
+                    <i class="icon-hot-tag"></i>
+                    推荐好友乐享三重好礼
+                </a>
+            </div>
+            <!-- 已登录 end --><?php endif; ?>
     </div>
     <!-- 用户信息 end -->
 </div>
@@ -907,22 +993,12 @@
 
 
 
+
 <!-- 底部start -->
 <div style="display: block; clear: both;"></div>
 <div class="xz-bottom">
-    <!-- <div class="xz-widget">
-        <div class="xz-widget-header">
-            <div class="to-top1">
-                <span class="top-xiaozhu1"></span>
-                <span class="top-xiaozhu2"></span>
-                <i class="to-top-icon1"></i>
-                <i class="to-top-icon2"></i>
-            </div>
-            <div class="bottom-ad">
-                <p>开启轻松、安全、稳健的理财之旅吧！<a href="javascript:;">立即注册去投资</a></p>
-            </div>
-        </div> -->
 
+    
     <div class="xz-widget-body">
         <table class="bottom-left table">
             <tr>
@@ -973,49 +1049,53 @@
             <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="android-download" title="下载手机app"></a>
         </div>
     </div>
+
     <div class="xz-widget-footer">
-        <dl class="clearfix index_foot_dl active">
-            <dt>友情链接</dt>
-            <dd><a href="http://www.lasedu.com/" title="留学中介" target="_blank">留学中介</a></dd>
-            <dd><a href="http://www.sz7h.com/" title="期货开户" target="_blank">期货开户</a></dd>
-            <dd><a href="http://www.wangdaibuluo.com/" title="网贷部落" target="_blank">网贷部落</a></dd>
-            <dd><a href="http://news.23.cn" title="创业资讯" target="_blank">创业资讯</a></dd>
-            <dd><a href="http://www.ruan8.com" title="软吧手机软件" target="_blank">软吧手机软件</a></dd>
-            <dd><a href="http://www.anruan.com" title="安软市场" target="_blank">安软市场</a></dd>
-            <dd><a href="http://www.xiaozhu168.com/wangdai-1.html" title="网贷平台" target="_blank">网贷平台</a></dd>
-            <dd><a href="http://www.xiazaiduo.com/" title="统一下载站 " target="_blank">统一下载站 </a></dd>
-            <dd><a href="http://www.downza.cn/android" title="下载之家" target="_blank">下载之家</a></dd>
-            <dd><a href="http://www.uzzf.com/" title="东坡下载" target="_blank">东坡下载</a></dd>
-            <dd><a href="http://www.qdnzy.cn" title="广东门户" target="_blank">广东门户</a></dd>
-            <dd><a href="http://money.cardbaobao.com/" title="网上理财" target="_blank">网上理财</a></dd>
-            <dd><a href="http://www.cdyushun.com/" title="成都贷款" target="_blank">成都贷款</a></dd>
-            <dd><a href="http://www.9553.com/ " title="9553下载" target="_blank">9553下载</a></dd>
-            <dd><a href="http://www.dghuarong.com" title="金华信息港" target="_blank">金华信息港</a></dd>
-            <dd><a href="http://www.gezila.com/" title="格子啦下载吧" target="_blank">格子啦下载吧</a></dd>
-            <dd><a href="http://www.hot78.com" title="招商网" target="_blank">招商网</a></dd>
-            <dd><a href="http://www.bj5188.com.cn/" title="抵押贷款
+        
+<dl class="clearfix index_foot_dl active">
+    <dt>友情链接</dt>
+    <dd><a href="http://www.lasedu.com/" title="留学中介" target="_blank">留学中介</a></dd>
+    <dd><a href="http://www.sz7h.com/" title="期货开户" target="_blank">期货开户</a></dd>
+    <dd><a href="http://www.wangdaibuluo.com/" title="网贷部落" target="_blank">网贷部落</a></dd>
+    <dd><a href="http://news.23.cn" title="创业资讯" target="_blank">创业资讯</a></dd>
+    <dd><a href="http://www.ruan8.com" title="软吧手机软件" target="_blank">软吧手机软件</a></dd>
+    <dd><a href="http://www.anruan.com" title="安软市场" target="_blank">安软市场</a></dd>
+    <dd><a href="http://www.xiaozhu168.com/wangdai-1.html" title="网贷平台" target="_blank">网贷平台</a></dd>
+    <dd><a href="http://www.xiazaiduo.com/" title="统一下载站 " target="_blank">统一下载站 </a></dd>
+    <dd><a href="http://www.downza.cn/android" title="下载之家" target="_blank">下载之家</a></dd>
+    <dd><a href="http://www.uzzf.com/" title="东坡下载" target="_blank">东坡下载</a></dd>
+    <dd><a href="http://www.qdnzy.cn" title="广东门户" target="_blank">广东门户</a></dd>
+    <dd><a href="http://money.cardbaobao.com/" title="网上理财" target="_blank">网上理财</a></dd>
+    <dd><a href="http://www.cdyushun.com/" title="成都贷款" target="_blank">成都贷款</a></dd>
+    <dd><a href="http://www.9553.com/ " title="9553下载" target="_blank">9553下载</a></dd>
+    <dd><a href="http://www.dghuarong.com" title="金华信息港" target="_blank">金华信息港</a></dd>
+    <dd><a href="http://www.gezila.com/" title="格子啦下载吧" target="_blank">格子啦下载吧</a></dd>
+    <dd><a href="http://www.hot78.com" title="招商网" target="_blank">招商网</a></dd>
+    <dd><a href="http://www.bj5188.com.cn/" title="抵押贷款
 " target="_blank">抵押贷款
-            </a></dd>
-            <dd><a href="http://fxdd.yahui.cc" title="亚汇FXDD" target="_blank">亚汇FXDD</a></dd>
-            <dd><a href="http://www.wd361.com" title="网贷互联" target="_blank">网贷互联</a></dd>
-            <dd><a href="http://shenzhen.99dai.cn/" title="深圳贷款" target="_blank">深圳贷款</a></dd>
-            <dd><a href="http://www.360gann.com/ " title="股票分析软件" target="_blank">股票分析软件</a></dd>
-            <dd><a href="http://www.ps188.cn" title="盘手网" target="_blank">盘手网</a></dd>
-            <dd><a href="http://broker.jfz.com/" title="理财问答" target="_blank">理财问答</a></dd>
-            <dd><a href="https://www.jujinziben.com" title="p2p投资理财" target="_blank">p2p投资理财</a></dd>
-            <dd><a href="http://www.kmg898.com" title="金融理财师" target="_blank">金融理财师</a></dd>
-            <dd><a href="http://fenxishi.yjcf360.com" title="金融分析师" target="_blank">金融分析师</a></dd>
-            <dd><a href="http://www.shitouke.cn" title="网贷预警" target="_blank">网贷预警</a></dd>
-            <dd><a href="http://www.51wangdai.com/" title="51网贷" target="_blank">51网贷</a></dd>
-            <dd><a href="http://www.jiacaiguanjia.com" title="家财管加" target="_blank">家财管加</a></dd>
-            <dd><a href="http://www.wdzx.com" title="网贷中心" target="_blank">网贷中心</a></dd>
-            <dd><a href="http://www.wangdaidongfang.com " title="网贷东方" target="_blank">网贷东方</a></dd>
-            <dd><a href="http://www.foxf.com.hk" title="香港保险" target="_blank">香港保险</a></dd>
-            <dd><a href="http://www.76676.com/" title="76676" target="_blank">76676</a></dd>
-            <dd><a href="http://toutiao.manqian.cn/" title="慢钱头条" target="_blank">慢钱头条</a></dd>
-            <dd><a href="http://finance.n8n8.cn/" title="金融财经" target="_blank">金融财经</a></dd>
-            <dd><a href="http://www.168chaogu.com/" title="股票学习网" target="_blank">股票学习网</a></dd>
-        </dl>
+    </a></dd>
+    <dd><a href="http://fxdd.yahui.cc" title="亚汇FXDD" target="_blank">亚汇FXDD</a></dd>
+    <dd><a href="http://www.wd361.com" title="网贷互联" target="_blank">网贷互联</a></dd>
+    <dd><a href="http://shenzhen.99dai.cn/" title="深圳贷款" target="_blank">深圳贷款</a></dd>
+    <dd><a href="http://www.360gann.com/ " title="股票分析软件" target="_blank">股票分析软件</a></dd>
+    <dd><a href="http://www.ps188.cn" title="盘手网" target="_blank">盘手网</a></dd>
+    <dd><a href="http://broker.jfz.com/" title="理财问答" target="_blank">理财问答</a></dd>
+    <dd><a href="https://www.jujinziben.com" title="p2p投资理财" target="_blank">p2p投资理财</a></dd>
+    <dd><a href="http://www.kmg898.com" title="金融理财师" target="_blank">金融理财师</a></dd>
+    <dd><a href="http://fenxishi.yjcf360.com" title="金融分析师" target="_blank">金融分析师</a></dd>
+    <dd><a href="http://www.shitouke.cn" title="网贷预警" target="_blank">网贷预警</a></dd>
+    <dd><a href="http://www.51wangdai.com/" title="51网贷" target="_blank">51网贷</a></dd>
+    <dd><a href="http://www.jiacaiguanjia.com" title="家财管加" target="_blank">家财管加</a></dd>
+    <dd><a href="http://www.wdzx.com" title="网贷中心" target="_blank">网贷中心</a></dd>
+    <dd><a href="http://www.wangdaidongfang.com " title="网贷东方" target="_blank">网贷东方</a></dd>
+    <dd><a href="http://www.foxf.com.hk" title="香港保险" target="_blank">香港保险</a></dd>
+    <dd><a href="http://www.76676.com/" title="76676" target="_blank">76676</a></dd>
+    <dd><a href="http://toutiao.manqian.cn/" title="慢钱头条" target="_blank">慢钱头条</a></dd>
+    <dd><a href="http://finance.n8n8.cn/" title="金融财经" target="_blank">金融财经</a></dd>
+    <dd><a href="http://www.168chaogu.com/" title="股票学习网" target="_blank">股票学习网</a></dd>
+</dl>
+
+        
         <div class="footer">
             <div>
                 <div class="float-l">
@@ -1032,6 +1112,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </div>
 
@@ -1048,19 +1129,21 @@
             </a>
             <div class="com_left_li1 com_left_li5 calculate" id="fix_calculate"><i class="com_left_i3"></i><em>计算收益</em><label></label></div>
             <a  href="http://www.xiaozhu168.com/homeAutoTender" style="display: none;">
-                <div class="com_left_li1 com_left_li5 calculate" id="fix_calculate"><i class="com_left_i9"></i><em>批量投标</em><label></label></div>
+                <div class="com_left_li1 com_left_li5 calculate" id="fix_calculate1"><i class="com_left_i9"></i><em>批量投标</em><label></label></div>
             </a>
             <div class="com_left_div2 goto_top"><i class="com_left_i4"></i><em>返回顶部</em></div>
         </div>
     </div>
 </div>
-<input type="hidden" value="" id="noquestion">
+
 <!--右侧悬浮结束-->
-<script src="https://qiyukf.com/script/c57c1e6a6ef539fba5f8066aad13ec15.js?uid=&moblie=" ></script>
+
+
 
 <script type="text/javascript" src="/Public/static/website/js/lib/jquery-1.8.3.min.js"></script>
 
 <script type="text/javascript" src="/Public/static/website/js/common.js?v=1.3"></script>
+
 <script type="text/javascript" src="/Public/static/website/js/jquery.poshytip.min.js"></script>
 <script type="text/javascript">
     $(function () {
@@ -1129,8 +1212,8 @@
 <?php endforeach ?>
 
 <script type="text/javascript">
-    var basePath = "<?php echo ($_SERVER['SERVER_NAME']); ?>";
-    var basePaths = "<?php echo ($_SERVER['SERVER_NAME']); ?>";
+    var basePath = "<?php echo ($_SERVER['PHP_SELF']); ?>";
+    var basePaths = "<?php echo ($_SERVER['PHP_SELF']); ?>";
     var resourcesPath = "/Public/static/website/";
 
     function needlogin() {

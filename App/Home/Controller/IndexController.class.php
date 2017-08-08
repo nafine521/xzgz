@@ -16,4 +16,20 @@ class IndexController extends PublicController {
     	$display=R("Article/about_us");
     	
     }
+
+    public function reg(){
+        $this->setPageInfo('注册','产品','丰富的内容',['user_info','regist'],["index_1"]);
+        $this->display();
+    }
+
+    public function ajaxCheckMobilePhoneRegister(){
+        $tel=I("paramMap_mobilePhone");
+        $uid=M("user")->field("uid")->where(["user_tel"=>$tel])->find();
+        if($uid>0){
+            $msg=6;
+        }else{
+            $msg=0;
+        }
+        $this->ajaxReturn($msg);
+    }
 }

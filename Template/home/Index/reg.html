@@ -1,0 +1,127 @@
+<extend  name="Public/base" />
+<blok name="header">
+<!-- 注册页头部 start -->
+<div class="regist-header">
+    <div class="header-content">
+        <a href="https://www.xiaozhu168.com/" class="company-logo">
+            <img src="https://mer.xiaozhu168.com/static/website/images/logo-a.png" alt="logo" />
+        </a>
+        <div class="app-qrcode">
+            <img class="qrcode-img" src="https://mer.xiaozhu168.com/static/website/images/qrcode.jpg" alt="扫描下载app" />
+            <p>
+                掌上投资，更加精彩<br />
+                <span class="green">下载小猪罐子客户端</span>
+            </p>
+        </div>
+        <div class="is-vip">
+            已是小猪罐子会员？
+            <a href="javascript:loginWin('https://www.xiaozhu168.com/');" class="goto-login">去登录</a>
+        </div>
+    </div>
+</div>
+<!-- 注册页头部 end -->
+</blok>
+<block name="content">
+<!-- 页面主体 start -->
+<div class="regist-main">
+    <div class="form-content">
+        <div class="form-box">
+            <form action="register" method="post" class="regist-form">
+                <!-- 邀请人信息 start -->
+                <!-- 邀请人信息 end -->
+
+                <div class="form-line">
+                    <div class="ipt-box">
+                        <i class="icon-user"></i>
+                        <input type="text" id="phon" maxLength="11" class="tel-ipt" placeholder="请输入手机号码" />
+                    </div>
+                    <div class="err-line"></div>
+                </div>
+
+                <div class="form-line">
+                    <div class="ipt-box">
+                        <i class="icon-lock"></i>
+                        <input type="password" id="red_pwd" maxLength="20" class="psd-ipt" placeholder="请输入密码" />
+                    </div>
+                    <div class="view-pwd-list">
+                        <div class="float-l view-pwd-1">弱</div>
+                        <div class="float-l view-pwd-2">中</div>
+                        <div class="float-l view-pwd-3">强</div>
+                    </div>
+                    <div class="err-line"></div>
+                </div>
+
+                <div class="invite-line">
+                    <div class="invite-toggle">
+                        <i class="icon-point-right"></i>
+                        <span class="red">邀请人手机号/邀请码(选填)</span>
+                    </div>
+                    <div class="form-line invite-form-line">
+                        <div class="ipt-box">
+                            <i class="icon-inviter"></i>
+                            <input type="text" id="refferee" maxLength="11" class="invite-ipt" placeholder="手机号/邀请码" />
+                        </div>
+                        <div class="err-line"></div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="disabled" id="regBtn">
+                    立即注册
+                    <i class="icon-money-pack"></i>
+                </a>
+
+                <div class="contract-line">
+                    <label>
+                        <input type="checkbox" checked />
+                        我已阅读并同意
+                    </label>
+                    <a href="javascript:showProtocol();" class="contract-btn blue">《小猪罐子平台注册及服务协议》</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="regist-banner" style="background-image:url(https://www.xiaozhu168.com/upload/images/288zhuce.jpg);">
+        <img src="https://mer.xiaozhu168.com/static/website/images/regist_banner.jpg" alt="">
+    </div>
+</div>
+</block>
+<block name="com_div">&nbsp;</block>
+<!-- 页面主体 end -->
+
+
+<block name="footer_js">
+<script type="text/javascript" src="__PUBLIC__website/js/promiseA.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__website/js/regist.js"></script>
+
+<script type="text/javascript">
+    var basePath = "http://{$_SERVER['HTTP_HOST']}";
+    function switchCode() {
+        var timenow = new Date();
+        $("#codeNum").attr("src", "{:U('verify')}?pageId=capacity&d=" + timenow);
+    }
+</script>
+</block>
+<block name="footer">
+    <div class="xz-bottom xz-white-bottom">
+        <div class="xz-widget-footer">
+            <dl class="clearfix index_foot_dl active">
+            </dl>
+            <div class="footer">
+                <div>
+                    <div class="float-l">
+                        copyright©2014 xiaozhu168.com All Rights Reserved 备案号：粤ICP备14055923号
+                    </div>
+                    <div class="float-r">
+                        <a key="558ab0b7efbfb02e2a186fda" style="background:none;margin-right:40px;" class="aptitude-1" target="_blank" logo_size="83x30" logo_type="business" href="http://v.pinpaibao.com.cn/authenticate/cert/?site=192.168.16.26:3080&amp;at=business"><!--script src="http://fm.p0y.cn/j/adv.js"></script><script src="http://static.anquan.org/static/outer/js/aq_auth.js"></script--><b id="aqLogoCVUHT" style="display: none;"></b><img src="//static.anquan.org/static/outer/image/hy_83x30.png" alt="安全联盟认证" width="83" height="30" style="border: none;"></a>
+                        <a id="___szfw_logo___" style="margin-right:78px;" href="https://credit.szfw.org/CX20160229013712570171.html" target="_blank"><img src="https://mer.xiaozhu168.com/static/website/images/cert.png" width="112" border="0"></a> <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" class="aptitude-1" title="工业和信息化部" target="_blank"></a> <a href="http://szcert.ebs.org.cn/ebc298c1-8dbf-4784-a88c-5c62cb2d9461" class="aptitude-2" title="深圳市网络经营者信息公示" target="_blank"></a> <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1398578442" class="aptitude-3" title="ICP网站征信证书" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>
+
+

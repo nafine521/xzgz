@@ -1,4 +1,7 @@
-<layout name="Public/layout" />
+<extend  name="Public/base" />
+
+
+<block name="content">
 <!-- banner start -->
 <div class="banner-box">
     <!-- 轮播图 start -->
@@ -22,9 +25,8 @@
 
     <!-- 用户信息 start -->
     <div class="banner-tag-box">
-        <!-- 已登录 start -->
-        <!-- 已登录 end -->
 
+        <if condition="empty($user_info)">
         <!-- 未登录 start -->
         <div class="banner-tag visitor-banner-tag">
             <ul class="clearfix">
@@ -48,6 +50,36 @@
             </a>
         </div>
         <!-- 未登录 end -->
+            <else/>
+            <!-- 已登录 start -->
+            <div class="banner-tag login-banner-tag">
+                <div class="user-base">
+                    <a href="https://www.xiaozhu168.com/home.html" class="user-img">
+                        <img src="https://mer.xiaozhu168.com/static/website/images/Headportrait.jpg" alt="用户头像">
+                    </a>
+                    <span class="user-base-sp">
+
+                	Hi,<a href="https://www.xiaozhu168.com/accountInit.html" target="_blank">{$user_info['user_tel']}</a>
+                </span>
+                    <em class="user-level">VIP0</em>
+                </div>
+                <ul class="clearfix">
+                    <li class="float-l" style="display: none;">
+                        投资者选择（人）
+                        <strong>148,471</strong>
+                    </li>
+                    <li class="float-r">
+                        <a href="https://www.xiaozhu168.com/recharge.html" target="_blank" class="yellow">前往充值&gt;&gt;</a>
+                    </li>
+                </ul>
+                <a href="https://www.xiaozhu168.com/accountInit.html" target="_blank" class="green-link-btn">我的账户</a>
+                <a href="https://www.xiaozhu168.com/myInvite.html" target="_blank" class="transparent-link-btn">
+                    <i class="icon-hot-tag"></i>
+                    推荐好友乐享三重好礼
+                </a>
+            </div>
+            <!-- 已登录 end -->
+        </if>
     </div>
     <!-- 用户信息 end -->
 </div>
@@ -746,3 +778,59 @@
     </ul>
 </div>
 <!--合作伙伴结束-->
+</block>
+
+<block name="widget">
+    <div class="xz-widget-body">
+        <table class="bottom-left table">
+            <tr>
+                <th>关于</th>
+                <th>安全</th>
+                <th>服务</th>
+                <th>新手指引</th>
+            </tr>
+            <tr>
+                <td><a href="http://www.xiaozhu168.com/aboutus.html" target="_blank">公司简介</a></td>
+                <td><a href="http://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a></td>
+                <td><a href="http://www.xiaozhu168.com/vip_power.html" target="_blank">会员权益</a></td>
+                <td><a href="forgetpassword.html" target="_blank">找回密码</a></td>
+            </tr>
+            <tr>
+                <td><a href="http://www.xiaozhu168.com/aboutus.html#7" target="_blank">商务合作</a></td>
+                <td><a href="http://www.xiaozhu168.com/safety-ensure.html" target="_blank">风控体系</a></td>
+                <td><a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a></td>
+                <td><a href="reg.html" target="_blank">注册帐号</a></td>
+            </tr>
+            <tr>
+                <td><a href="http://www.xiaozhu168.com/aboutus.html#3" target="_blank">团队故事</a></td>
+                <td><a href="http://www.xiaozhu168.com/server_exp.html#money" target="_blank">资金托管</a></td>
+                <td><a href="http://www.xiaozhu168.com/server_exp.html" target="_blank">资费说明</a></td>
+                <td><a href="http://www.xiaozhu168.com/map.html" target="_blank">网站地图</a></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><a href="http://www.xiaozhu168.com/electronicSecurity.html" target="_blank">电子保全</a></td>
+                <td><a href="http://www.xiaozhu168.com/baike/" target="_blank">理财百科</a></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <div class="bottom-center">
+            <img src="__PUBLIC__website/images/wx_tb.jpg" titlel="关注微信公众号" />
+            <br />
+            <span>关注<em>微信公众号</em></span>
+        </div>
+        <div class="bottom-right">
+            <div class="clearfix">
+                <a href="https://shang.qq.com/wpa/qunwpa?idkey=510d1fd88ddc0946320b45a026378e90b5c317eee5ca2b2a7b88237c0cccffb1" id="qq-group" class="qq-group" title="投资交流群"></a>
+            </div>
+            <em>客服热线</em>( 工作日 9:00 - 22:00 )
+            <br />
+            <strong>400-882-5188</strong>
+            <br />
+            <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="iphone-download" title="下载手机app"></a>
+            <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="android-download" title="下载手机app"></a>
+        </div>
+    </div>
+</block>
+
+
