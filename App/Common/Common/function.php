@@ -83,7 +83,7 @@
     //id找pid=id的
     function getPid($id,$tablename="category"){
         $db=M($tablename);
-        $arr=$db->field("id")->where("pid=".$id)->select();
+        $arr=$db->field("id,cat_name")->where("pid=".$id)->select();
         $res="";
         foreach ($arr as $item){
             $res.=intval($item['id']);

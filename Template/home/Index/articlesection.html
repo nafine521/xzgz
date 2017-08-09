@@ -1,0 +1,127 @@
+<extend name="Public/base"/>
+
+
+<!-- 添加一个用于在loginWin 方法中使用的basePath 标识 -->
+<block name="content">
+<!-- 面包屑start -->
+<div class="crumbs">
+    <div class="crumbs-content">
+        <i class="icon-house"></i>
+        <a href="http://www.xiaozhu168.com/">首页</a>
+        <i class="icon-leftarrow"></i>
+        <a href="http://www.xiaozhu168.com/baike/">理财百科</a>
+        <i class="icon-leftarrow"></i>
+        <a href="">
+
+            P2P理财
+        </a>
+    </div>
+</div>
+<!-- 面包屑end -->
+
+<!-- 页面内容start -->
+<div class="help-page clearfix">
+    <!-- 左边导航start -->
+    <div class="help-nav clearfix">
+        <ul class="nav-list" id="nav-list">
+            <volist name="clist" id="v" key="k">
+            <li <if condition="$_GET['id'] eq $v['id']"> class="active"</if> >
+                <a href="{:U('arcticlesection',['id'=>$v.id])}" class="nav_list_a"><i class="icon_bk{$k}"></i>{$v.cat_name}</a>
+            </li>
+            </volist>
+            <!--<li>
+                <a href="http://www.xiaozhu168.com/articlesection-2-1.html" class="nav_list_a2 nav_list_a"><i class="icon_bk2"></i>资讯</a>
+            </li>
+            <li>
+                <a href="http://www.xiaozhu168.com/articlesection-3-1.html" class="nav_list_a"><i class="icon_bk3"></i>网络理财</a>
+            </li>
+            <li>
+                <a href="http://www.xiaozhu168.com/articlesection-4-1.html" class="nav_list_a"><i class="icon_bk4"></i>银行理财</a>
+            </li>
+            <li>
+                <a href="http://www.xiaozhu168.com/articlesection-5-1.html" class="nav_list_a"><i class="icon_bk5"></i>信用卡</a>
+            </li>
+            <li>
+                <a href="http://www.xiaozhu168.com/articlesection-6-1.html" class="nav_list_a"><i class="icon_bk6"></i>贷款</a>
+            </li>
+            <li>
+                <a href="http://www.xiaozhu168.com/articlesection-7-1.html" class="nav_list_a"><i class="icon_bk7"></i>基金</a>-->
+            </li>
+        </ul>
+    </div>
+    <!-- 左边导航end -->
+
+    <!--右侧问答-->
+    <div class="help-content">
+        <div class="xz-widget">
+            <div class="xz-widget-header">
+
+                <h3><em>P2P理财</em></h3>
+            </div>
+            <div class="xz-widget-body">
+                <ul class="question-list">
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-9429.html" target="_blank" class="font_size18 gray3 pt25 block">
+                            汇金公司是什么</a>
+                        <div class="q-answer show">
+                            <p>看财经新闻的时候，经常会出现汇金公司增资，汇金公司减持等等词汇，很多人就好奇，中央汇金公司是？<a class="gray9" href="http://www.xiaozhu168.com/articles/details-9429.html" target="_blank" style="font-size:14px;color:#999999">[更多详情]</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-8429.html" target="_blank" class="font_size18 gray3 pt25 block">
+                            土地储备贷款申请条件</a>
+                        <div class="q-answer show">
+                            <p>1.已取得企（事）业法人资格，已在相关部门办理营业执照并办理年检手续；<a class="gray9" href="http://www.xiaozhu168.com/articles/details-8429.html" target="_blank" style="font-size:14px;color:#999999">[更多详情]</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-8097.html" target="_blank" class="font_size18 gray3 pt25 block">
+                            2017理财知识记账，钱都去哪儿了</a>
+                        <div class="q-answer show">
+                            <p>很多人不愿意使用信用卡，把信用卡视为洪水猛兽，原因之一就是，对不付现金的这种刷卡消费方式不感冒，觉得不是实打实的毛爷爷送出去<a class="gray9" href="http://www.xiaozhu168.com/articles/details-8097.html" target="_blank" style="font-size:14px;color:#999999">[更多详情]</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-7136.html" target="_blank" class="font_size18 gray3 pt25 block">
+                            炒股的这八种病态心理你有没有？</a>
+                        <div class="q-answer show">
+                            <p>股市是一个充满着欲望的大海，每一次涨跌必将引发愤怒和狂啸，远远听去，这些愤怒和狂啸夹杂着痛苦的呼喊以及喜悦的狂欢<a class="gray9" href="http://www.xiaozhu168.com/articles/details-7136.html" target="_blank" style="font-size:14px;color:#999999">[更多详情]</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-6878.html" target="_blank" class="font_size18 gray3 pt25 block">
+                            还在指望房贷打折？放弃吧！</a>
+                        <div class="q-answer show">
+                            <p>过去，根据不动产登记、税收等法律政策的特殊规定，房屋赠与必须缴纳契税、印花税等税费，并且必须办理房屋赠与公证。<a class="gray9" href="http://www.xiaozhu168.com/articles/details-6878.html" target="_blank" style="font-size:14px;color:#999999">[更多详情]</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="xz-widget-footer" style="margin-bottom:20px;">
+                <div class="main_c_list_page">
+                    <div class='main_c_list_page'><a href='javascript:doJumpPage(1);' class='previousPage'></a><a class='mr_a' href='javascript:doJumpPage(1);'>1</a><a class='' href='javascript:doJumpPage(2);'>2</a><a class='' href='javascript:doJumpPage(3);'>3</a><a class='' href='javascript:doJumpPage(4);'>4</a><a class='' href='javascript:doJumpPage(5);'>5</a><a class='' href='javascript:doJumpPage(6);'>6</a><em>...</em><a class='' href='javascript:doJumpPage(153);'>153</a><a href='javascript:doJumpPage(2);' class='nextPage'></a></div></div>
+            </div>
+        </div>
+    </div>
+    <!--右侧问答结束-->
+</div>
+<!-- 页面内容end -->
+</block>
+
+
+<block name="footer_js">
+<script type="text/javascript" src="http://mer.xiaozhu168.com/static/website/js/jquery.xz168fy-1.0.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        var type = "1";
+        if(type!=""){
+            $("#nav-list li:eq("+(type-1)+")").addClass("active");
+        }
+    });
+
+</script>
+
+</block>
+

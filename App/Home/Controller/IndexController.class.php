@@ -84,7 +84,31 @@ class IndexController extends PublicController {
     //百科
     public function baike(){
 
-        $this->setPageInfo('理财百科','产品','丰富的内容',['home/user_info','encyclopedia'],["index_1"]);
+        $this->setPageInfo('理财百科','产品','丰富的内容',['home/user_info','encyclopedia']);
+        $this->display();
+    }
+
+    //资讯列表
+    public function articlesection(){
+
+        $cate_db=M("category");
+        $subSql=$cate_db->field("id")->where(["cat_name"=>"理财百科"])->buildSql();//子查询sql语句
+        $clist=$cate_db->field("id,cat_name")->where(["pid"=>$subSql])->select();
+        $id=I("id") ?I("id"):$clist[0]["id"];
+        //文章列表
+        $arc_db=M("archives");
+        $arclist=$arc_db->where(["cat_id"=>$id])->select();
+
+        $this->assign("arclist",$arclist);
+        $this->assign("clist",$clist);
+        $this->setPageInfo('理财百科','产品','丰富的内容',['home/user_info','help']);
+        $this->display();
+    }
+
+    //资讯详情
+    public function article(){
+
+        $this->setPageInfo('理财百科','产品','丰富的内容',['news_css']);
         $this->display();
     }
 }

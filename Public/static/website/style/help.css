@@ -135,7 +135,7 @@
   height: 18px;
   margin-top: 13px;
 }
-.icon_piggz {
+.icon_bk2 {
   background: url(../images/help/help_icon.png) no-repeat -27px -24px;
   width: 20px;
   height: 15px;
@@ -180,7 +180,7 @@
 .icon_problem.active {
   background: url(../images/help/help_icon.png) no-repeat -1px -1px;
 }
-.icon_piggz.active,.active .icon_piggz{
+.icon_bk2.active,.active .icon_bk2{
   background: url(../images/help/help_icon.png) no-repeat -1px -24px;
 }
 .icon_transactions.active {
@@ -201,43 +201,43 @@
 .icon_noun.active {
   background: url(../images/help/help_icon.png) no-repeat -1px -163px;
 }
-.icon_p2p,.icon_net,.icon_bank,.icon_credit,.icon_borrow,.icon_fund{
+.icon_bk1,.icon_bk3,.icon_bk4,.icon_bk5,.icon_bk6,.icon_bk7{
   background: url(../images/help/help_icon.png) no-repeat -64px -119px;
   width:18px;
   height: 18px;
   margin-top:13px;
 }
-.nav_list_a:hover .icon_p2p,.icon_p2p:hover,.active .icon_p2p{
+.nav_list_a:hover .icon_bk1,.icon_bk1:hover,.active .icon_bk1{
   background-position: -64px -143px;
 }
-.icon_net{
+.icon_bk3{
   background-position: -91px -119px;
 }
-.nav_list_a:hover .icon_net,.icon_net:hover,.active .icon_net{
+.nav_list_a:hover .icon_bk3,.icon_bk3:hover,.active .icon_bk3{
   background-position: -91px -143px;
 }
-.icon_bank{
+.icon_bk4{
   background-position: -118px -119px;
 }
-.nav_list_a:hover .icon_bank,.icon_bank:hover,.active .icon_bank{
+.nav_list_a:hover .icon_bk4,.icon_bk4:hover,.active .icon_bk4{
   background-position: -118px -143px;
 }
-.icon_credit{
+.icon_bk5{
   background-position: -144px -119px;
 }
-.nav_list_a:hover .icon_credit,.icon_credit:hover,.active .icon_credit{
+.nav_list_a:hover .icon_bk5,.icon_bk5:hover,.active .icon_bk5{
   background-position: -144px -143px;
 }
-.icon_borrow{
+.icon_bk6{
   background-position: -169px -119px;
 }
-.nav_list_a:hover .icon_borrow,.icon_borrow:hover,.active .icon_borrow{
+.nav_list_a:hover .icon_bk6,.icon_bk6:hover,.active .icon_bk6{
   background-position: -169px -143px;
 }
-.icon_fund{
+.icon_bk7{
   background-position: -193px -119px;
 }
-.nav_list_a:hover .icon_fund,.icon_fund:hover,.active .icon_fund{
+.nav_list_a:hover .icon_bk7,.icon_bk7:hover,.active .icon_bk7{
   background-position: -193px -143px;
 }
 .helpicon-minus,
