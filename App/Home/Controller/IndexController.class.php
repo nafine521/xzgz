@@ -4,7 +4,7 @@ use Think\Controller;
 class IndexController extends PublicController {
     public function index(){
 
-    	$this->setPageInfo('首页','产品','丰富的内容',['common','icon','login_css','index_1200'],["index_1"]);
+    	$this->setPageInfo('首页','产品','丰富的内容',['login_css','index_1200'],["index_1"]);
         $this->display();
     }
     public function porduct(){
@@ -13,8 +13,21 @@ class IndexController extends PublicController {
     }
 
     public function about_us(){
-    	$display=R("Article/about_us");
-    	
+
+        $db=M("archives");
+        $arclist=$db->field("id,title")->where(["cat_id"=>1])->order("id")->select();
+
+        $id= I("id")? I("id"):$arclist[0]['id'];
+
+        $info=$db->find($id);
+        if(!empty($info['topics_title'])){
+            $piclist=M("photo")->where("aid=".$info['id'])->select();
+            $info['topics']=$piclist;
+        }
+        $this->setPageInfo($info['title'],$info['keyword'],$info['description'],["aboutus-new",'information']);
+        $this->assign("arclist",$arclist);
+        $this->assign("info",$info);
+        $this->display();
     }
 
     public function reg(){
@@ -67,5 +80,11 @@ class IndexController extends PublicController {
         }
         //if()$this->ajaxReturn([6]);//预留短信接口发送失败或写入数据库失败。。因为无法对比
         $this->ajaxReturn([1]);
+    }
+    //百科
+    public function baike(){
+
+        $this->setPageInfo('理财百科','产品','丰富的内容',['home/user_info','encyclopedia'],["index_1"]);
+        $this->display();
     }
 }

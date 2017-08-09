@@ -26,9 +26,17 @@
 <div class="pd-20">
 	<form action="" method="post" class="form form-horizontal" id="form-news-add">
 		<div class="row cl">
-			<label class="form-label col-2"><span class="c-red">*</span>新闻标题：</label>
+			<label class="form-label col-2"><span class="c-red">*</span>文章标题：</label>
 			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info['title']}" placeholder="请输入新闻标题" name="title" datatype="*" nullmsg="请输入新闻标题">
+				<input type="text" class="input-text" value="{$info['title']}" placeholder="请输入标题" name="title" datatype="*" nullmsg="请输入文章标题">
+			</div>
+			<div class="col-3"> </div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-2">专题标题：</label>
+			<div class="formControls col-7">
+				<input type="text" class="input-text" value="{$info['topics_title']}" placeholder="不填则无专题" name="topics_title" >
 			</div>
 			<div class="col-3"> </div>
 		</div>
@@ -73,10 +81,10 @@
 
 		</div>
 		<div class="row cl">
-			<label class="form-label col-2"><span class="c-red">*</span>品牌缩略图：</label>
+			<label class="form-label col-2">缩略图：</label>
 			<div class="formControls col-6"> 
-			        <img id="thumb_url" src='__ROOT__<if condition="$info['img']">{$info.img}<else/>/Public/Admin/nopic.jpg</if>' style="height:100px;width:150">
-			  	<input type="hidden"  id="picurl" name="litpic" value="{$info.litpic}" datatype="*" nullmsg="请选择缩略图"/>
+			        <img id="thumb_url" src='__ROOT__<if condition="$info['litpic']">{$info.litpic}<else/>/Public/Admin/nopic.jpg</if>' style="height:100px;width:150" >
+			  	<input type="hidden"  id="picurl" name="litpic" value="{$info.litpic}" />
 
 			  	<button class="btn btn-success" id="image"  type="button" >选择图片</button>
 			</div>

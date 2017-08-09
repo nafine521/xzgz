@@ -52,7 +52,7 @@
                         <a href="javascript:loginWin();" class="darker">登录</a>
                     </li>
                     <li>
-                        <a href="http://www.xiaozhu168.com/reg.html" class="red">注册</a>
+                        <a href="{:U('Index/reg')}" class="red">注册</a>
                     </li>
                     <!-- 未登录 end -->
 
@@ -121,58 +121,58 @@
 
 
                 <volist name="nav_list['顶部']" id="v">
-                    <li  <eq name="i" value="count($v)"> class="last-li" </eq> >
+                    <li  >
                     <a href="{$v[nav_link]}" <eq name="v.is_open_new" value="1" > target="_blank" </eq>>{$v[nav_name]}</a>
                 </li>
                 </volist>
-                <!--<li class="last-li">-->
-                    <!--&lt;!&ndash; 掌上小猪 start &ndash;&gt;-->
-                    <!--<div class="xiaozhu-hand">-->
-                        <!--<i class="icon-phone1"></i>-->
-                        <!--掌上小猪-->
-                        <!--<i class="icon-down-green"></i>-->
+                <li class="last-li">
+                    <!-- 掌上小猪 start -->
+                    <div class="xiaozhu-hand">
+                        <i class="icon-phone1"></i>
+                        掌上小猪
+                        <i class="icon-down-green"></i>
 
-                        <!--<div class="xiaozhu-hand-box">-->
-                            <!--<div class="xiaozhu-hand-qrcode clearfix">-->
-                                <!--<i class="icon-pointup-white"></i>-->
-                                <!--<img src="__PUBLIC__website/images/qrcode.png" />-->
-                                <!--<p>-->
-                                    <!--掌上投资，更加精彩<br />-->
-                                    <!--<span class="green">下载小猪罐子客户端</span><br />-->
-                                    <!--<a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">-->
-                                    <!--</a>-->
-                                    <!--<a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">-->
-                                    <!--</a>-->
-                                <!--</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash; 掌上小猪 end &ndash;&gt;-->
+                        <div class="xiaozhu-hand-box">
+                            <div class="xiaozhu-hand-qrcode clearfix">
+                                <i class="icon-pointup-white"></i>
+                                <img src="__PUBLIC__website/images/qrcode.png" />
+                                <p>
+                                    掌上投资，更加精彩<br />
+                                    <span class="green">下载小猪罐子客户端</span><br />
+                                    <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">
+                                    </a>
+                                    <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 掌上小猪 end -->
 
-                    <!--&lt;!&ndash; 新浪微博 start &ndash;&gt;-->
-                    <!--<a href="javascript:;" class="tencent-wechat">-->
-                        <!--<em class="qrcode-hover-border"></em>-->
-                        <!--<div class="qrcode-box">-->
-                            <!--<div class="tencent-wechat-content qrcode-content">-->
-                                <!--<span class="wechat-qrcode"></span>-->
-                                <!--扫描关注<span class="green">微信</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                    <!--&lt;!&ndash; 新浪微博 end &ndash;&gt;-->
+                    <!-- 新浪微博 start -->
+                    <a href="javascript:;" class="tencent-wechat">
+                        <em class="qrcode-hover-border"></em>
+                        <div class="qrcode-box">
+                            <div class="tencent-wechat-content qrcode-content">
+                                <span class="wechat-qrcode"></span>
+                                扫描关注<span class="green">微信</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 新浪微博 end -->
 
-                    <!--&lt;!&ndash; 微信 start &ndash;&gt;-->
-                    <!--<a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">-->
-                        <!--<em class="qrcode-hover-border"></em>-->
-                        <!--<div class="qrcode-box">-->
-                            <!--<div class="weibo-qrcode-content qrcode-content">-->
-                                <!--<span class="weibo-qrcode"></span>-->
-                                <!--扫描关注<span class="red">微博</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                    <!--&lt;!&ndash; 微信 end &ndash;&gt;-->
-                <!--</li>-->
+                    <!-- 微信 start -->
+                    <a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">
+                        <em class="qrcode-hover-border"></em>
+                        <div class="qrcode-box">
+                            <div class="weibo-qrcode-content qrcode-content">
+                                <span class="weibo-qrcode"></span>
+                                扫描关注<span class="red">微博</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 微信 end -->
+                </li>
             </ul>
             <!-- 用户登录状态 end -->
 
@@ -187,24 +187,13 @@
             <!-- 菜单 start -->
             <div class="nav-content">
                 <ul class="common-nav-list">
-                    <li class="active">
-                        <a href="http://www.xiaozhu168.com/">首页</a>
-                    </li>
-                    <li>
-                        <a href="http://www.xiaozhu168.com/pool-13-0-0-0-0-1-1.html">我要投资</a>
-                    </li>
-                    <li>
-                        <a href="http://www.xiaozhu168.com/companyProfile.html">信息披露</a>
-                    </li>
-                    <li>
-                        <a href="http://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a>
-                    </li>
-                    <li>
-                        <a href="http://www.xiaozhu168.com/mall/">小猪商城</a>
-                    </li>
-                    <li>
-                        <a href="http://www.xiaozhu168.com/aboutus.html">了解小猪</a>
-                    </li>
+
+
+                    <volist name="nav_list['中间']" id="v">
+                        <li <if condition="$v.nav_link eq $action or $v.nav_link eq '/'"> class="active"</if> >
+                            <a href="{$v[nav_link]}" <eq name="v.is_open_new" value="1" > target="_blank" </eq> >{$v[nav_name]}</a>
+                        </li>
+                    </volist>
                 </ul>
             </div>
             <!-- 菜单 end -->
@@ -223,18 +212,7 @@
 <div style="display: block; clear: both;"></div>
 <block name="footer">
     <div class="xz-bottom">
-        <!-- <div class="xz-widget">
-            <div class="xz-widget-header">
-                <div class="to-top1">
-                    <span class="top-xiaozhu1"></span>
-                    <span class="top-xiaozhu2"></span>
-                    <i class="to-top-icon1"></i>
-                    <i class="to-top-icon2"></i>
-                </div>
-                <div class="bottom-ad">
-                    <p>开启轻松、安全、稳健的理财之旅吧！<a href="javascript:;">立即注册去投资</a></p>
-                </div>
-            </div> -->
+
 
         <div class="xz-widget-body">
             <table class="bottom-left table">
@@ -337,7 +315,7 @@
 <script type="text/javascript" src="__PUBLIC__website/js/lib/jquery-1.8.3.min.js"></script>
 
 <script type="text/javascript" src="__PUBLIC__website/js/common.js?v=1.3"></script>
-<block name="footer_js">
+
 <script type="text/javascript" src="__PUBLIC__website/js/jquery.poshytip.min.js"></script>
 <script type="text/javascript">
     $(function () {
@@ -390,15 +368,7 @@
 
 
 </script>
-
-<noscript><p><img src="https://piwik.xiaozhu168.com/piwik.php?idsite=1" style="border:0;display: none;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-<noscript><img src="//stats.ipinyou.com/adv.gif?a=wQ..Bt1tXGnc9XDNzd63VYjb00&e=" style="display:none;"/></noscript>
-
-
-
-
-
+<block name="footer_js">
 <!-- 底部end -->
 <script type="text/javascript" src="__PUBLIC__website/js/elemInScreen.js"></script>
 <?php foreach($js as $k => $v): ?>
@@ -455,7 +425,7 @@
             var  top = (_h - 354) / 2;
 
             var html =  '<div id="active_open" style="width: 492px; height: 354px; position: fixed; z-index:9999; top:'+top+'px;left:'+left+'px;">'+
-                '<a href="{$_SERVER['SERVER_NAME']}news/details-365.html"><img src="'+ resourcesPath +'images/492_354.png"></a>'+
+                '<a href="{$_SERVER['SERVER_NAME']}/news/details-365.html"><img src="'+ resourcesPath +'images/492_354.png"></a>'+
             '<a href="javascript:active_close();" style="display: block; position: absolute; top:0; left:436px; width: 40px; height: 40px; background:url('+ resourcesPath +'images/492_354.png) no-repeat; background-position: -436px 0;"></a></div>';
             $('.popout-shadow').after(html);
         }

@@ -13,8 +13,7 @@ class ArticleController extends BaseController {
     public function article_add(){
         $db=M('archives');
         if(IS_POST){
-
-             $data=I();
+             $data=I("post.");
              if($data['id']>0){
                 $oldpic=$db->field('litpic')->find($data['id']);
                 if($oldpic==$data['litpic']){

@@ -1,0 +1,648 @@
+<!-- 添加一个用于在loginWin 方法中使用的basePath 标识 -->
+<extend name="Public/base" />
+<block name="content">
+<div class="encyclopedia-content clearfix">
+
+    <!-- 面包屑 start -->
+    <div class="crumbs">
+        <div class="crumbs-content">
+            <i class="icon-house"></i>
+            <a href="/">首页</a>
+            <i class="icon-leftarrow"></i>
+            <a href="{:U('baike')}">理财百科</a>
+        </div>
+    </div>
+    <!-- 面包屑 end -->
+
+    <!-- 左侧内容 start -->
+    <div class="ency-left">
+
+        <!-- banner start -->
+        <div class="ency-banner">
+            <div class="banner-tab">
+                <ul class="banner-content-s">
+                    <li class="active">
+                        <a href="http://www.xiaozhu168.com/articles/details-10680.html">
+                            <em class="news-pointer"><i class="icon-leftarrow-green"></i></em>
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>注意：住房公积金提取要满足这些...</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="http://www.xiaozhu168.com/articles/details-10679.html">
+                            <em class="news-pointer"><i class="icon-leftarrow-green"></i></em>
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>【提示】二套住房公积金贷款首付...</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="http://www.xiaozhu168.com/articles/details-10678.html">
+                            <em class="news-pointer"><i class="icon-leftarrow-green"></i></em>
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>北京提取住房公积金的流程和材料...</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="http://www.xiaozhu168.com/articles/details-10677.html">
+                            <em class="news-pointer"><i class="icon-leftarrow-green"></i></em>
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>住房公积金各项业务实现 全程零...</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="http://www.xiaozhu168.com/articles/details-10676.html">
+                            <em class="news-pointer"><i class="icon-leftarrow-green"></i></em>
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>住房公积金贷款如何申请到高额度...</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="http://www.xiaozhu168.com/articles/details-10675.html">
+                            <em class="news-pointer"><i class="icon-leftarrow-green"></i></em>
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>府谷要买房的注意！住房公积金贷...</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="pre-new">
+                    <i class="icon-up-white"></i>
+                </div>
+                <div class="next-new">
+                    <i class="icon-down-white"></i>
+                </div>
+
+            </div>
+
+            <div class="banner-content">
+                <ol>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10680.html">
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>注意：住房公积金提取要满足这些条件</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10679.html">
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>【提示】二套住房公积金贷款首付比例提至40%</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10678.html">
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>北京提取住房公积金的流程和材料将进一步简化</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10677.html">
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>住房公积金各项业务实现 全程零收费</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10676.html">
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>住房公积金贷款如何申请到高额度？</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10675.html">
+                            <img src="http://mer.xiaozhu168.com/static/website/images/personal_center/pig_nothing.png" />
+                            <p>府谷要买房的注意！住房公积金贷款政策又有新变化!</p>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- banner end -->
+
+        <div class="ency-news clearfix">
+
+            <!-- P2P理财 start -->
+            <div class="news-panel">
+                <h3>
+                    P2P理财
+                    <a href="http://www.xiaozhu168.com/articlesection-1-1.html" rel="nofollow">more</a>
+                </h3>
+                <a class="hotest-news" href="http://www.xiaozhu168.com/articles/details-9429.html">
+                    <img src="http://mer.xiaozhu168.com/static/website/images/aboutus/001.jpg" />
+                    <h4>
+                        汇金公司是什么</h4>
+                    <p>
+                        看财经新闻的时候，经常会出现汇金公司增资，汇金公司...</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-8429.html">
+                            土地储备贷款申请条件</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-8097.html">
+                            2017理财知识记账，钱都去哪儿了</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-7136.html">
+                            炒股的这八种病态心理你有没有？</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-6878.html">
+                            还在指望房贷打折？放弃吧！</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4695.html">
+                            外汇交易系统到底是简单好还是复杂好？</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- P2P理财 end -->
+
+            <!-- 网络理财 start -->
+            <div class="news-panel">
+                <h3>
+                    网络理财
+                    <a href="http://www.xiaozhu168.com/articlesection-3-1.html" rel="nofollow">more</a>
+                </h3>
+                <a class="hotest-news" href="http://www.xiaozhu168.com/articles/details-10315.html">
+                    <img src="http://mer.xiaozhu168.com/static/website/images/aboutus/002.jpg" />
+                    <h4>
+                        爱贷网app</h4>
+                    <p>
+                        爱贷网app软件介绍
+                        爱贷网app是国内首批P2P...</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10086.html">
+                            e融所平台联系方式</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10080.html">
+                            壹佰金融平台上获得的收益合法吗？</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10079.html">
+                            淘淘金平台上借款怎么操作？</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10018.html">
+                            来财街上投资为什么要实名认证？</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-10003.html">
+                            国泰惠民益贷平台普惠保</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 网络理财 end -->
+
+            <!-- 银行理财 start -->
+            <div class="news-panel">
+                <h3>
+                    银行理财
+                    <a href="http://www.xiaozhu168.com/articlesection-4-1.html" rel="nofollow">more</a>
+                </h3>
+                <a class="hotest-news" href="http://www.xiaozhu168.com/articles/details-4068.html">
+                    <img src="http://mer.xiaozhu168.com/static/website/images/aboutus/003.jpg" />
+                    <h4>
+                        邮储银行三月外币协议储蓄，高利率，高收益...</h4>
+                    <p>
+                        外币协议储蓄特点
+
+                        安全可靠&amp;#10004...</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4010.html">
+                            建行私人银行2017-02-15在售投资理财...</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-3941.html">
+                            建设银行网上银行专享理财产品，年化4.60%</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-3940.html">
+                            淮安提高农行信用卡固定额度需要什么条件</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-3939.html">
+                            上海农商行官网，上海农商行客服电话</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-3938.html">
+                            青岛银行存款利率上浮20% 保留5年定期</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 银行理财 end -->
+
+            <!-- 信用卡 start -->
+            <div class="news-panel">
+                <h3>
+                    信用卡
+                    <a href="http://www.xiaozhu168.com/articlesection-5-1.html" rel="nofollow">more</a>
+                </h3>
+                <a class="hotest-news" href="http://www.xiaozhu168.com/articles/details-4574.html">
+                    <img src="http://mer.xiaozhu168.com/static/website/images/aboutus/004.jpg" />
+                    <h4>
+                        交通银行信用卡普卡怎么升金卡</h4>
+                    <p>
+                        交通银行信用卡普卡怎么升金卡?金卡或者白金卡，都是...</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4059.html">
+                            小额信用卡申请渠道2017</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4044.html">
+                            信用卡申请表格怎么填写能提高审批成功率</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4043.html">
+                            信用卡按时还款，为什么还是有不良记录？</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4042.html">
+                            信用卡欠款未还，代价惨重！</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4041.html">
+                            信用卡怎么养？普通人几张合适？</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 信用卡 end -->
+
+            <!-- 贷款 start -->
+            <div class="news-panel">
+                <h3>
+                    贷款
+                    <a href="http://www.xiaozhu168.com/articlesection-6-1.html" rel="nofollow">more</a>
+                </h3>
+                <a class="hotest-news" href="http://www.xiaozhu168.com/articles/details-4594.html">
+                    <img src="http://mer.xiaozhu168.com/static/website/images/aboutus/005.jpg" />
+                    <h4>
+                        8类学生能申请助学贷款 你身列其中吗</h4>
+                    <p>
+                        时下，距离高考已进入倒计时阶段，一些贫困学生的家长...</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4593.html">
+                            民营银行试点或扩至中西部地区</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4591.html">
+                            2017信用卡取现渠道有哪些</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4590.html">
+                            中国制造2025明确9项战略任务</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4129.html">
+                            正确认识无抵押贷款，无抵押贷款常见的两个错误...</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4118.html">
+                            小微企业可办理哪些贷款</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 贷款 end -->
+
+            <!-- 基金 start -->
+            <div class="news-panel">
+                <h3>
+                    基金
+                    <a href="http://www.xiaozhu168.com/articlesection-7-1.html" rel="nofollow">more</a>
+                </h3>
+                <a class="hotest-news" href="http://www.xiaozhu168.com/articles/details-4578.html">
+                    <img src="http://mer.xiaozhu168.com/static/website/images/aboutus/006.jpg" />
+                    <h4>
+                        广发天天红货币基金购买及赎回规则</h4>
+                    <p>
+                        广发天天红基金被列为货币基金的里面，不像保本基金的...</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4571.html">
+                            股票交易关于bias指标使用技巧详解</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4570.html">
+                            偏股型基金仓位上升 加仓三大领域</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4569.html">
+                            军工领域迎来极好的行情 提早布局坐等收益</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4433.html">
+                            越南货币兑换方式和攻略</a>
+                    </li>
+                    <li>
+                        <a href="http://www.xiaozhu168.com/articles/details-4430.html">
+                            货币政策对证券市场的影响有哪些</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 基金 end -->
+
+        </div>
+
+    </div>
+    <!-- 左侧内容 end -->
+
+    <!-- 右侧内容 start -->
+    <div class="ency-right">
+
+        <div class="news-tags clearfix">
+            <a class="tag-p2p" href="http://www.xiaozhu168.com/articlesection-1-1.html">P2P理财</a>
+            <a class="tag-net" href="http://www.xiaozhu168.com/articlesection-3-1.html">网络理财</a>
+            <a class="tag-fund" href="http://www.xiaozhu168.com/articlesection-7-1.html">基金</a>
+            <a class="tag-loan" href="http://www.xiaozhu168.com/articlesection-6-1.html">贷款</a>
+            <a class="tag-credit" href="http://www.xiaozhu168.com/articlesection-5-1.html">信用卡</a>
+            <a class="tag-bank" href="http://www.xiaozhu168.com/articlesection-4-1.html">银行理财</a>
+            <a class="tag-news" href="http://www.xiaozhu168.com/articlesection-2-1.html">资讯 </a>
+        </div>
+
+        <div class="hot-news">
+            <h3>热文推荐</h3>
+            <ul>
+                <li>
+                    <em class="green-bg">1</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-9154.html">
+                        网贷平台资金存管推进速度不及预期</a>
+                </li>
+                <li>
+                    <em class="green-bg">2</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-963.html">
+                        传统银行谋求转型升级 瞄准O2O模式</a>
+                </li>
+                <li>
+                    <em class="green-bg">3</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-10476.html">
+                        住房公积金购房贷款流程及手续！</a>
+                </li>
+                <li>
+                    <em>4</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-6436.html">
+                        信用卡额度明明可以拿更高，问题出在哪...</a>
+                </li>
+                <li>
+                    <em>5</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-3652.html">
+                        央行：在岸人民币平稳运行 未破7</a>
+                </li>
+                <li>
+                    <em>6</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-293.html">
+                        P2P投资理财，提升生活质量的最佳选...</a>
+                </li>
+                <li>
+                    <em>7</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-391.html">
+                        华夏基金定投推荐哪些好的基金</a>
+                </li>
+                <li>
+                    <em>8</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-7987.html">
+                        公积金有七种用法？看看你知道几种！</a>
+                </li>
+                <li>
+                    <em>9</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-10161.html">
+                        怎么把一张普通信用卡轻松提升到5万额...</a>
+                </li>
+                <li>
+                    <em>10</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-2239.html">
+                        T+0到账手续费0.5%！还有免手续...</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="https://www.xiaozhu168.com/toAnniversaryActive" class="avt-banner">
+            <img src="https://www.xiaozhu168.com/upload/images/banner/huodongrenwu%20%20470x200.png" />
+        </a>
+
+        <div class="related-news">
+            <h3>相关文章推荐</h3>
+            <ul>
+                <li>
+                    <em class="green-bg">1</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-1714.html">
+                        建行信用卡多久能申请下来?</a>
+                </li>
+                <li>
+                    <em class="green-bg">2</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-1127.html">
+                        互联网消费金融成新蓝海</a>
+                </li>
+                <li>
+                    <em class="green-bg">3</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-3997.html">
+                        互联网金融到底包括什么。</a>
+                </li>
+                <li>
+                    <em>4</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-9604.html">
+                        p2p理财大胜银行理财</a>
+                </li>
+                <li>
+                    <em>5</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-875.html">
+                        双降108款银行理财产品收益低于3%...</a>
+                </li>
+                <li>
+                    <em>6</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-5704.html">
+                        信用卡额度低？三步带你完成招行信用卡...</a>
+                </li>
+                <li>
+                    <em>7</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-6214.html">
+                        美元不行了？新兴市场货币迎十年最佳开...</a>
+                </li>
+                <li>
+                    <em>8</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-6316.html">
+                        炒股的三个阶段</a>
+                </li>
+                <li>
+                    <em>9</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-2064.html">
+                        如何正确选择P2P理财的还款方式</a>
+                </li>
+                <li>
+                    <em>10</em>
+                    <a href="http://www.xiaozhu168.com/articles/details-4707.html">
+                        个人公积金账户异地转入</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 右侧内容 end -->
+</div>
+</block>
+
+<block name="footer_js">
+
+
+
+
+<script type="text/javascript">
+
+    (function( $ ){
+        // banner构造函数
+        function XZBanner( args ){
+            var elem = this.elem = $(args.elem);
+            var way = this.way = args.way || 'top';
+            this.length = elem.children().length;
+            var child = elem.children().first();
+            var type = way === 'top' ? 'outerHeight' : 'outerWidth';
+            if( way === 'top' ){
+                this.pDest = child[type]()
+                    + ( parseInt( child.css( 'marginTop' ) ) || 0 )
+                    + ( parseInt( child.css( 'marginBottom' ) ) || 0 );
+            }else{
+                this.pDest = child[type]()
+                    + ( parseInt( child.css( 'marginLeft' ) ) || 0 )
+                    + ( parseInt( child.css( 'marginRight' ) ) || 0 );
+            }
+        }
+
+        XZBanner.prototype = {
+            // 走到指定位置
+            toStep : function( step ){
+                var _this = this;
+                var now = this.now;
+                step = Math.abs( +step ) % this.length;
+                this.now = step;
+                if( now !== this.now ){
+                    this.beforeMove();
+                    move( this , this.getDestination() , function(){
+                        _this.afterMove();
+                    });
+                }
+            },
+
+            // 上一步
+            prev : function(){
+                var now = this.now - 1;
+                this.toStep( now < 0 ? this.length - 1 : now );
+            },
+
+            // 下一步
+            next : function(){
+                this.toStep( this.now + 1 );
+            },
+
+            // 移动之前(实例实现)
+            beforeMove : function(){},
+
+            // 移动之后(实例实现)
+            afterMove : function(){},
+
+            // 获取运动参数(实例实现)
+            getDestination : function(){}
+
+        };
+
+        // 移动
+        function move( banner , moveArgs , fn ){
+            fn = fn || function(){};
+            var elem = banner.elem;
+            elem.stop().animate( moveArgs.move , moveArgs.time , function(){
+                fn.call( banner );
+            });
+        }
+
+        // 扩展xzBanner到window对象
+        extend( 'xzBanner' , function( args ){
+            return new XZBanner( args );
+        });
+
+    })( window.jQuery );
+
+    $(function(){
+        var timer;
+        // 右边banner
+        var bannerRight = xzBanner({
+            elem : '.banner-content-s'
+        });
+
+        // 左边banner
+        var bannerLeft = xzBanner({
+            elem : '.banner-content ol',
+            way : 'left'
+        });
+
+        // 移动之前
+        bannerRight.beforeMove = function(){
+            var now = this.now;
+            var list = this.elem.find( 'li' );
+            list.removeClass( 'active' );
+            list.eq( now ).addClass( 'active' );
+            bannerLeft.toStep( now );
+        }
+
+        // 移动之后
+        bannerRight.afterMove = function(){
+            var _this = this;
+            clearTimeout( timer );
+            // 4秒到下一张
+            timer = setTimeout(function(){
+                _this.next();
+            } , 4000 );
+        }
+
+        // 左边banner获取运动参数
+        bannerLeft.getDestination = function(){
+            var dest = -this.now * this.pDest;
+            var moveArgs = { move : {} , time : 600 };
+            moveArgs.move[this.way] = dest;
+            return moveArgs;
+        }
+
+        // 右边banner获取运动参数
+        bannerRight.getDestination = function(){
+            var dest = -this.now * this.pDest;
+            var moveArgs = { move : {} , time : 300 };
+            var h = Math.round( $('.banner-tab').height() / this.pDest ) * this.pDest;
+            var height = this.elem.height();
+            var temp = 0;
+            while( height + dest + temp < h ){
+                temp += this.pDest;
+            }
+            moveArgs.move[this.way] = dest + temp;
+            return moveArgs;
+        }
+
+        // 上一张
+        $('.pre-new').click(function(){
+            clearTimeout( timer );
+            bannerRight.prev();
+        });
+
+        // 下一张
+        $('.next-new').click(function(){
+            clearTimeout( timer );
+            bannerRight.next();
+        });
+
+        // 走到第一张
+        bannerRight.toStep( 0 );
+    });
+
+</script>
+</block>

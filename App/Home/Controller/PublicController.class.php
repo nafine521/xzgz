@@ -3,10 +3,10 @@ namespace Home\Controller;
 use Think\Controller;
 class PublicController extends Controller {
     static $user_info=[];
-
     public function _initialize(){
-    	$controller=CONTROLLER_NAME;
-    	$this->assign("controller",$controller);
+        //高亮显示
+        $action = CONTROLLER_NAME."/".ACTION_NAME;
+        $this->assign('action',$action);
     	$db=M("nav");
     	$where["is_show"]=1;
     	$nav_list=$db->where($where)->order("nav_sort")->select();

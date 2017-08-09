@@ -116,15 +116,7 @@ CREATE TABLE `xz_archives`(
   body text COMMENT '文章内容'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='文章表';
 
--- 专题页面表
-CREATE TABLE `xz_specil`(
-  id int UNSIGNED AUTO_INCREMENT PRIMARY KEY COMMENT '专题id',
-  cat_id int UNSIGNED NOT NULL DEFAULT '0' COMMENT '所属栏目',
-  title char(100) NOT NULL DEFAULT '' COMMENT '专题标题',
-  litpic CHAR(100) NOT NULL DEFAULT '' COMMENT '缩略图',
-  description tinytext COMMENT '描述',
-  body text COMMENT '文章内容'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='专题表';
+
 
 -- 相册表
 CREATE TABLE  `xz_photo`(
@@ -313,3 +305,14 @@ CREATE TABLE `xz_smscod` (
   `expression` INT NOT NULL DEFAULT '0' COMMENT '过期时间',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8  COMMENT='短信验证表';
+
+-- 专题页面表
+CREATE TABLE `xz_specil`(
+  id int UNSIGNED AUTO_INCREMENT PRIMARY KEY COMMENT '专题id',
+  cat_id int UNSIGNED NOT NULL DEFAULT '0' COMMENT '所属栏目',
+  aid int UNSIGNED NOT NULL DEFAULT '0' COMMENT '所属文章',
+  title char(100) NOT NULL DEFAULT '' COMMENT '专题标题',
+  litpic CHAR(100) NOT NULL DEFAULT '' COMMENT '缩略图',
+  description tinytext COMMENT '描述',
+  body text COMMENT '文章内容'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='专题表';

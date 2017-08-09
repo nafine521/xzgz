@@ -27,7 +27,7 @@
 	<form action="" method="post" class="form form-horizontal" id="form-product-add">
 		<input type="hidden" name="id" value="{$info.id}">
 		<div class="row cl">
-			<label class="form-label col-2"><span class="c-red">*</span>所属产品,文章：</label>
+			<label class="form-label col-2"><span class="c-red">*</span>所属：</label>
 			<div class="formControls col-2"> <span class="select-box">
 				<select name="pro_id" class="select" datatype="*" nullmsg="请选择">
 					<option value="">全部</option>
@@ -39,7 +39,22 @@
 				</span> </div>
             <div class="col-3"> </div>
 		</div>
+		<div class="row cl">
+			<label class="form-label col-2">图片名称：</label>
+			<div class="formControls col-6">
+				<input type="text" class="input-text" value="{$info.imgtitle}"  placeholder=""  name="imgtitle" >
+			</div>
+			<div class="col-3"> </div>
+		</div>
         <div class="row cl">
+			<div class="row cl">
+				<label class="form-label col-2">图片链接：</label>
+				<div class="formControls col-6">
+					<input type="text" class="input-text" value="{$info.img_link}"  placeholder=""  name="img_link" >
+				</div>
+				<div class="col-3"> </div>
+			</div>
+			<div class="row cl">
 
             <label class="form-label col-2">排序：</label>
             <div class="formControls col-3">
@@ -96,8 +111,8 @@ $(function(){
                 setTimeout(function () {
                     $.Hidemsg();
                     var index = parent.layer.getFrameIndex(window.name);//获取当前页面的索引
-                    //parent.location.reload();//刷新父窗口
-                    //parent.layer.close(index);//关闭当前窗口
+                    parent.location.reload();//刷新父窗口
+                    parent.layer.close(index);//关闭当前窗口
                 },1000)
             }
         }

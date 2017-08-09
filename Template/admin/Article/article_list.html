@@ -48,8 +48,8 @@
 					<td><input type="checkbox" value="{$v['id']}" name="opt_id"></td>
 					<td>{$v['id']}</td>
 					<td width="200">
-						<label class="form-label col-3">&nbsp;</label>
-						<div class="formControls col-5"  > <span class="select-box" >
+
+						<div class="formControls col-7"  > <span class="select-box" >
 						<select size="1" onblur="saveVal(this,{$v.id},'cat_id')" style="width:auto;border:none;">
 							
 							<volist name="category" id="vo">
@@ -67,7 +67,7 @@
 						<if condition="$v['refer'] eq 1">
 							<span class="label label-success radius">已推荐</span>
 							<else/>
-							<span class="label label-defaunt radius">不推荐</span>
+							<span class="label label-defaunt radius">正常</span>
 							</if>
 					</td>
 					<td class="td-manage f-14 ">
