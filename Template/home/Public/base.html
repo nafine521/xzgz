@@ -118,63 +118,61 @@
 
                     <!-- 已登录 end -->
                 </if>
-                <li>
-                    <a href="javascript:loginWin('{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}?{$_SERVER['QUERY_STRING']}');">充值</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/ask/" target="_blank">小猪问答</a>
-                </li>
-                <li class="last-li">
-                    <!-- 掌上小猪 start -->
-                    <div class="xiaozhu-hand">
-                        <i class="icon-phone1"></i>
-                        掌上小猪
-                        <i class="icon-down-green"></i>
 
-                        <div class="xiaozhu-hand-box">
-                            <div class="xiaozhu-hand-qrcode clearfix">
-                                <i class="icon-pointup-white"></i>
-                                <img src="__PUBLIC__website/images/qrcode.png" />
-                                <p>
-                                    掌上投资，更加精彩<br />
-                                    <span class="green">下载小猪罐子客户端</span><br />
-                                    <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">
-                                    </a>
-                                    <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 掌上小猪 end -->
 
-                    <!-- 新浪微博 start -->
-                    <a href="javascript:;" class="tencent-wechat">
-                        <em class="qrcode-hover-border"></em>
-                        <div class="qrcode-box">
-                            <div class="tencent-wechat-content qrcode-content">
-                                <span class="wechat-qrcode"></span>
-                                扫描关注<span class="green">微信</span>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- 新浪微博 end -->
-
-                    <!-- 微信 start -->
-                    <a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">
-                        <em class="qrcode-hover-border"></em>
-                        <div class="qrcode-box">
-                            <div class="weibo-qrcode-content qrcode-content">
-                                <span class="weibo-qrcode"></span>
-                                扫描关注<span class="red">微博</span>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- 微信 end -->
+                <volist name="nav_list['顶部']" id="v">
+                    <li  <eq name="i" value="count($v)"> class="last-li" </eq> >
+                    <a href="{$v[nav_link]}" <eq name="v.is_open_new" value="1" > target="_blank" </eq>>{$v[nav_name]}</a>
                 </li>
+                </volist>
+                <!--<li class="last-li">-->
+                    <!--&lt;!&ndash; 掌上小猪 start &ndash;&gt;-->
+                    <!--<div class="xiaozhu-hand">-->
+                        <!--<i class="icon-phone1"></i>-->
+                        <!--掌上小猪-->
+                        <!--<i class="icon-down-green"></i>-->
+
+                        <!--<div class="xiaozhu-hand-box">-->
+                            <!--<div class="xiaozhu-hand-qrcode clearfix">-->
+                                <!--<i class="icon-pointup-white"></i>-->
+                                <!--<img src="__PUBLIC__website/images/qrcode.png" />-->
+                                <!--<p>-->
+                                    <!--掌上投资，更加精彩<br />-->
+                                    <!--<span class="green">下载小猪罐子客户端</span><br />-->
+                                    <!--<a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">-->
+                                    <!--</a>-->
+                                    <!--<a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">-->
+                                    <!--</a>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; 掌上小猪 end &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; 新浪微博 start &ndash;&gt;-->
+                    <!--<a href="javascript:;" class="tencent-wechat">-->
+                        <!--<em class="qrcode-hover-border"></em>-->
+                        <!--<div class="qrcode-box">-->
+                            <!--<div class="tencent-wechat-content qrcode-content">-->
+                                <!--<span class="wechat-qrcode"></span>-->
+                                <!--扫描关注<span class="green">微信</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--&lt;!&ndash; 新浪微博 end &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; 微信 start &ndash;&gt;-->
+                    <!--<a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">-->
+                        <!--<em class="qrcode-hover-border"></em>-->
+                        <!--<div class="qrcode-box">-->
+                            <!--<div class="weibo-qrcode-content qrcode-content">-->
+                                <!--<span class="weibo-qrcode"></span>-->
+                                <!--扫描关注<span class="red">微博</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--&lt;!&ndash; 微信 end &ndash;&gt;-->
+                <!--</li>-->
             </ul>
             <!-- 用户登录状态 end -->
 
@@ -299,7 +297,7 @@
                         地址：深圳市南山区深南大道9966号威盛科技大厦7楼
                     </div>
                     <div class="float-r">
-                        <a key ="558ab0b7efbfb02e2a186fda" style="background:none;margin-right:40px;" class="aptitude-1" target="_blank" logo_size="83x30"  logo_type="business"  href="http://www.anquan.org" ><script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script></a>
+                        <a key ="558ab0b7efbfb02e2a186fda" style="background:none;margin-right:40px;" class="aptitude-1" target="_blank" logo_size="83x30"  logo_type="business"  href="http://www.anquan.org" ><!--script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script--></a>
                         <a id='___szfw_logo___' style="margin-right:78px;" href='https://credit.szfw.org/CX20160229013712570171.html' target='_blank'><img src='https://mer.xiaozhu168.com/static/website/images/cert.png' width="112" border='0' /></a>
                         <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" class="aptitude-1" title="工业和信息化部" target="_blank"></a>
                         <a href="http://szcert.ebs.org.cn/ebc298c1-8dbf-4784-a88c-5c62cb2d9461" class="aptitude-2" title="深圳市网络经营者信息公示" target="_blank"></a>

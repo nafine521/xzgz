@@ -46,6 +46,7 @@
 				<th width="25"><input type="checkbox" name="" value=""></th>
 				<th width="40">ID</th>
 				<th width="150">栏目名称</th>
+				<th width="150">栏目链接</th>
 				<th width="90">所属栏目</th>
 				<th width="90">排序</th>
 				<th width="100">操作</th>
@@ -57,6 +58,7 @@
 				<td><input type="checkbox" value="{$v.id}" name="checkbox"></td>
 				<td>{$v.id}</td>
 				<td><input type="text" value="{$v.cat_name}" class="input-text" style="text-align:center;width:100px;" onblur="changeVal(this,{$v.id},'cat_name')" /></td>
+				<td><input type="text" value="{$v.clink}" class="input-text" style="text-align:center;width:100px;" onblur="changeVal(this,{$v.id},'clink')" /></td>
 				<td>{$v.pid|getNameById}</td>
 				<td><input type="text" value="{$v.cat_sort}" class="input-text" style="text-align:center;width:40px;" onblur="changeVal(this,{$v.id},'cat_sort')" /></td>
 				<td class="td-manage">

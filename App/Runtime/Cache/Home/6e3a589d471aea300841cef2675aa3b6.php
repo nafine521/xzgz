@@ -116,63 +116,59 @@
                     </li>
 
                     <!-- 已登录 end --><?php endif; ?>
-                <li>
-                    <a href="javascript:loginWin('<?php echo ($_SERVER['HTTP_HOST']); echo ($_SERVER['PHP_SELF']); ?>?<?php echo ($_SERVER['QUERY_STRING']); ?>');">充值</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/ask/" target="_blank">小猪问答</a>
-                </li>
-                <li class="last-li">
-                    <!-- 掌上小猪 start -->
-                    <div class="xiaozhu-hand">
-                        <i class="icon-phone1"></i>
-                        掌上小猪
-                        <i class="icon-down-green"></i>
 
-                        <div class="xiaozhu-hand-box">
-                            <div class="xiaozhu-hand-qrcode clearfix">
-                                <i class="icon-pointup-white"></i>
-                                <img src="/Public/static/website/images/qrcode.png" />
-                                <p>
-                                    掌上投资，更加精彩<br />
-                                    <span class="green">下载小猪罐子客户端</span><br />
-                                    <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">
-                                    </a>
-                                    <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 掌上小猪 end -->
 
-                    <!-- 新浪微博 start -->
-                    <a href="javascript:;" class="tencent-wechat">
-                        <em class="qrcode-hover-border"></em>
-                        <div class="qrcode-box">
-                            <div class="tencent-wechat-content qrcode-content">
-                                <span class="wechat-qrcode"></span>
-                                扫描关注<span class="green">微信</span>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- 新浪微博 end -->
+                <?php if(is_array($nav_list['顶部'])): $i = 0; $__LIST__ = $nav_list['顶部'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li  <?php if(($i) == "count($v)"): ?>class="last-li"<?php endif; ?> >
+                    <a href="<?php echo ($v[nav_link]); ?>" <?php if(($v["is_open_new"]) == "1"): ?>target="_blank"<?php endif; ?>><?php echo ($v[nav_name]); ?></a>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                <!--<li class="last-li">-->
+                    <!--&lt;!&ndash; 掌上小猪 start &ndash;&gt;-->
+                    <!--<div class="xiaozhu-hand">-->
+                        <!--<i class="icon-phone1"></i>-->
+                        <!--掌上小猪-->
+                        <!--<i class="icon-down-green"></i>-->
 
-                    <!-- 微信 start -->
-                    <a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">
-                        <em class="qrcode-hover-border"></em>
-                        <div class="qrcode-box">
-                            <div class="weibo-qrcode-content qrcode-content">
-                                <span class="weibo-qrcode"></span>
-                                扫描关注<span class="red">微博</span>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- 微信 end -->
-                </li>
+                        <!--<div class="xiaozhu-hand-box">-->
+                            <!--<div class="xiaozhu-hand-qrcode clearfix">-->
+                                <!--<i class="icon-pointup-white"></i>-->
+                                <!--<img src="/Public/static/website/images/qrcode.png" />-->
+                                <!--<p>-->
+                                    <!--掌上投资，更加精彩<br />-->
+                                    <!--<span class="green">下载小猪罐子客户端</span><br />-->
+                                    <!--<a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">-->
+                                    <!--</a>-->
+                                    <!--<a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">-->
+                                    <!--</a>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; 掌上小猪 end &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; 新浪微博 start &ndash;&gt;-->
+                    <!--<a href="javascript:;" class="tencent-wechat">-->
+                        <!--<em class="qrcode-hover-border"></em>-->
+                        <!--<div class="qrcode-box">-->
+                            <!--<div class="tencent-wechat-content qrcode-content">-->
+                                <!--<span class="wechat-qrcode"></span>-->
+                                <!--扫描关注<span class="green">微信</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--&lt;!&ndash; 新浪微博 end &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; 微信 start &ndash;&gt;-->
+                    <!--<a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">-->
+                        <!--<em class="qrcode-hover-border"></em>-->
+                        <!--<div class="qrcode-box">-->
+                            <!--<div class="weibo-qrcode-content qrcode-content">-->
+                                <!--<span class="weibo-qrcode"></span>-->
+                                <!--扫描关注<span class="red">微博</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--&lt;!&ndash; 微信 end &ndash;&gt;-->
+                <!--</li>-->
             </ul>
             <!-- 用户登录状态 end -->
 
@@ -996,125 +992,94 @@
 
 <!-- 底部start -->
 <div style="display: block; clear: both;"></div>
-<div class="xz-bottom">
 
-    
-    <div class="xz-widget-body">
-        <table class="bottom-left table">
-            <tr>
-                <th>关于</th>
-                <th>安全</th>
-                <th>服务</th>
-                <th>新手指引</th>
-            </tr>
-            <tr>
-                <td><a href="http://www.xiaozhu168.com/aboutus.html" target="_blank">公司简介</a></td>
-                <td><a href="http://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a></td>
-                <td><a href="http://www.xiaozhu168.com/vip_power.html" target="_blank">会员权益</a></td>
-                <td><a href="forgetpassword.html" target="_blank">找回密码</a></td>
-            </tr>
-            <tr>
-                <td><a href="http://www.xiaozhu168.com/aboutus.html#7" target="_blank">商务合作</a></td>
-                <td><a href="http://www.xiaozhu168.com/safety-ensure.html" target="_blank">风控体系</a></td>
-                <td><a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a></td>
-                <td><a href="reg.html" target="_blank">注册帐号</a></td>
-            </tr>
-            <tr>
-                <td><a href="http://www.xiaozhu168.com/aboutus.html#3" target="_blank">团队故事</a></td>
-                <td><a href="http://www.xiaozhu168.com/server_exp.html#money" target="_blank">资金托管</a></td>
-                <td><a href="http://www.xiaozhu168.com/server_exp.html" target="_blank">资费说明</a></td>
-                <td><a href="http://www.xiaozhu168.com/map.html" target="_blank">网站地图</a></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="http://www.xiaozhu168.com/electronicSecurity.html" target="_blank">电子保全</a></td>
-                <td><a href="http://www.xiaozhu168.com/baike/" target="_blank">理财百科</a></td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-        <div class="bottom-center">
-            <img src="/Public/static/website/images/wx_tb.jpg" titlel="关注微信公众号" />
-            <br />
-            <span>关注<em>微信公众号</em></span>
-        </div>
-        <div class="bottom-right">
-            <div class="clearfix">
-                <a href="https://shang.qq.com/wpa/qunwpa?idkey=510d1fd88ddc0946320b45a026378e90b5c317eee5ca2b2a7b88237c0cccffb1" id="qq-group" class="qq-group" title="投资交流群"></a>
-            </div>
-            <em>客服热线</em>( 工作日 9:00 - 22:00 )
-            <br />
-            <strong>400-882-5188</strong>
-            <br />
-            <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="iphone-download" title="下载手机app"></a>
-            <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="android-download" title="下载手机app"></a>
-        </div>
-    </div>
-
-    <div class="xz-widget-footer">
-        
-<dl class="clearfix index_foot_dl active">
-    <dt>友情链接</dt>
-    <dd><a href="http://www.lasedu.com/" title="留学中介" target="_blank">留学中介</a></dd>
-    <dd><a href="http://www.sz7h.com/" title="期货开户" target="_blank">期货开户</a></dd>
-    <dd><a href="http://www.wangdaibuluo.com/" title="网贷部落" target="_blank">网贷部落</a></dd>
-    <dd><a href="http://news.23.cn" title="创业资讯" target="_blank">创业资讯</a></dd>
-    <dd><a href="http://www.ruan8.com" title="软吧手机软件" target="_blank">软吧手机软件</a></dd>
-    <dd><a href="http://www.anruan.com" title="安软市场" target="_blank">安软市场</a></dd>
-    <dd><a href="http://www.xiaozhu168.com/wangdai-1.html" title="网贷平台" target="_blank">网贷平台</a></dd>
-    <dd><a href="http://www.xiazaiduo.com/" title="统一下载站 " target="_blank">统一下载站 </a></dd>
-    <dd><a href="http://www.downza.cn/android" title="下载之家" target="_blank">下载之家</a></dd>
-    <dd><a href="http://www.uzzf.com/" title="东坡下载" target="_blank">东坡下载</a></dd>
-    <dd><a href="http://www.qdnzy.cn" title="广东门户" target="_blank">广东门户</a></dd>
-    <dd><a href="http://money.cardbaobao.com/" title="网上理财" target="_blank">网上理财</a></dd>
-    <dd><a href="http://www.cdyushun.com/" title="成都贷款" target="_blank">成都贷款</a></dd>
-    <dd><a href="http://www.9553.com/ " title="9553下载" target="_blank">9553下载</a></dd>
-    <dd><a href="http://www.dghuarong.com" title="金华信息港" target="_blank">金华信息港</a></dd>
-    <dd><a href="http://www.gezila.com/" title="格子啦下载吧" target="_blank">格子啦下载吧</a></dd>
-    <dd><a href="http://www.hot78.com" title="招商网" target="_blank">招商网</a></dd>
-    <dd><a href="http://www.bj5188.com.cn/" title="抵押贷款
-" target="_blank">抵押贷款
-    </a></dd>
-    <dd><a href="http://fxdd.yahui.cc" title="亚汇FXDD" target="_blank">亚汇FXDD</a></dd>
-    <dd><a href="http://www.wd361.com" title="网贷互联" target="_blank">网贷互联</a></dd>
-    <dd><a href="http://shenzhen.99dai.cn/" title="深圳贷款" target="_blank">深圳贷款</a></dd>
-    <dd><a href="http://www.360gann.com/ " title="股票分析软件" target="_blank">股票分析软件</a></dd>
-    <dd><a href="http://www.ps188.cn" title="盘手网" target="_blank">盘手网</a></dd>
-    <dd><a href="http://broker.jfz.com/" title="理财问答" target="_blank">理财问答</a></dd>
-    <dd><a href="https://www.jujinziben.com" title="p2p投资理财" target="_blank">p2p投资理财</a></dd>
-    <dd><a href="http://www.kmg898.com" title="金融理财师" target="_blank">金融理财师</a></dd>
-    <dd><a href="http://fenxishi.yjcf360.com" title="金融分析师" target="_blank">金融分析师</a></dd>
-    <dd><a href="http://www.shitouke.cn" title="网贷预警" target="_blank">网贷预警</a></dd>
-    <dd><a href="http://www.51wangdai.com/" title="51网贷" target="_blank">51网贷</a></dd>
-    <dd><a href="http://www.jiacaiguanjia.com" title="家财管加" target="_blank">家财管加</a></dd>
-    <dd><a href="http://www.wdzx.com" title="网贷中心" target="_blank">网贷中心</a></dd>
-    <dd><a href="http://www.wangdaidongfang.com " title="网贷东方" target="_blank">网贷东方</a></dd>
-    <dd><a href="http://www.foxf.com.hk" title="香港保险" target="_blank">香港保险</a></dd>
-    <dd><a href="http://www.76676.com/" title="76676" target="_blank">76676</a></dd>
-    <dd><a href="http://toutiao.manqian.cn/" title="慢钱头条" target="_blank">慢钱头条</a></dd>
-    <dd><a href="http://finance.n8n8.cn/" title="金融财经" target="_blank">金融财经</a></dd>
-    <dd><a href="http://www.168chaogu.com/" title="股票学习网" target="_blank">股票学习网</a></dd>
-</dl>
-
-        
-        <div class="footer">
-            <div>
-                <div class="float-l">
-                    copyright©2014 xiaozhu168.com All Rights Reserved 备案号：粤ICP备14055923号<br />
-                    深圳市前海小猪互联网金融服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;
-                    地址：深圳市南山区深南大道9966号威盛科技大厦7楼
+    <div class="xz-bottom">
+        <!-- <div class="xz-widget">
+            <div class="xz-widget-header">
+                <div class="to-top1">
+                    <span class="top-xiaozhu1"></span>
+                    <span class="top-xiaozhu2"></span>
+                    <i class="to-top-icon1"></i>
+                    <i class="to-top-icon2"></i>
                 </div>
-                <div class="float-r">
-                    <a key ="558ab0b7efbfb02e2a186fda" style="background:none;margin-right:40px;" class="aptitude-1" target="_blank" logo_size="83x30"  logo_type="business"  href="http://www.anquan.org" ><script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script></a>
-                    <a id='___szfw_logo___' style="margin-right:78px;" href='https://credit.szfw.org/CX20160229013712570171.html' target='_blank'><img src='/Public/static/website/images/cert.png' width="112" border='0' /></a>
-                    <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" class="aptitude-1" title="工业和信息化部" target="_blank"></a>
-                    <a href="http://szcert.ebs.org.cn/ebc298c1-8dbf-4784-a88c-5c62cb2d9461" class="aptitude-2" title="深圳市网络经营者信息公示" target="_blank"></a>
-                    <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1398578442" class="aptitude-3" title="ICP网站征信证书" target="_blank"></a>
+                <div class="bottom-ad">
+                    <p>开启轻松、安全、稳健的理财之旅吧！<a href="javascript:;">立即注册去投资</a></p>
+                </div>
+            </div> -->
+
+        <div class="xz-widget-body">
+            <table class="bottom-left table">
+                <tr>
+                    <th>关于</th>
+                    <th>安全</th>
+                    <th>服务</th>
+                    <th>新手指引</th>
+                </tr>
+                <tr>
+                    <td><a href="https://www.xiaozhu168.com/aboutus.html" target="_blank">公司简介</a></td>
+                    <td><a href="https://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a></td>
+                    <td><a href="https://www.xiaozhu168.com/vip_power.html" target="_blank">会员权益</a></td>
+                    <td><a href="https://www.xiaozhu168.com/forgetpassword.html" target="_blank">找回密码</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.xiaozhu168.com/aboutus.html#7" target="_blank">商务合作</a></td>
+                    <td><a href="https://www.xiaozhu168.com/safety-ensure.html" target="_blank">风控体系</a></td>
+                    <td><a href="https://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a></td>
+                    <td><a href="https://www.xiaozhu168.com/reg.html" target="_blank">注册帐号</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.xiaozhu168.com/aboutus.html#3" target="_blank">团队故事</a></td>
+                    <td><a href="https://www.xiaozhu168.com/server_exp.html#money" target="_blank">资金托管</a></td>
+                    <td><a href="https://www.xiaozhu168.com/server_exp.html" target="_blank">资费说明</a></td>
+                    <td><a href="https://www.xiaozhu168.com/map.html" target="_blank">网站地图</a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><a href="https://www.xiaozhu168.com/electronicSecurity.html" target="_blank">电子保全</a></td>
+                    <td><a href="https://www.xiaozhu168.com/baike/" target="_blank">理财百科</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <div class="bottom-center">
+                <img src="https://mer.xiaozhu168.com/static/website/images/wx_tb.jpg" titlel="关注微信公众号" />
+                <br />
+                <span>关注<em>微信公众号</em></span>
+            </div>
+            <div class="bottom-right">
+                <div class="clearfix">
+                    <a href="https://shang.qq.com/wpa/qunwpa?idkey=510d1fd88ddc0946320b45a026378e90b5c317eee5ca2b2a7b88237c0cccffb1" id="qq-group" class="qq-group" title="投资交流群"></a>
+                </div>
+                <em>客服热线</em>( 工作日 9:00 - 22:00 )
+                <br />
+                <strong>400-882-5188</strong>
+                <br />
+                <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="iphone-download" title="下载手机app"></a>
+                <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="android-download" title="下载手机app"></a>
+            </div>
+        </div>
+        <div class="xz-widget-footer">
+            <dl class="clearfix index_foot_dl active">
+            </dl>
+            <div class="footer">
+                <div>
+                    <div class="float-l">
+                        copyright©2014 xiaozhu168.com All Rights Reserved 备案号：粤ICP备14055923号<br />
+                        深圳市前海小猪互联网金融服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;
+                        地址：深圳市南山区深南大道9966号威盛科技大厦7楼
+                    </div>
+                    <div class="float-r">
+                        <a key ="558ab0b7efbfb02e2a186fda" style="background:none;margin-right:40px;" class="aptitude-1" target="_blank" logo_size="83x30"  logo_type="business"  href="http://www.anquan.org" ><!--script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script--></a>
+                        <a id='___szfw_logo___' style="margin-right:78px;" href='https://credit.szfw.org/CX20160229013712570171.html' target='_blank'><img src='https://mer.xiaozhu168.com/static/website/images/cert.png' width="112" border='0' /></a>
+                        <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" class="aptitude-1" title="工业和信息化部" target="_blank"></a>
+                        <a href="http://szcert.ebs.org.cn/ebc298c1-8dbf-4784-a88c-5c62cb2d9461" class="aptitude-2" title="深圳市网络经营者信息公示" target="_blank"></a>
+                        <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1398578442" class="aptitude-3" title="ICP网站征信证书" target="_blank"></a>
+                    </div>
                 </div>
             </div>
         </div>
-        
     </div>
-</div>
+
+
 
 <!--右侧悬浮-->
 <div class="com_left_div">

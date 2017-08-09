@@ -9,9 +9,12 @@ class PublicController extends Controller {
     	$this->assign("controller",$controller);
     	$db=M("nav");
     	$where["is_show"]=1;
-    	$where['nav_position']="中间";
     	$nav_list=$db->where($where)->order("nav_sort")->select();
-    	$this->assign("nav_list",$nav_list);
+    	foreach ($nav_list as $k =>$itme){
+    	    if(isset($nav_res[$itme["nav_position"]])) $nav_res[$itme["nav_position"]][]=$itme;
+            else $nav_res[$itme["nav_position"]][]=$itme;
+        }
+    	$this->assign("nav_list",$nav_res);
 
     	if (empty(self::$user_info)) {
             $user_info=$this->login_status();

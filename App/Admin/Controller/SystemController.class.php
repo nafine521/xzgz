@@ -11,7 +11,7 @@ class SystemController extends BaseController {
             $where['_logic']="or";
 		}
 		$count=$db->where($where)->count();
-		$page = new \Think\Page($count,5);
+		$page = new \Think\Page($count,30);
 		$list=$db->where($where)->order('id')->limit($page->firstRow, $page->listRows)->select();
 		$page->setConfig("prev", "上一页");
 		$page->setConfig("next", "下一页");
@@ -64,7 +64,7 @@ class SystemController extends BaseController {
             $where['_logic']="or";
         }
         $count=$db->where($where)->count();
-        $page = new \Think\Page($count,5);
+        $page = new \Think\Page($count,30);
         $list=$db->where($where)->order('id')->limit($page->firstRow, $page->listRows)->select();
         $page->setConfig("prev", "上一页");
         $page->setConfig("next", "下一页");
