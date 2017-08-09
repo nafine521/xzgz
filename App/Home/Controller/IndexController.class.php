@@ -83,7 +83,12 @@ class IndexController extends PublicController {
     }
     //百科
     public function baike(){
+        $cate_db=M("category");
+        $subSql=$cate_db->field("id")->where(["cat_name"=>"理财百科"])->buildSql();//子查询sql语句
 
+        $clist=$cate_db->field("id,cat_name")->where("pid =".$subSql)->select();
+        //dump($cate_db->getLastSql());
+        $this->assign("clist",$clist);
         $this->setPageInfo('理财百科','产品','丰富的内容',['home/user_info','encyclopedia']);
         $this->display();
     }
@@ -93,7 +98,8 @@ class IndexController extends PublicController {
 
         $cate_db=M("category");
         $subSql=$cate_db->field("id")->where(["cat_name"=>"理财百科"])->buildSql();//子查询sql语句
-        $clist=$cate_db->field("id,cat_name")->where(["pid"=>$subSql])->select();
+
+        $clist=$cate_db->field("id,cat_name")->where("pid =".$subSql)->select();
         $id=I("id") ?I("id"):$clist[0]["id"];
         //文章列表
         $arc_db=M("archives");

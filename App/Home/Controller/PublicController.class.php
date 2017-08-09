@@ -10,6 +10,7 @@ class PublicController extends Controller {
     	$db=M("nav");
     	$where["is_show"]=1;
     	$nav_list=$db->where($where)->order("nav_sort")->select();
+        $nav_res=[];
     	foreach ($nav_list as $k =>$itme){
     	    if(isset($nav_res[$itme["nav_position"]])) $nav_res[$itme["nav_position"]][]=$itme;
             else $nav_res[$itme["nav_position"]][]=$itme;

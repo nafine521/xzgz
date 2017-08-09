@@ -365,13 +365,10 @@
     <div class="ency-right">
 
         <div class="news-tags clearfix">
-            <a class="tag-p2p" href="http://www.xiaozhu168.com/articlesection-1-1.html">P2P理财</a>
-            <a class="tag-net" href="http://www.xiaozhu168.com/articlesection-3-1.html">网络理财</a>
-            <a class="tag-fund" href="http://www.xiaozhu168.com/articlesection-7-1.html">基金</a>
-            <a class="tag-loan" href="http://www.xiaozhu168.com/articlesection-6-1.html">贷款</a>
-            <a class="tag-credit" href="http://www.xiaozhu168.com/articlesection-5-1.html">信用卡</a>
-            <a class="tag-bank" href="http://www.xiaozhu168.com/articlesection-4-1.html">银行理财</a>
-            <a class="tag-news" href="http://www.xiaozhu168.com/articlesection-2-1.html">资讯 </a>
+
+            <volist name="clist" id="v" key="k">
+            <a class="tag-bk{$k}" href="{:U('articlesection',['id'=>$v['id']])}">{$v.cat_name} </a>
+            </volist>
         </div>
 
         <div class="hot-news">

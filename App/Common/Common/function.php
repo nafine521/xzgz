@@ -4,7 +4,7 @@
 	function getNameById($id,$tableName="category",$field="cat_name",$str="一级栏目"){
 		$db=M($tableName);
 		if($id>0){
-			$info=$db->find($id);	
+			$info=$db->field($field)->find($id);
 			return $info[$field];
 		}else{
 			return $str;

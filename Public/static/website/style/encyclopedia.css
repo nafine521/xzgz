@@ -256,21 +256,21 @@ body {
 .news-tags a:hover {
   background: #1eae58;
 }
-.news-tags .tag-p2p,
-.news-tags .tag-net,
-.news-tags .tag-loan {
+.news-tags .tag-bk1,
+.news-tags .tag-bk2,
+.news-tags .tag-bk4 {
   width: 95px;
 }
-.news-tags .tag-fund {
+.news-tags .tag-bk3 {
   width: 67px;
 }
-.news-tags .tag-credit {
+.news-tags .tag-bk5 {
   width: 167px;
 }
-.news-tags .tag-bank {
+.news-tags .tag-bk6 {
   width: 145px;
 }
-.news-tags .tag-news {
+.news-tags .tag-bk7 {
   width: 117px;
 }
 .hot-news,

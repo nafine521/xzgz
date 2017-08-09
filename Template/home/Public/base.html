@@ -122,7 +122,7 @@
 
                 <volist name="nav_list['顶部']" id="v">
                     <li  >
-                    <a href="{$v[nav_link]}" <eq name="v.is_open_new" value="1" > target="_blank" </eq>>{$v[nav_name]}</a>
+                    <a href="{:U($v['nav_link'])}" <eq name="v.is_open_new" value="1" > target="_blank" </eq>>{$v['nav_name']}</a>
                 </li>
                 </volist>
                 <li class="last-li">
