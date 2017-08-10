@@ -13,7 +13,7 @@
         <i class="icon-leftarrow"></i>
         <a href="">
 
-            {$arclist[0]['cat_id']|getNameById}
+            {$cat_name}
         </a>
     </div>
 </div>
@@ -39,7 +39,7 @@
         <div class="xz-widget">
             <div class="xz-widget-header">
 
-                <h3><em>{$arclist[0]['cat_id']|getNameById}</em></h3>
+                <h3><em>{$cat_name}</em></h3>
             </div>
             <div class="xz-widget-body">
                 <ul   class="question-list">
@@ -58,7 +58,7 @@
 
             <div class="xz-widget-footer" style="margin-bottom:20px;">
                 <div class="main_c_list_page">
-                    <div class='main_c_list_page'><a href='javascript:doJumpPage(1);' class='previousPage'></a><a class='mr_a' href='javascript:doJumpPage(1);'>1</a><a class='' href='javascript:doJumpPage(2);'>2</a><a class='' href='javascript:doJumpPage(3);'>3</a><a class='' href='javascript:doJumpPage(4);'>4</a><a class='' href='javascript:doJumpPage(5);'>5</a><a class='' href='javascript:doJumpPage(6);'>6</a><em>...</em><a class='' href='javascript:doJumpPage(153);'>153</a><a href='javascript:doJumpPage(2);' class='nextPage'></a></div></div>
+                    <div class='main_c_list_page'><!--a href='javascript:doJumpPage(1);' class='previousPage'></a><a class='mr_a' href='javascript:doJumpPage(1);'>1</a><a class='' href='javascript:doJumpPage(2);'>2</a><a class='' href='javascript:doJumpPage(3);'>3</a><a class='' href='javascript:doJumpPage(4);'>4</a><a class='' href='javascript:doJumpPage(5);'>5</a><a class='' href='javascript:doJumpPage(6);'>6</a><em>...</em><a class='' href='javascript:doJumpPage(153);'>153</a><a href='javascript:doJumpPage(2);' class='nextPage'></a-->{$page}</div></div>
             </div>
         </div>
     </div>

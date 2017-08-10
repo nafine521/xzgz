@@ -139,4 +139,33 @@ class PublicController extends Controller {
 
     }
 
+    //最新文章
+    public function order_pubdate($cat_id=15,$limit=5)
+    {
+        $db=M("archives");
+        $str_id=getPid($cat_id);
+        $str_id.=$cat_id;
+        $list=$db->field("id,title")->where(["cat_id"=>["in",$str_id]])->order("pubdate desc")->limit($limit)->select();
+        return $list;
+    }
+    //相关文章
+    public function relate_list($cat_id=15,$limit=5)
+    {
+        $db=M("archives");
+        $str_id=getPid($cat_id);
+        $str_id.=$cat_id;
+        $list=$db->field("id,title")->where(["cat_id"=>["in",$str_id]])->order("pubdate desc")->limit($limit)->select();
+        return $list;
+    }
+
+    //热推文章
+    public function recommend($cat_id=15,$limit=5)
+    {
+        $db=M("archives");
+        $str_id=getPid($cat_id);
+        $str_id.=$cat_id;
+        $list=$db->field("id,title")->where(["cat_id"=>["in",$str_id],"refer"=>1])->order("pubdate desc")->limit($limit)->select();
+        return $list;
+    }
+
 }

@@ -28,38 +28,17 @@
         <!--左边通知正文-->
         <div class="not_text">
             <!--标题-->
-            <h1 class="not_title">汇金公司是什么</h1>
-            <p class="not_titletime">2017-07-20 09:47</p>
+            <h1 class="not_title">{$info['title']}</h1>
+            <p class="not_titletime">{$info['pubdate']|date='Y-m-d H:i',###}</p>
             <!--标题结束-->
 
             <!--通知内容-->
             <div class="not_write">
-                <p><p><span style="font-size:14px;"><span style="font-family:微软雅黑;">看财经新闻的时候，经常会出现汇金公司增资，汇金公司减持等等词汇，很多人就好奇，中央汇金公司是？感觉很牛逼的样子，投哪网小编就为大家介绍下汇金公司的背景资料。<br />
-中央汇金投资有限责任公司（简称&ldquo;中央汇金公司&rdquo;），总部设在北京，是依据《中华人民共和国公司法》由国家出资设立的国有独资公司。根据国务院授权，代表国家依法行使对国有商业银行等重点金融企业出资人的权利和义务。<br />
-汇金公司主要控股参股金融机构包括：<br />
-1、 国家开发银行；<br />
-2、中国进出口银行<br />
-3、 中国工商银行股份有限公司；<br />
-4、 中国农业银行股份有限公司；<br />
-5、 中国银行股份有限公司；<br />
-6、 中国建设银行股份有限公司；<br />
-7、 中国光大银行股份有限公司；<br />
-8、 中国再保险（集团）股份有限公司；<br />
-9、 中国建银投资有限责任公司；<br />
-10、 中国银河金融控股有限责任公司；<br />
-11、申银万国证券股份有限公司；<br />
-12、中信建投证券股份有限公司；<br />
-13、国泰君安证券股份有限公司；<br />
-14、新华人寿保险股份有限公司。<br />
-2003年12月，承担着代表国家投资并持有国有商业银行等重点金融企业的股权，并代表国务院行使股东权利的汇金公司正式成立，注册资本2000亿美元。<br />
-2007年9月，财政部发行特别国债，从中国人民银行购买汇金公司的全部股权，并将上述股权作为对中国投资有限责任公司(以下简称&ldquo;中投公司&rdquo;)出资的一部分，注入中投公司。自此，汇金公司被纳入中投公司旗下，与其海外投资平台实行严格的&ldquo;防火墙&rdquo;隔离制度。<br />
-正是由于带有强烈政府意图的金融控股公司，汇金公司一举一动往往被猜测或过分解读其背后的市场信号。<br />
-汇金公司虽然名为公司，但有观点认为它仍是政府机构，由于国资委不负责管理金融类国有资产，所以汇金公司被认为是&ldquo;金融国资委&rdquo;。此外，动用国家外汇储备用于国有企业因制度和机制的原因产生的亏损，也遭到部分学者专家的质疑，在程序上也有如吴敬琏等人认为汇金公司应取得人大财经委的授权。<br />
-&nbsp;<br />
-【免责声明】融金宝理财发布的 汇金公司是什么 一文目的在于传播更多信息，与本网站立场无关。融金宝理财不保证该信息（包括但不限于文字、数据及图表）全部或者部分内容的准确性、真实性、完整性、有效性、及时性、原创性等。相关信息并未经过本网站证实，不对您构成任何投资建议，据此操作，风险自担。</span></span></p>
+                <p>
+                    {$info['body']|htmlspecialchars_decode}
                 </p>
                 <div class="mt50">
-                    <p style="width:auto;float:left;"><a href="javascript:;">来源：</a></p>
+                    <p style="width:auto;float:left;"><a href="javascript:;">来源：</a>{$info['source']}</p>
                     <!--分享-->
                     <div style="float:right;" data-tag="share_1" class="bdsharebuttonbox">
                         <span style="float:left;margin-top:6px;">果断分享到：</span>
@@ -74,7 +53,7 @@
                     <p style="float:left; line-height: 36px;">
 
                         标签：
-                        <a href="littitle-汇金-1.html" class="tag-xq">汇金</a>
+                        <a href="汇金" class="tag-xq">汇金</a>
                     </p>
                     <script type="text/javascript">
                         window._bd_share_config={
@@ -96,10 +75,12 @@
                     <!--分享结束-->
                 </div>
                 <p class="not_flip">
-                    <span>
-							上一篇：<a href="http://www.xiaozhu168.com/articles/details-9430.html">邦帮堂怎么样？邦帮堂靠谱吗？邦帮堂安全吗？</a>
+                    <volist name="pervNext" id="v" key="k">
+                        <span <if condition="$k eq 2"> class="not_span" </if> >
+							{$v['pn']}：<a href="{:U('',['aid'=>$v['id']])}">{$v['title']}</a>
 						</span>
-                    <span class="not_span">下一篇：<a href="http://www.xiaozhu168.com/articles/details-9428.html">惠投无忧怎么样</a></span>
+                    </volist>
+                    <!--<span class="not_span">下一篇：<a href="http://www.xiaozhu168.com/articles/details-9428.html">惠投无忧怎么样</a></span>-->
                 </p>
             </div>
             <!--通知内容结束-->
@@ -112,33 +93,27 @@
                 <p>
                     <span><i class="icon-smallhorn"></i></span>
                     <span class="not_tz">最新文章</span>
-                    <span class="not_more"><!-- <a href="javascript:">更多>></a> --></span>
+                    <span class="not_more"></span>
                 </p>
                 <ul>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10683.html" target="_blank" style="vertical-align:middle">【货币分析】美元涨或跌，明确的指示在哪里？</a>
+                    <volist name="latest" id="v">
+                    <li><a href="{:U(['',['aid'=>$v['id']]])}" target="_blank" style="vertical-align:middle">{$v['title']}</a>
                     </li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10682.html" target="_blank" style="vertical-align:middle">【分析】私募基金的优势及分红方式</a>
-                    </li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10681.html" target="_blank" style="vertical-align:middle">基金投资中的八大错觉</a>
-                    </li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10680.html" target="_blank" style="vertical-align:middle">注意：住房公积金提取要满足这些条件</a>
-                    </li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10679.html" target="_blank" style="vertical-align:middle">【提示】二套住房公积金贷款首付比例提至40%</a>
-                    </li>
+                    </volist>
                 </ul>
             </div>
             <div>
                 <p>
                     <span><i class="icon-smallhorn"></i></span>
                     <span class="not_tz">相关文章</span>
-                    <span class="not_more"><!-- <a href="javascript:">更多>></a> --></span>
+                    <span class="not_more"></span>
                 </p>
                 <ul>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-3018.html" target="_blank"  style="vertical-align:middle">现代农装（股票代码：430010）的财务违规教训！</a></li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-421.html" target="_blank"  style="vertical-align:middle">什么是短期投资_短期投资有哪些</a></li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-9077.html" target="_blank"  style="vertical-align:middle">支付宝免费注册流程与注意事项</a></li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-1779.html" target="_blank"  style="vertical-align:middle">什么是场内货币基金?场内货币基金的优势有哪些?</a></li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-7078.html" target="_blank"  style="vertical-align:middle">详解2017常用的理财规划工具</a></li>
+                    <volist name="relate" id="v">
+                    <li><a href="{:U(['',['aid'=>$v['id']]])}" target="_blank"  style="vertical-align:middle">{$v['title']}</a></li>
+                    </volist>
+
+
                 </ul>
             </div>
         </div>

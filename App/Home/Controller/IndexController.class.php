@@ -41,7 +41,11 @@ class IndexController extends PublicController {
             if (!$code->check($verify)) {
                 $this->ajaxReturn(["opt"=>2]);
             }
-            //if()$this->ajaxReturn(["opt"=>2]);//验证短信码失败
+            //if()$this->ajaxReturn(["opt"=>2]);// TODO : 验证短信码失败
+
+            if(!empty($data['paramMap.refferee'])){
+
+            }//TODO : 如果填写邀请码
             $this->ajaxReturn(["msg"=>1]);
         }
         $this->setPageInfo('注册','产品','丰富的内容',['home/user_info','regist'],["index_1"]);
@@ -78,7 +82,29 @@ class IndexController extends PublicController {
         if($uid>0){
             $this->ajaxReturn([5]);
         }
-        //if()$this->ajaxReturn([6]);//预留短信接口发送失败或写入数据库失败。。因为无法对比
+
+        /*vendor("submail.SUBMAILAutoload");
+        $mail_configs=[
+            'appid'=>'your_mail_appid',
+            'appkey'=>'your_mail_appkey',
+            'sign_type'=>'normal'
+        ];
+        $submail=new MAILSend($mail_configs);
+        $submail->AddTo("leo@submail.cn","leo");
+        $submail->SetSender("no-reply@submail.cn","SUBMAIL");
+        $submail->SetSubject("test");
+        $submail->SetText("test SDK text");
+        $submail->SetHtml("test SDK html");
+        $submail->send();
+        TODO: 上线后测试
+        */
+
+        vendor("Sms.industrySMS");
+        $sms= new \UserRegMsg;
+        $sms->sendSMS("",$data["paramMap.phone"]);
+        //if()$this->ajaxReturn([6]);// TODO : 预留短信接口发送失败或写入数据库失败。。因为无法对比
+
+
         $this->ajaxReturn([1]);
     }
     //百科
@@ -101,20 +127,50 @@ class IndexController extends PublicController {
 
         $clist=$cate_db->field("id,cat_name")->where("pid =".$subSql)->select();
         $id=I("id") ?I("id"):$clist[0]["id"];
+
+        //当前栏目名称
+        foreach ($clist as $item) {
+            if($item['id'] == $id) $cat_name= $item['cat_name'];
+        }
         //文章列表
         $arc_db=M("archives");
-        $arclist=$arc_db->where(["cat_id"=>$id])->select();
+        //$arclist=$arc_db->where(["cat_id"=>$id])->select();
+
+        $count=$arc_db->where(["cat_id"=>$id])->count();
+        $page = new \Think\Page($count,10);
+        $arclist=$arc_db->where(["cat_id"=>$id])->order('id')->limit($page->firstRow, $page->listRows)->select();
+        $page->setConfig("prev", "&nbsp;");
+        $page->setConfig("next", "&nbsp;");
+        //$this->assign("count",$count);
+        $this->assign("page",$page->show());
+        $this->assign("cat_name",$cat_name);
 
         $this->assign("arclist",$arclist);
         $this->assign("clist",$clist);
-        $this->setPageInfo('理财百科','产品','丰富的内容',['home/user_info','help']);
+        $this->setPageInfo($cat_name,'产品','丰富的内容',['home/user_info','help']);
         $this->display();
     }
 
     //资讯详情
     public function article(){
+        $aid=I("aid");
+        $db=M("archives");
 
-        $this->setPageInfo('理财百科','产品','丰富的内容',['news_css']);
+        $info=$db->find($aid);
+
+        $subSql=$db->field("id,title")->where(["id"=>["lt",$aid]])->order("id desc")->limit(1)->buildSql();
+        $pervNext=$db->field("id,title")->where(["id"=>["gt",$aid]])->limit(1)->union($subSql,true)->select();
+        $pervNext=array_reverse($pervNext);
+        $pervNext[0]['pn']="上一篇";
+        if(!empty($pervNext[1])) $pervNext[1]['pn']="下一篇";
+
+        $this->assign("info",$info);
+        $this->assign("pervNext",$pervNext);
+        $this->assign("latest",$this->order_pubdate());
+        $this->assign("relate",$this->relate_list());
+        $this->setPageInfo($info['title'],$info['keyword'],$info['description'],['news_css']);
         $this->display();
     }
+
+
 }
