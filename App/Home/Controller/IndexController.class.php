@@ -41,7 +41,11 @@ class IndexController extends PublicController {
             if (!$code->check($verify)) {
                 $this->ajaxReturn(["opt"=>2]);
             }
-            //if()$this->ajaxReturn(["opt"=>2]);//验证短信码失败
+            //if()$this->ajaxReturn(["opt"=>2]);// TODO : 验证短信码失败
+
+            if(!empty($data['paramMap.refferee'])){
+
+            }//TODO : 如果填写邀请码
             $this->ajaxReturn(["msg"=>1]);
         }
         $this->setPageInfo('注册','产品','丰富的内容',['home/user_info','regist'],["index_1"]);
@@ -78,7 +82,29 @@ class IndexController extends PublicController {
         if($uid>0){
             $this->ajaxReturn([5]);
         }
-        //if()$this->ajaxReturn([6]);//预留短信接口发送失败或写入数据库失败。。因为无法对比
+
+        /*vendor("submail.SUBMAILAutoload");
+        $mail_configs=[
+            'appid'=>'your_mail_appid',
+            'appkey'=>'your_mail_appkey',
+            'sign_type'=>'normal'
+        ];
+        $submail=new MAILSend($mail_configs);
+        $submail->AddTo("leo@submail.cn","leo");
+        $submail->SetSender("no-reply@submail.cn","SUBMAIL");
+        $submail->SetSubject("test");
+        $submail->SetText("test SDK text");
+        $submail->SetHtml("test SDK html");
+        $submail->send();
+        TODO: 上线后测试
+        */
+
+        vendor("Sms.industrySMS");
+        $sms= new \UserRegMsg;
+        $sms->sendSMS("",$data["paramMap.phone"]);
+        //if()$this->ajaxReturn([6]);// TODO : 预留短信接口发送失败或写入数据库失败。。因为无法对比
+
+
         $this->ajaxReturn([1]);
     }
     //百科
@@ -140,37 +166,11 @@ class IndexController extends PublicController {
 
         $this->assign("info",$info);
         $this->assign("pervNext",$pervNext);
-        $this->assign("");
+        $this->assign("latest",$this->order_pubdate());
+        $this->assign("relate",$this->relate_list());
         $this->setPageInfo($info['title'],$info['keyword'],$info['description'],['news_css']);
         $this->display();
     }
 
-    //最新文章
-    public function order_pubdate($cat_id=15,$limit=5)
-    {
-        $db=M("archives");
-        $str_id=getPid($cat_id);
-        $str_id.=$cat_id;
-        $list=$db->field("id,title")->where(["cat_id"=>["in",$str_id]])->order("pubdate desc")->limit($limit)->select();
-        return $list;
-    }
-    //相关文章
-    public function relate_list($cat_id=15,$limit=5)
-    {
-        $db=M("archives");
-        $str_id=getPid($cat_id);
-        $str_id.=$cat_id;
-        $list=$db->field("id,title")->where(["cat_id"=>["in",$str_id]])->order("pubdate desc")->limit($limit)->select();
-        return $list;
-    }
 
-    //相关文章
-    public function recommend($cat_id=15,$limit=5)
-    {
-        $db=M("archives");
-        $str_id=getPid($cat_id);
-        $str_id.=$cat_id;
-        $list=$db->field("id,title")->where(["cat_id"=>["in",$str_id],"refer"=>1])->order("pubdate desc")->limit($limit)->select();
-        return $list;
-    }
 }

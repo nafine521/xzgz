@@ -93,33 +93,27 @@
                 <p>
                     <span><i class="icon-smallhorn"></i></span>
                     <span class="not_tz">最新文章</span>
-                    <span class="not_more"><!-- <a href="javascript:">更多>></a> --></span>
+                    <span class="not_more"></span>
                 </p>
                 <ul>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10683.html" target="_blank" style="vertical-align:middle">【货币分析】美元涨或跌，明确的指示在哪里？</a>
+                    <volist name="latest" id="v">
+                    <li><a href="{:U(['',['aid'=>$v['id']]])}" target="_blank" style="vertical-align:middle">{$v['title']}</a>
                     </li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10682.html" target="_blank" style="vertical-align:middle">【分析】私募基金的优势及分红方式</a>
-                    </li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10681.html" target="_blank" style="vertical-align:middle">基金投资中的八大错觉</a>
-                    </li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10680.html" target="_blank" style="vertical-align:middle">注意：住房公积金提取要满足这些条件</a>
-                    </li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-10679.html" target="_blank" style="vertical-align:middle">【提示】二套住房公积金贷款首付比例提至40%</a>
-                    </li>
+                    </volist>
                 </ul>
             </div>
             <div>
                 <p>
                     <span><i class="icon-smallhorn"></i></span>
                     <span class="not_tz">相关文章</span>
-                    <span class="not_more"><!-- <a href="javascript:">更多>></a> --></span>
+                    <span class="not_more"></span>
                 </p>
                 <ul>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-3018.html" target="_blank"  style="vertical-align:middle">现代农装（股票代码：430010）的财务违规教训！</a></li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-421.html" target="_blank"  style="vertical-align:middle">什么是短期投资_短期投资有哪些</a></li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-9077.html" target="_blank"  style="vertical-align:middle">支付宝免费注册流程与注意事项</a></li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-1779.html" target="_blank"  style="vertical-align:middle">什么是场内货币基金?场内货币基金的优势有哪些?</a></li>
-                    <li><a href="http://www.xiaozhu168.com/articles/details-7078.html" target="_blank"  style="vertical-align:middle">详解2017常用的理财规划工具</a></li>
+                    <volist name="relate" id="v">
+                    <li><a href="{:U(['',['aid'=>$v['id']]])}" target="_blank"  style="vertical-align:middle">{$v['title']}</a></li>
+                    </volist>
+
+
                 </ul>
             </div>
         </div>
