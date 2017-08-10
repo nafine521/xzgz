@@ -65,9 +65,9 @@ class IndexController extends PublicController {
 
     public function sendSMSReg(){
         $data=I("post.");
-        $verify=$data["paramMap.vcode2"];
+        $verify=$data["paramMap_vcode2"];
         if(empty($verify)){
-            $this->ajaxReturn([3]);
+            $this->ajaxReturn([3,$data]);
         }
         //判断验证码是否正确
         $code = new \Think\Verify();
@@ -75,34 +75,31 @@ class IndexController extends PublicController {
             $this->ajaxReturn([4]);
         }
 
-        if(!preg_match("/^1[34578]{1}\d{9}$/",$data["paramMap.phone"])){
+        if(!preg_match("/^1[34578]{1}\d{9}$/",$data["paramMap_phone"])){
             $this->ajaxReturn([2]);
         }
-        $uid=M("user")->field("uid")->where(["user_tel"=>$data["paramMap.phone"]])->find();
+        $uid=M("user")->field("uid")->where(["user_tel"=>$data["paramMap_phone"]])->find();
         if($uid>0){
             $this->ajaxReturn([5]);
         }
 
-        /*vendor("submail.SUBMAILAutoload");
-        $mail_configs=[
-            'appid'=>'your_mail_appid',
-            'appkey'=>'your_mail_appkey',
-            'sign_type'=>'normal'
-        ];
-        $submail=new MAILSend($mail_configs);
-        $submail->AddTo("leo@submail.cn","leo");
-        $submail->SetSender("no-reply@submail.cn","SUBMAIL");
-        $submail->SetSubject("test");
-        $submail->SetText("test SDK text");
-        $submail->SetHtml("test SDK html");
-        $submail->send();
-        TODO: 上线后测试
-        */
 
+        $num=rand(1000,9999);
         vendor("Sms.industrySMS");
-        $sms= new \UserRegMsg;
-        $sms->sendSMS("",$data["paramMap.phone"]);
-        //if()$this->ajaxReturn([6]);// TODO : 预留短信接口发送失败或写入数据库失败。。因为无法对比
+        $sms= new \UserRegMsg([
+            "account_sid"=>"0fcf3d4cb25a4d0daba6001739d97ec3",
+            "auth_token"=>"7876defded71413cb26e72085f694ef8"
+        ]);
+        $sms_result=$sms->sendSMS("你的验证码为".$num,$data["paramMap_phone"]);
+        $state=json_decode($sms_result);
+        //if($state['respCode']!="00000") $this->ajaxReturn([6,"info"=>$sms_result]); //TODO: 返回非0000则接口代码需要调整。。。
+        $retodb=M("smscod")->add([
+            "sms_ticket"=>$num,
+            "return_state"=>$sms_result,
+            "expression"=>time()+300
+        ]);
+
+        //if(0==$retodb || $state['respCode']!="00000")$this->ajaxReturn([6]);// TODO : 预留短信接口发送失败或写入数据库失败。。因为无法对比
 
 
         $this->ajaxReturn([1]);

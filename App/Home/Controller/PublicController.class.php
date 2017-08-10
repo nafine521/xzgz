@@ -130,11 +130,11 @@ class PublicController extends Controller {
     //验证码
     public function verify(){
         $verify=new \Think\Verify();
-        $verify->imageW=83;
-        $verify->imageH=38;
+        $verify->imageW=95;
+        //$verify->imageH=55;
         $verify->useCurve=false;
         $verify->length=4;
-        $verify->fontSize=14;
+        $verify->fontSize=13;
         $verify->entry();
 
     }

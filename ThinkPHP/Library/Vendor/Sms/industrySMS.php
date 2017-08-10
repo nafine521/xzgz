@@ -7,6 +7,7 @@ class UserRegMsg {
     protected $sms_config;
     public $CONTENT_TYPE = "application/x-www-form-urlencoded";
     public $ACCEPT = "application/json";
+    public $base_url='https://api.miaodiyun.com/20150822/';
 
     public function __construct($config=[])
     {
@@ -51,23 +52,20 @@ class UserRegMsg {
 
 	function createSig()
 	{
-	    global $ACCOUNT_SID, $AUTH_TOKEN;
+	    //global $ACCOUNT_SID, $AUTH_TOKEN;
         date_default_timezone_set("Asia/Shanghai");
 	    $timestamp = date("YmdHis");
 
 	    // 签名
-	    $sig = md5($ACCOUNT_SID . $AUTH_TOKEN . $timestamp);
+	    $sig = md5($this->sms_config['account_sid'] . $this->sms_config['auth_token'] . $timestamp);
 	    return $sig;
 	}
 
 	function createBasicAuthData()
 	{
-	    //global $ACCOUNT_SID, $AUTH_TOKEN;
-
         date_default_timezone_set("Asia/Shanghai");
 	    $timestamp = date("YmdHis");
 	    // 签名
-
 	    $sig = md5( $this->sms_config['account_sid'] . $this->sms_config['auth_token'] . $timestamp);
 	    return array("accountSid" => $this->sms_config['account_sid'], "timestamp" => $timestamp, "sig" => $sig, "respDataType"=> "JSON");
 	}
@@ -79,9 +77,9 @@ class UserRegMsg {
 	 */
 	function createHeaders()
 	{
-	    global $CONTENT_TYPE, $ACCEPT;
+	    //global $CONTENT_TYPE, $ACCEPT;
 
-	    $headers = array('Content-type: '.$CONTENT_TYPE, 'Accept: '.$ACCEPT );
+	    $headers = array('Content-type: '.$this->CONTENT_TYPE, 'Accept: '.$this->ACCEPT );
 
 	    return $headers;
 	}
@@ -98,12 +96,9 @@ class UserRegMsg {
 	 */
 	function post($funAndOperate, $body)
 	{
-	    //global $CONTENT_TYPE, $ACCEPT;
-
 	    // 构造请求数据
-	    $url =  'https://api.miaodiyun.com/20150822/' . $funAndOperate;
+	    $url =  $this->base_url . $funAndOperate;
 	    $headers = $this->createHeaders();
-
 
 	    // 要求post请求的消息体为&拼接的字符串，所以做下面转换
 	    $fields_string = "";
