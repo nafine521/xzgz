@@ -134,7 +134,7 @@ class PublicController extends Controller {
         //$verify->imageH=55;
         $verify->useCurve=false;
         $verify->length=4;
-        $verify->fontSize=13;
+        $verify->fontSize=14;
         $verify->entry();
 
     }

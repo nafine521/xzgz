@@ -120,6 +120,6 @@ class UserRegMsg {
 	    $result = curl_exec($con);
 	    curl_close($con);
 
-	    return "" . $result;
+	    return "".$result;
 	}
 }

@@ -38,17 +38,37 @@ class IndexController extends PublicController {
             }
             //判断验证码是否正确
             $code = new \Think\Verify();
-            if (!$code->check($verify)) {
+            if (!$code->check($data["paramMap_imgCode"])) {
                 $this->ajaxReturn(["opt"=>2]);
             }
-            //if()$this->ajaxReturn(["opt"=>2]);// TODO : 验证短信码失败
+            $res_code=M("smscod")->field("sms_ticket")->where(["reg_tel"=>$data["paramMap_cellPhone"]])->order("id desc")->find();
+            if($res_code != $data['paramMap_vcode']) $this->ajaxReturn(["opt"=>2]);// TODO : 验证短信码失败
 
-            if(!empty($data['paramMap.refferee'])){
+            if(!empty($data['paramMap_refferee'])){
 
             }//TODO : 如果填写邀请码
+            $password=md5($data["paramMap_password"].C("SALT"));
+
+            $reg=M("user")->add([
+                "user_password"=>$password,
+                "user_tel"=>$data["paramMap_cellPhone"],
+                "user_name"=>$data["paramMap_cellPhone"],
+                "reg_time"=>time(),
+                "is_member"=>1,
+                "user_tel_bind"=>1
+            ]);
+            if($reg) {
+                $member=M("member")->add([
+                    "member_name"=>$data["paramMap_cellPhone"],
+                    "reg_time"=>time()
+                    //"uid"=>$reg
+                ]);
+                if (!$member) M("user")->rollback();
+
+            }
             $this->ajaxReturn(["msg"=>1]);
         }
-        $this->setPageInfo('注册','产品','丰富的内容',['home/user_info','regist'],["index_1"]);
+        $this->setPageInfo('注册','','',['home/user_info','regist'],["regist"]);
         $this->display();
     }
 
@@ -84,25 +104,35 @@ class IndexController extends PublicController {
         }
 
 
-        $num=rand(1000,9999);
+        $num=rand(100000,999999);
+        $expression=300;
         vendor("Sms.industrySMS");
         $sms= new \UserRegMsg([
             "account_sid"=>"0fcf3d4cb25a4d0daba6001739d97ec3",
             "auth_token"=>"7876defded71413cb26e72085f694ef8"
         ]);
-        $sms_result=$sms->sendSMS("你的验证码为".$num,$data["paramMap_phone"]);
+        $sms_result=$sms->sendSMS("【拓谋网络】您的验证码为".$num."，请于".($expression/60)."分钟内正确输入，如非本人操作，请忽略此短信。",$data["paramMap_phone"]);
+
         $state=json_decode($sms_result);
-        //if($state['respCode']!="00000") $this->ajaxReturn([6,"info"=>$sms_result]); //TODO: 返回非0000则接口代码需要调整。。。
+        //if($state->respCode != "00000" ) $this->ajaxReturn([6,"info"=>$sms_result]); //TODO: 返回非0000则接口代码需要调整。。。返回134为内容要匹配。。暂时已完成
         $retodb=M("smscod")->add([
             "sms_ticket"=>$num,
             "return_state"=>$sms_result,
-            "expression"=>time()+300
+            "expression"=>time()+$expression,
+            "reg_tel"=>$data["paramMap_phone"]
         ]);
 
-        //if(0==$retodb || $state['respCode']!="00000")$this->ajaxReturn([6]);// TODO : 预留短信接口发送失败或写入数据库失败。。因为无法对比
+        if(0==$retodb || $state->respCode != "00000" )$this->ajaxReturn([6]);// TODO : 预留短信接口发送失败或写入数据库失败。。因为无法对比
 
 
         $this->ajaxReturn([1]);
+    }
+
+    //注册条款
+    public function regAgreement()
+    {
+        $this->setPageInfo("服务协议","","");
+        $this->display();
     }
     //百科
     public function baike(){
