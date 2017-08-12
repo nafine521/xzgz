@@ -26,34 +26,22 @@
 <div class="pd-20">
 	<form action="" method="post" class="form form-horizontal" id="form-product-add">
 		<input type="hidden" name="id" value="{$info.id}" />
+
 		<div class="row cl">
-			<label class="form-label col-2">产品编号：</label>
+			<label class="form-label col-2"><span class="c-red">*</span>项目名称：</label>
 			<div class="formControls col-7">
-				<input type="text" class="input-text" <if condition="$info.id gt 0">disabled</if> value="{$info.product_sn}" placeholder="可以不填,默认自动生成" id="" name="product_sn" >
+				<input type="text" class="input-text" value="{$info.name}" placeholder="请输入项目名称" name="product_name" datatype="*" nullmsg="项目名称不能为空">
 			</div>
 			<div class="col-3"> </div>
 		</div>
+
 		<div class="row cl">
-			<label class="form-label col-2"><span class="c-red">*</span>产品名称：</label>
-			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info.name}" placeholder="请输入产品名称" id="" name="product_name" datatype="*" nullmsg="产品名称不能为空">
-			</div>
-			<div class="col-3"> </div>
-		</div>
-		<!-- <div class="row cl">
-			<label class="form-label col-2">简略标题：</label>
-			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info.title}" placeholder="" id="" name="title">
-			</div>
-			<div class="col-3"> </div>
-		</div> -->
-		<div class="row cl">
-			<label class="form-label col-2"><span class="c-red">*</span>分类栏目：</label>
+			<label class="form-label col-2"><span class="c-red">*</span>项目类型：</label>
 			<div class="formControls col-7"> <span class="select-box">
-				<select name="cat_id" class="select" datatype="*" nullmsg="请选择分类">
-					<option value="">请选择分类</option>
+				<select name="type_id" class="select" datatype="*" nullmsg="请选择项目类型">
+					<option value="">请选择项目类型</option>
 					<volist name="category" id="v">
-					<option value="{$v.id}" <if condition="$info.cat_id eq $v['id']">selected</if> >{$v.level|str_repeat="├",###}{$v.name}</option>
+					<option value="{$v.id}" <if condition="$info.type_id eq $v['id']">selected</if> >{$v.level|str_repeat="├",###}{$v.name}</option>
 					</volist>
 				</select>
 				</span> </div>
@@ -71,10 +59,10 @@
 					</dt>
 					<dd>
 						<dl class="cl permission-list2">
-							<volist name="v.child" id="vo">
-							<dt>
-								<label class="">
-									<input type="checkbox" value="{$vo.id}" <if condition="in_array($vo['id'],$info['attr'])">checked</if> name="attr[]" id="user-Character-0-0">
+							<volist name="v.children" id="vo">
+							<dt style="width: auto;">
+								<label class="form-label">
+									<input type="checkbox" value="{$vo.id}" <if condition="in_array($vo['id'],$info['attr_id'])">checked</if> name="attr[]" id="user-Character-0-0">
 									{$vo.name}</label>
 							</dt>
 							</volist>
@@ -86,64 +74,45 @@
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-2"><span class="c-red">*</span>库存量：</label>
+			<label class="form-label col-2"><span class="c-red">*</span>年化收益：</label>
 			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info.product_number}" placeholder="请输入数字" id="" name="product_number">
+				<input type="text" class="input-text" value="{$info.annual_income}" placeholder="请输入数字" name="annual_income"  datatype="*" nullmsg="请输入年化收益">
 			</div>
 			<div class="col-3"> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-2">点击量：</label>
+			<label class="form-label col-2"><span class="c-red">*</span>项目总额：</label>
 			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info.hits}" placeholder="" id="" name="hits">
+				<input type="text" class="input-text" value="{$info.item_totle}" placeholder="" id="" name="item_totle"  datatype="*" nullmsg="请输入项目总额">元
 			</div>
 			<div class="col-3"> </div>
 		</div>
-		<div class="row cl">
-			<label class="form-label col-2">评论数：</label>
-			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info.discuss}" placeholder="" id="" name="discuss">
-			</div>
-			<div class="col-3"> </div>
-		</div>
+
 		
 		<div class="row cl">
-			<label class="form-label col-2">关注数：</label>
+			<label class="form-label col-2">剩余额度：</label>
 			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info.concern}" placeholder="" id="" name="concern">
+				<input type="text" class="input-text" value="{$info.surplus}" placeholder="" id="" name="surplus">
 			</div>
 			<div class="col-3"> </div>
 		</div>
+
 		<div class="row cl">
-			<label class="form-label col-2"><span class="c-red"></span>市场价格：</label>
+
+			<label class="form-label col-2"><span class="c-red">*</span>项目周期：</label>
 			<div class="formControls col-7">
-				<input type="text" name="market_price" id="" placeholder="" value="{$info.market_price}" class="input-text" style="width:90%">
-				元</div>
+				<input type="text" name="expression" id="" placeholder="仅文字描述" value="{$info['expression']}" class="input-text" style="width:90%"  datatype="*" nullmsg="请输入项目周期">
+				</div>
 			<div class="col-3"> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-2"><span class="c-red">*</span>本店价格：</label>
-			<div class="formControls col-7">
-				<input type="text" name="shop_price" id="" placeholder="请输入本店价格" value="{$info.shop_price}" class="input-text" style="width:90%">
-				元</div>
-			<div class="col-3"> </div>
-		</div>
-		<div class="row cl">
-			
-			<label class="form-label col-2">促销价格：</label>
-			<div class="formControls col-7">
-				<input type="text" name="promo_price" id="" placeholder="" value="{$info['promo_price']>0?$info['promo_price']:''}" class="input-text" style="width:90%">
-				元</div>
-			<div class="col-3"> </div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-2">促销开始时间：</label>
+			<label class="form-label col-2"><span class="c-red">*</span>开始时间：</label>
 			<div class="formControls col-2">
-				<input type="text" name="promo_start_time" value="{$info['promo_start_time']?$info['promo_start_time']|date='Y-m-d H:i:s',###:''}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{ $dp.$D(\'datemax\')||\'%y-%M-%d\'}'})" id="datemin" class="input-text Wdate" style="width:180px;">
+				<input type="text" name="exp_start" value="{$info['exp_start']?$info['exp_start']|date='Y-m-d H:i:s',###:''}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{ $dp.$D(\'datemax\')||\'%y-%M-%d\'}'})" id="datemin" class="input-text Wdate" style="width:180px;" data>
 			</div>
-			<label class="form-label col-2">促销结束时间：</label>
+			<label class="form-label col-2"><span class="c-red">*</span>结束时间：</label>
 			<div class="formControls col-2">
-				<input type="text" name="promo_end_time" value="{$info['promo_end_time']?$info['promo_end_time']|date='Y-m-d H:i:s',###:''}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{ $dp.$D(\'datemin\')}'})" id="datemax" class="input-text Wdate" style="width:180px;">
+				<input type="text" name="exp_stop" value="{$info['exp_stop']?$info['exp_stop']|date='Y-m-d H:i:s',###:''}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{ $dp.$D(\'datemin\')}'})" id="datemax" class="input-text Wdate" style="width:180px;">
 			</div>
 			<div class="col-3"> </div>
 		</div>
@@ -151,14 +120,14 @@
 			<label class="form-label col-2">是否上架：</label>
 			<div class="formControls col-2 skin-minimal">
 				<div class="check-box">
-					<input type="checkbox" value="1" <if condition="$info.is_sale eq 1">checked</if> id="checkbox-1" name="is_sale">
+					<input type="checkbox" value="1" <if condition="$info.item_status eq 1">checked</if> id="checkbox-1" name="is_sale">
 					<label for="checkbox-1">&nbsp;</label>
 				</div>
 			</div>
 			<div class="col-3"> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-2">产品关键字：</label>
+			<label class="form-label col-2">项目关键字：</label>
 			<div class="formControls col-7">
 				<input type="text" name="keyword" id="" placeholder="多个关键字用英文逗号隔开，限10个关键字" value="{$info.keyword}" class="input-text">
 			</div>
@@ -174,18 +143,19 @@
 			</div>
 			<div class="col-3"> </div>
 		</div>
-		
+
+
 		<div class="row cl">
-			<label class="form-label col-2">产品规格：</label>
+			<label class="form-label col-2">描述：</label>
 			<div class="formControls col-7"> 
-				<script id="editor1" type="text/plain" style="width:100%;height:400px;">{$info.format}</script> 
+				<script id="editor2" type="text/plain" style="width:100%;height:400px;">{$info.description}</script> 
 			</div>
 			<div class="col-3"> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-2">产品描述：</label>
-			<div class="formControls col-7"> 
-				<script id="editor2" type="text/plain" style="width:100%;height:400px;">{$info.description}</script> 
+                <label class="form-label col-2">内容介绍：</label>
+            <div class="formControls col-7">
+                <script id="editor1" type="text/plain" style="width:100%;height:400px;">{$info.format}</script>
 			</div>
 			<div class="col-3"> </div>
 		</div>
@@ -244,13 +214,13 @@ $(function(){
 		radioClass: 'iradio-blue',
 		increaseArea: '20%'
 	});
-	var ue = UE.getEditor('editor1',{textarea:"format"});
+	var ue = UE.getEditor('editor1',{textarea:"body"});
 	var ue = UE.getEditor('editor2',{textarea:"description"});
 });
 KindEditor.ready(function(K) {
 	var editor = K.editor({
 	    allowFileManager : true,       
-	    uploadJson : "{:U('Base/uploadImg',array('path'=>'product','w'=>150,'h'=>80))}", //上传功能
+	    uploadJson : "{:U('Base/uploadImg',['path'=>'project','w'=>150,'h'=>80])}", //上传功能
 	    fileManagerJson : '__ROOT____PUBLIC__kindeditor/php/file_manager_json.php?dirpath=product', //网络空间
 	  });  
 	//上传背景图片

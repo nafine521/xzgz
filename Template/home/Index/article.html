@@ -14,11 +14,11 @@
     <div class="news_bar">
         <ul>
             <li><i class="icon-house"></i></li>
-            <li class="news_index"><a href="http://www.xiaozhu168.com/" target="_blank">首页</a></li>
+            <li class="news_index"><a href="/" target="_blank">首页</a></li>
             <li  class="news_jt"><i class="icon-leftarrow"></i></li>
-            <li class="news_notice"><a href="http://www.xiaozhu168.com/articlesection-1-1.html">P2P理财</a></li>
+            <li class="news_notice"><a href="{:U('articlesection',["cat_id"=>$info["class_id"]])}">{$info.class_name}</a></li>
             <li  class="news_jt"><i class="icon-leftarrow"></i></li>
-            <li><label>汇金公司是什么</label></li>
+            <li><label>{$info['title']}</label></li>
         </ul>
     </div>
     <!--指引条div结束-->

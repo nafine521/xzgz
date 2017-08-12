@@ -26,7 +26,7 @@
         <ul class="nav-list" id="nav-list">
             <volist name="clist" id="v" key="k">
             <li <if condition="$_GET['id'] eq $v['id']"> class="active"</if> >
-                <a href="{:U('articlesection',['id'=>$v['id']])}" class="nav_list_a"><i class="icon_bk{$k}"></i>{$v.cat_name}</a>
+                <a href="{:U('articlesection',['id'=>$v['id']])}" class="nav_list_a"><i class="icon_bk{$k}"></i>{$v.name}</a>
             </li>
             </volist>
 

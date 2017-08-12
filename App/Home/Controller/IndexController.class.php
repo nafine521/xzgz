@@ -131,41 +131,44 @@ class IndexController extends PublicController {
     //注册条款
     public function regAgreement()
     {
-        $this->setPageInfo("服务协议","","");
+        $subSql=M("article_class")->field("id")->where(["name"=>"服务条款"])->buildSql();
+        $info=M("archives")->where("class_id = ".$subSql)->find();
+        $this->setPageInfo($info["title"],$info["keyword"],$info["description"]);
+        $this->assign("body",htmlspecialchars_decode($info["body"]));
         $this->display();
     }
     //百科
     public function baike(){
-        $cate_db=M("category");
-        $subSql=$cate_db->field("id")->where(["cat_name"=>"理财百科"])->buildSql();//子查询sql语句
+        $cate_db=M("article_class");
+        $subSql=$cate_db->field("id")->where(["name"=>"理财百科"])->buildSql();//子查询sql语句
 
-        $clist=$cate_db->field("id,cat_name")->where("pid =".$subSql)->select();
+        $clist=$cate_db->field("id,name")->where("pid =".$subSql)->select();
         //dump($cate_db->getLastSql());
         $this->assign("clist",$clist);
-        $this->setPageInfo('理财百科','产品','丰富的内容',['home/user_info','encyclopedia']);
+        $this->setPageInfo('理财百科','','',['home/user_info','encyclopedia']);
         $this->display();
     }
 
     //资讯列表
     public function articlesection(){
 
-        $cate_db=M("category");
-        $subSql=$cate_db->field("id")->where(["cat_name"=>"理财百科"])->buildSql();//子查询sql语句
+        $cate_db=M("article_class");
+        $subSql=$cate_db->field("id")->where(["name"=>"理财百科"])->buildSql();//子查询sql语句
 
-        $clist=$cate_db->field("id,cat_name")->where("pid =".$subSql)->select();
+        $clist=$cate_db->field("id,name")->where("pid =".$subSql)->select();
         $id=I("id") ?I("id"):$clist[0]["id"];
 
-        //当前栏目名称
+        //当前分类名称
         foreach ($clist as $item) {
-            if($item['id'] == $id) $cat_name= $item['cat_name'];
+            if($item['id'] == $id) $cat_name= $item['name'];
         }
         //文章列表
         $arc_db=M("archives");
         //$arclist=$arc_db->where(["cat_id"=>$id])->select();
 
-        $count=$arc_db->where(["cat_id"=>$id])->count();
+        $count=$arc_db->where(["class_id"=>$id])->count();
         $page = new \Think\Page($count,10);
-        $arclist=$arc_db->where(["cat_id"=>$id])->order('id')->limit($page->firstRow, $page->listRows)->select();
+        $arclist=$arc_db->where(["class_id"=>$id])->order('id')->limit($page->firstRow, $page->listRows)->select();
         $page->setConfig("prev", "&nbsp;");
         $page->setConfig("next", "&nbsp;");
         //$this->assign("count",$count);
@@ -174,7 +177,7 @@ class IndexController extends PublicController {
 
         $this->assign("arclist",$arclist);
         $this->assign("clist",$clist);
-        $this->setPageInfo($cat_name,'产品','丰富的内容',['home/user_info','help']);
+        $this->setPageInfo($cat_name,'','',['home/user_info','help']);
         $this->display();
     }
 
@@ -191,10 +194,13 @@ class IndexController extends PublicController {
         $pervNext[0]['pn']="上一篇";
         if(!empty($pervNext[1])) $pervNext[1]['pn']="下一篇";
 
+        //当前分类名称
+        $class_name=M("article_class")->field("name")->where(["id"=>$info["class_id"]])->find();
+        $info["class_name"]=$class_name['name'];
         $this->assign("info",$info);
         $this->assign("pervNext",$pervNext);
         $this->assign("latest",$this->order_pubdate());
-        $this->assign("relate",$this->relate_list());
+        $this->assign("relate",$this->recommend());
         $this->setPageInfo($info['title'],$info['keyword'],$info['description'],['news_css']);
         $this->display();
     }

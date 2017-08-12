@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="__PUBLIC__lib/html5.js"></script>
+<script type="text/javascript" src="__PUBLIC__lib/respond.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__lib/PIE_IE678.js"></script>
+<![endif]-->
+<link href="__PUBLIC__css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__lib/icheck/icheck.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__lib/Hui-iconfont/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>添加栏目</title>
+</head>
+<body>
+<div class="pd-20">
+	<form action="" method="post" class="form form-horizontal" id="form-nav-add">
+		<input type="hidden" name="id" value="{$info.id}" />
+		<div class="row cl">
+			<label class="form-label col-3">上级属性：</label>
+			<div class="formControls col-5"> <span class="select-box" >
+				<select class="select" name="pid" size="1" datatype="*" nullmsg="请选择栏目！" >
+					<option value="">请选择上级属性</option>
+					<option value=0 <if condition="$info.pid eq '0' ">selected</if> >一级栏目</option>
+					<volist name="cat_list" id="v">
+						<option value={$v.id} <if condition="$info.pid eq $v['id']">selected</if> >{$v.level|str_repeat="&nbsp;&nbsp;&nbsp;",###}{$v.name}</option>
+					</volist>
+				</select>
+				</span> </div>
+			<div class="col-4"> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>属性名称：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text" value="{$info.name}" placeholder=""  name="name" datatype="*" nullmsg="属性名称不能为空">
+			</div>
+			<div class="col-4"> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3">属性提示：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text" value="{$info.tips}" placeholder=""  name="tips" >
+			</div>
+			<div class="col-4"> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3">排序：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text" value="{$info.sort}" placeholder=""  name="sort">
+			</div>
+			<div class="col-4"> </div>
+		</div>
+
+
+		
+		
+		<div class="row cl">
+			<div class="col-9 col-offset-3">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</div>
+<script type="text/javascript" src="__PUBLIC__lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__lib/icheck/jquery.icheck.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__lib/Validform/5.3.2/Validform.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="__PUBLIC__js/H-ui.js"></script> 
+<script type="text/javascript" src="__PUBLIC__js/H-ui.admin.js"></script> 
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	
+	$("#form-nav-add").Validform({
+		tiptype:2,
+		ajaxPost:true,
+		callback:function(data){
+			if(data.status=="y"){
+				setTimeout(function(){
+					$.Hidemsg();
+					var index = parent.layer.getFrameIndex(window.name); //获取当前子页面的索引
+					parent.location.reload();//重新加载父页面
+					parent.layer.close(index); //通过索引关闭页面
+				},1000);
+			}
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -32,9 +32,8 @@
 				<tr class="text-c">
 					<th width="25"><input type="checkbox"></th>
 					<th width="80">ID</th>
-					<th>系列</th>
+					<th>分类</th>
 					<th width="80">标题</th>
-
 					<th>内容</th>
 					<th width="120">更新时间</th>
 					<th>排序</th>
@@ -50,10 +49,10 @@
 					<td width="200">
 
 						<div class="formControls col-7"  > <span class="select-box" >
-						<select size="1" onblur="saveVal(this,{$v.id},'cat_id')" style="width:auto;border:none;">
+						<select size="1" onblur="saveVal(this,{$v.id},'class_id')" style="width:auto;border:none;">
 							
 							<volist name="category" id="vo">
-							<option value="{$vo.id}" <if condition="$vo['id'] eq $v['cat_id']">selected</if> >{$vo.level|str_repeat='&nbsp;&nbsp;├',###}{$vo.cat_name}</option>
+							<option value="{$vo.id}" <if condition="$vo['id'] eq $v['class_id']">selected</if> >{$vo.level|str_repeat='&nbsp;&nbsp;├',###}{$vo.name}</option>
 							</volist>
 						</select>
 						</span></div>

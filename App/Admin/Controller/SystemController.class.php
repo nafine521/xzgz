@@ -80,13 +80,7 @@ class SystemController extends BaseController {
         if(IS_POST){
             $data=I('post.');
             if($data['id']>0){
-                $where = array(
-                     'cat_name'=>$cat_name,
-                );
-                $info=$db->where($where)->find();
-                if($info){
-                    $this->ajaxReturn(array("status"=>"n","info"=>"栏目以存在"));die;  
-                }                
+
                 $b=$db->save($data);
             }else{
 
@@ -95,7 +89,7 @@ class SystemController extends BaseController {
                 );
                 $info=$db->where($where)->find();
                 if($info){
-                    $this->ajaxReturn(array("status"=>"n","info"=>"栏目以存在"));die;  
+                    $this->ajaxReturn(array("status"=>"n","info"=>"栏目存在"));die;
                 }
                 $b=$db->add($data);
             }

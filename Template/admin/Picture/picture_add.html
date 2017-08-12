@@ -31,7 +31,7 @@
 			<div class="formControls col-2"> <span class="select-box">
 				<select name="pro_id" class="select" datatype="*" nullmsg="请选择">
 					<option value="">全部</option>
-                    <option value="0">轮播图</option>
+                    <option value="0">首页轮播图</option>
 					<foreach name="achives" item="v" key="k">
 					<option value="{$k}" <if condition="$info['aid'] eq $v['id']">selected</if> >├{$v['title']}</option>
 					</foreach>

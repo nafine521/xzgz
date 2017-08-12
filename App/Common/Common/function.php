@@ -91,5 +91,16 @@
         return $res;
     }
 
+    /*tree 树形结构*/
+    function tree($arr,$pid=0){
+        $res=[];
+        foreach ($arr as $v) {
+            if ($v['pid']==$pid) {
+                $v['children']=tree($arr,$v['id']);
+                $res[]=$v;
+            }
+        }
+        return $res;
+    }
 
 ?>

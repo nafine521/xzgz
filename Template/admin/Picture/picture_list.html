@@ -47,11 +47,11 @@
 					<td>
 						
 						<span class="select-box"  style="text-align:center;">
-						<select name="pro_id" class="select" onblur="saveVal(this,{$v['id']},'aid')">
+						<select  class="select" onblur="saveVal(this,{$v['id']},'aid')">
 							<option value="">请选择产品</option>
-							<option value="0" <if condition="$v['aid'] eq 0">selected</if>>轮播图</option>
+							<option value="0" <if condition="$v['aid'] eq 0">selected</if> >首页轮播图</option>
 							<foreach name="achives" item="vo" key="k">
-							<option value="{$vo.id}" <if condition="$v['aid'] eq $vo.id">selected</if> >├{$vo.title}</option>
+							<option value="{$vo.id}" <if condition="$v['aid'] eq $vo['id']">selected</if> >├{$vo.title}</option>
 							</foreach>
 						</select>
 						</span> 
