@@ -7,10 +7,7 @@ class IndexController extends PublicController {
     	$this->setPageInfo('首页','产品','丰富的内容',['login_css','index_1200'],["index_1"]);
         $this->display();
     }
-    public function project(){
-        $this->setPageInfo('产品中心','产品','众多产品供你选择',array('product'));
-    	$this->display();
-    }
+
 
     public function about_us(){
 
@@ -206,4 +203,11 @@ class IndexController extends PublicController {
     }
 
 
+    public function project(){
+        $type=M("project_type")->select();
+        $this->assign("pro_type",classify($type));
+
+        $this->setPageInfo('产品中心','产品','众多产品供你选择',["tag_list_new"]);
+        $this->display();
+    }
 }

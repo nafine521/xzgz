@@ -1,160 +1,13 @@
+<extend name="Public:base"/>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>产品列表_小猪罐子</title>
-    <link href="http://www.xiaozhu168.com/favicon.ico" type="image/x-icon" rel="shortcut icon" />
-    <link href="http://mer.xiaozhu168.com/static/website/style/common.css" type="text/css" rel="stylesheet" />
-    <link href="http://mer.xiaozhu168.com/static/website/style/icon.css" type="text/css" rel="stylesheet" />
-    <link href="http://mer.xiaozhu168.com/static/website/style/tag_list_new.css" type="text/css" rel="stylesheet" />
-</head>
-<body>
-<!--顶部灰条div-->
-<!--[if lt IE 8]>
-<div id="kie-bar" class="kie-bar">
-    您现在使用的浏览器版本过低，可能会导致浏览效果和信息的缺失。
-    建议立即升级到
-    <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank" title="免费升级至IE8浏览器">Internet Explorer 8</a>
-    或
-    <a href="http://baoku.360.cn/soft/show/appid/100923" target="_blank" title="免费升级至360安全浏览器">360安全浏览器</a>
-    ，安全更放心！
-</div>
-<![endif]-->
-<!--[if IE 6]>
-<script src="http://mer.xiaozhu168.com/static/website/js/ie6-png/iepngfix_tilebg.js" ></script>
-<![endif]-->
-<div class="header">
-    <div class="header-content">
-        <!-- 客服热线 start -->
-        <div class="custom-service">
-            <i class="icon-custom-service"></i>
-            客服热线：<span class="green bold">400-882-5188</span>
-            <span class="lighter">（工作日 9:00 - 22:00）</span>
-        </div>
-        <!-- 客服热线 end -->
-
-        <!-- 用户登录状态 start -->
-        <ul class="user-status">
-            <!-- 已登录 start -->
-            <!-- 已登录 end -->
-
-            <!-- 未登录 start -->
-            <li>
-                <a href="javascript:loginWin();" class="darker">登录</a>
-            </li>
-            <li>
-                <a href="http://www.xiaozhu168.com/reg.html" class="red">注册</a>
-            </li>
-            <!-- 未登录 end -->
-            <li>
-                <a href="javascript:loginWin('https://www.xiaozhu168.com/rechargeInit');">充值</a>
-            </li>
-            <li>
-                <a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a>
-            </li>
-            <li>
-                <a href="http://www.xiaozhu168.com/ask/" target="_blank">小猪问答</a>
-            </li>
-            <li class="last-li">
-                <!-- 掌上小猪 start -->
-                <div class="xiaozhu-hand">
-                    <i class="icon-phone1"></i>
-                    掌上小猪
-                    <i class="icon-down-green"></i>
-
-                    <div class="xiaozhu-hand-box">
-                        <div class="xiaozhu-hand-qrcode clearfix">
-                            <i class="icon-pointup-white"></i>
-                            <img src="http://mer.xiaozhu168.com/static/website/images/qrcode.png" />
-                            <p>
-                                掌上投资，更加精彩<br />
-                                <span class="green">下载小猪罐子客户端</span><br />
-                                <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="app-download-btn iphone-download-btn" title="app iphone 下载">
-                                </a>
-                                <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="app-download-btn android-download-btn" title="app android 下载">
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- 掌上小猪 end -->
-
-                <!-- 新浪微博 start -->
-                <a href="javascript:;" class="tencent-wechat">
-                    <em class="qrcode-hover-border"></em>
-                    <div class="qrcode-box">
-                        <div class="tencent-wechat-content qrcode-content">
-                            <span class="wechat-qrcode"></span>
-                            扫描关注<span class="green">微信</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- 新浪微博 end -->
-
-                <!-- 微信 start -->
-                <a href="http://weibo.com/xiaozhuguanzi" class="sina-weibo" target="_blank">
-                    <em class="qrcode-hover-border"></em>
-                    <div class="qrcode-box">
-                        <div class="weibo-qrcode-content qrcode-content">
-                            <span class="weibo-qrcode"></span>
-                            扫描关注<span class="red">微博</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- 微信 end -->
-            </li>
-        </ul>
-        <!-- 用户登录状态 end -->
-
-    </div>
-
-</div>
-<!--灰色顶部菜单栏结束-->
-<div class="common-nav">
-    <div class="nav-bar">
-        <a href="http://www.xiaozhu168.com/" class="xiaozhu-logo"><img src="http://mer.xiaozhu168.com/static/website/images/PC-logo_AE.gif" alt="小猪logo" /></a>
-
-        <!-- 菜单 start -->
-        <div class="nav-content">
-            <ul class="common-nav-list">
-                <li class="active">
-                    <a href="http://www.xiaozhu168.com/">首页</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/pool-13-0-0-0-0-1-1.html">我要投资</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/companyProfile.html">信息披露</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/mall/">小猪商城</a>
-                </li>
-                <li>
-                    <a href="http://www.xiaozhu168.com/aboutus.html">了解小猪</a>
-                </li>
-            </ul>
-        </div>
-        <!-- 菜单 end -->
-    </div>
-</div>
-<!-- 添加一个用于在loginWin 方法中使用的basePath 标识 -->
-<input type="hidden" id="jsLoginWinBasePath" name="jsLoginWinBasePath" value="http://www.xiaozhu168.com/"/>
-<input type="hidden" value="13" name="type"/>
-<input type="hidden" value="0" name="deadline"/>
-<input type="hidden" value="0" name="annualRate"/>
-<input type="hidden" value="0" name="paymentMode"/>
-<input type="hidden" value="0" name="sortName"/>
-<input type="hidden" value="1" name="sortOrder"/>
+<block name="content">
 <!-- 面包屑start -->
 <div class="crumbs">
     <div class="crumbs-content">
         <i class="icon-house"></i>
-        <a href="http://www.xiaozhu168.com/">首页</a>
+        <a href="/">首页</a>
         <i class="icon-leftarrow"></i>
-        <a href="http://www.xiaozhu168.com/invest-0-0-0-0-0-0-1.html">投资理财</a>
+        <a href="{:U('project')}">投资理财</a>
     </div>
 </div>
 <!-- 面包屑end -->
@@ -168,92 +21,34 @@
                 <dt>
                     <a href="javascript:;">所有项目</a>
                 </dt>
-                <dt class="nav-tab-hover hover1"></dt>
+                <volist name="pro_type" id="v" key="k">
+
+
                 <dd class="active">
-                    <a href="http://www.xiaozhu168.com/pool-13-0-0-0-0-1-1.html">
-                        <h4>新手团(<em class="red">1</em>)</h4>
+                    <a href="{:U('',['tid'=>$v['id']])}">
+                        <h4>{$v.name}</h4>
                         <span>
-									封闭期短，收益率高
+									{$v.abstract}
 								</span>
                     </a>
                 </dd>
+                    <volist name="v.children" id="vo">
+                        <dd class="active">
+                            <a href="{:U('',['tid'=>$vo['id']])}">
+                                <h4>{$vo.name}</h4>
+                                <span>
+									{$vo.abstract}
+								</span>
+                            </a>
+                        </dd>
+                    </volist>
                 <dt class="tag-mt10"></dt>
+                </volist>
 
-                <dd >
-                    <a href="http://www.xiaozhu168.com/invest-0-0-0-0-0-1-1.html">
-                        <h4>新手标(<em class="red">0</em>)</h4>
-                        <span>
-									每日限量 先到先得
-								</span>
-                    </a>
-                </dd>
-                <dt class="tag-mt10"></dt>
-                <!-- 团标 -->
-                <dd >
-                    <a href="http://www.xiaozhu168.com/pool-12-0-0-0-0-1-1.html">
-                        <h4>团标资产(<em class="red">2</em>)</h4>
-                        <span>
-									封闭期后，灵活退团
-								</span>
-                    </a>
-                </dd>
-                <!-- 团标 -->
 
-                <dt class="tag-mt10"></dt>
-                <dt class="tag-type-dt">
-                    机构资产标
-                </dt>
-                <dd >
-                    <a href="http://www.xiaozhu168.com/invest-3-0-0-0-0-1-1.html">
-                        <h4>优质标(<em class="red">1</em>)</h4>
-                        <span>
-							每日<em style="color: #ff6235">10:30、14:30、17:30</em>发售</span>
-                    </a>
-                </dd>
-                <dd >
-                    <a href="http://www.xiaozhu168.com/invest-6-0-0-0-0-1-1.html">
-                        <h4>普惠类(<em class="red">0</em>)</h4>
-                        <span>
-							优质项目，严格把关</span>
-                    </a>
-                </dd>
-                <dd >
-                    <a href="http://www.xiaozhu168.com/invest-4-0-0-0-0-1-1.html">
-                        <h4>房产类(<em class="red">0</em>)</h4>
-                        <span>
-							房产抵押，安全无忧</span>
-                    </a>
-                </dd>
-                <dd >
-                    <a href="http://www.xiaozhu168.com/invest-5-0-0-0-0-1-1.html">
-                        <h4>车辆类(<em class="red">0</em>)</h4>
-                        <span>
-							车辆抵押，稳健投资</span>
-                    </a>
-                </dd>
-                <dd >
-                    <a href="http://www.xiaozhu168.com/invest-7-0-0-0-0-1-1.html">
-                        <h4>渠道区(<em class="red">0</em>)</h4>
-                        <span>
-							渠道项目，层层把关</span>
-                    </a>
-                </dd>
-                <dt class="tag-mt10"></dt>
-                <dd >
-                    <a href="http://www.xiaozhu168.com/invest-11-0-0-0-0-1-1.html">
-                        <h4>债权转让(<em class="red">0</em>)</h4>
-                        <span>
-									灵活周转  随时转让
-								</span>
-                    </a>
-                </dd>
-                <dt class="tag-mt10"></dt>
-                <dd class="tag-before ">
-                    <a href="http://www.xiaozhu168.com/invest-10-0-0-0-0-1-1.html">
-                        <h4>往期产品(<em class="red">0</em>)</h4>
-                    </a>
-                </dd>
-                </dd>
+
+
+
             </dl>
 
             <!-- 左边打个小广告 start -->
@@ -338,6 +133,7 @@
 
         <!-- 团标列表 -->
         <div class="tag-list">
+
             <div class="invest-tag-bar">
                 <div class="tag-detail">
                     <div class="tag-detail-header">
@@ -423,215 +219,12 @@
     </div>
 </div>
 <!-- 热门推荐 end -->
-<div style="display: block; clear: both;"></div>
-<div class="xz-bottom">
-    <!-- <div class="xz-widget">
-        <div class="xz-widget-header">
-            <div class="to-top1">
-                <span class="top-xiaozhu1"></span>
-                <span class="top-xiaozhu2"></span>
-                <i class="to-top-icon1"></i>
-                <i class="to-top-icon2"></i>
-            </div>
-            <div class="bottom-ad">
-                <p>开启轻松、安全、稳健的理财之旅吧！<a href="javascript:;">立即注册去投资</a></p>
-            </div>
-        </div> -->
-
-    <div class="xz-widget-body">
-        <table class="bottom-left table">
-            <tr>
-                <th>关于</th>
-                <th>安全</th>
-                <th>服务</th>
-                <th>新手指引</th>
-            </tr>
-            <tr>
-                <td><a href="http://www.xiaozhu168.com/aboutus.html" target="_blank">公司简介</a></td>
-                <td><a href="http://www.xiaozhu168.com/safety_guarantee.html" target="_blank">安全保障</a></td>
-                <td><a href="http://www.xiaozhu168.com/vip_power.html" target="_blank">会员权益</a></td>
-                <td><a href="https://www.xiaozhu168.com/forgetpassword.html" target="_blank">找回密码</a></td>
-            </tr>
-            <tr>
-                <td><a href="http://www.xiaozhu168.com/aboutus.html#7" target="_blank">商务合作</a></td>
-                <td><a href="http://www.xiaozhu168.com/safety-ensure.html" target="_blank">风控体系</a></td>
-                <td><a href="http://www.xiaozhu168.com/help/loginReg.html" target="_blank">帮助中心</a></td>
-                <td><a href="https://www.xiaozhu168.com/reg.html" target="_blank">注册帐号</a></td>
-            </tr>
-            <tr>
-                <td><a href="http://www.xiaozhu168.com/aboutus.html#3" target="_blank">团队故事</a></td>
-                <td><a href="http://www.xiaozhu168.com/server_exp.html#money" target="_blank">资金托管</a></td>
-                <td><a href="http://www.xiaozhu168.com/server_exp.html" target="_blank">资费说明</a></td>
-                <td><a href="http://www.xiaozhu168.com/map.html" target="_blank">网站地图</a></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="http://www.xiaozhu168.com/electronicSecurity.html" target="_blank">电子保全</a></td>
-                <td><a href="http://www.xiaozhu168.com/baike/" target="_blank">理财百科</a></td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-        <div class="bottom-center">
-            <img src="http://mer.xiaozhu168.com/static/website/images/wx_tb.jpg" titlel="关注微信公众号" />
-            <br />
-            <span>关注<em>微信公众号</em></span>
-        </div>
-        <div class="bottom-right">
-            <div class="clearfix">
-                <a href="https://shang.qq.com/wpa/qunwpa?idkey=510d1fd88ddc0946320b45a026378e90b5c317eee5ca2b2a7b88237c0cccffb1" id="qq-group" class="qq-group" title="投资交流群"></a>
-            </div>
-            <em>客服热线</em>( 工作日 9:00 - 22:00 )
-            <br />
-            <strong>400-882-5188</strong>
-            <br />
-            <a href="https://itunes.apple.com/cn/app/xiao-zhu-guan-zi/id1012792916?mt=8" class="iphone-download" title="下载手机app"></a>
-            <a href="http://www.xiaozhu168.com/upload/files/app/xiaozhu_2.2.0.apk" class="android-download" title="下载手机app"></a>
-        </div>
-    </div>
-    <div class="xz-widget-footer">
-        <dl class="clearfix index_foot_dl active">
-        </dl>
-        <div class="footer">
-            <div>
-                <div class="float-l">
-                    copyright©2014 xiaozhu168.com All Rights Reserved 备案号：粤ICP备14055923号<br />
-                    深圳市前海小猪互联网金融服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;
-                    地址：深圳市南山区深南大道9966号威盛科技大厦7楼
-                </div>
-                <div class="float-r">
-                    <a key ="558ab0b7efbfb02e2a186fda" style="background:none;margin-right:40px;" class="aptitude-1" target="_blank" logo_size="83x30"  logo_type="business"  href="http://www.anquan.org" ><script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script></a>
-                    <a id='___szfw_logo___' style="margin-right:78px;" href='https://credit.szfw.org/CX20160229013712570171.html' target='_blank'><img src='http://mer.xiaozhu168.com/static/website/images/cert.png' width="112" border='0' /></a>
-                    <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" class="aptitude-1" title="工业和信息化部" target="_blank"></a>
-                    <a href="http://szcert.ebs.org.cn/ebc298c1-8dbf-4784-a88c-5c62cb2d9461" class="aptitude-2" title="深圳市网络经营者信息公示" target="_blank"></a>
-                    <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1398578442" class="aptitude-3" title="ICP网站征信证书" target="_blank"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--右侧悬浮-->
-<div class="com_left_div">
-    <div class="right-fix-tools">
-        <div class="fix-tools-content">
-            <a href="activity.html" target="_back" rel="nofollow">
-                <div class="com_left_li"><i class="com_left_i1"></i><em>活动专区</em></div>
-            </a>
-            <!-- <a target="_blank" href="http://b.qq.com/webc.htm?new=0&sid=4008825188&eid=218808P8z8p8q8R8P8q80&o=www.xiaozhu168.com&q=7" rel="nofollow"> -->
-            <a target="_blank" href="javascript:;" onclick="ysf.open();return false;">
-                <div class="com_left_li1 com_left_li4"><i class="com_left_i2"></i><em>在线客服</em><label></label></div>
-            </a>
-            <div class="com_left_li1 com_left_li5 calculate" id="fix_calculate"><i class="com_left_i3"></i><em>计算收益</em><label></label></div>
-            <a  href="http://www.xiaozhu168.com/homeAutoTender" style="display: none;">
-                <div class="com_left_li1 com_left_li5 calculate" id="fix_calculate"><i class="com_left_i9"></i><em>批量投标</em><label></label></div>
-            </a>
-            <div class="com_left_div2 goto_top"><i class="com_left_i4"></i><em>返回顶部</em></div>
-        </div>
-    </div>
-</div>
-<input type="hidden" value="" id="noquestion">
-<!--右侧悬浮结束-->
-<script src="https://qiyukf.com/script/c57c1e6a6ef539fba5f8066aad13ec15.js?uid=&moblie=" ></script>
-<script type="text/javascript" src="http://mer.xiaozhu168.com/static/website/js/lib/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="http://mer.xiaozhu168.com/static/website/js/common.js?v=1.3"></script>
-<script type="text/javascript" src="http://mer.xiaozhu168.com/static/website/js/jquery.poshytip.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        //菜单着色
-        (function(){
-            var _em = $('.widget-header-em > em');
-            var __li = $('.parentList .childList li');
-            $.each(__li,function (i){
-                var _this_li = __li.eq(i);
-
-                if(_this_li.find('i').text() == _em.text())
-                    _this_li.addClass('active');
-
-            });
-        })();
-    })
-    // 提示框
-    var _opts = {
-        className: "tip-yellowsimple",
-        showTimeout: 1,
-        alignTo: "target",
-        alignX: "center",
-        alignY: "top",
-        offsetY: 10,
-        offsetX:20,
-        allowTipHover: true
-    };
-    $(".popTip").poshytip(  _opts );
-    $(function(){
-        var state='';
-        var errorMsg='';
-        if(state==1){
-            xzalert( errorMsg );
-        }
-    })
+</block>
 
 
-    function queryQuestion(){
-        var noquestion = $('#noquestion').val();
-        $.post("queryQuestion",  function(data) {
-            if(data.noquestion == 1){
-                xzalert("暂无调查问卷！");
-                return ;
-            }else{
-                //window.location.href= "http://www.xiaozhu168.com/queryQuestion.html";
-                window.open("http://www.xiaozhu168.com/queryQuestion.html");
-            }
-        })
-    }
-
-
-</script>
-
-<noscript><p><img src="https://piwik.xiaozhu168.com/piwik.php?idsite=1" style="border:0;display: none;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-<noscript><img src="//stats.ipinyou.com/adv.gif?a=wQ..Bt1tXGnc9XDNzd63VYjb00&e=" style="display:none;"/></noscript>
-<!-- 360统计代码 -->
-<script type="text/javascript">
-    var _mvq = _mvq || [];
-    _mvq.push(['$setAccount', 'm-146284-0']);
-    _mvq.push(['$logConversion']);
-    (function() {
-        var mvl = document.createElement('script');
-        mvl.type = 'text/javascript'; mvl.async = true;
-        mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(mvl, s);
-    })();
-</script>
-
-<!-- 百度推送代码 -->
-<script>
-    (function(){
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        }
-        else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-    $(function(){
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?22d6540319e1ccf46303f97495af457f";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    });
-</script>
-
-
-<script type="text/javascript" src="http://mer.xiaozhu168.com/static/website/js/jquery.investfy-1.0.js"></script>
-<script type="text/javascript" src="http://mer.xiaozhu168.com/static/website/js/elemInScreen.js"></script>
+<block name="footer_js">
+<script type="text/javascript" src="__PUBLIC__website/js/jquery.investfy-1.0.js"></script>
+<script type="text/javascript" src="__PUBLIC__website/js/elemInScreen.js"></script>
 <script type="text/javascript">
     $(function() {
         //头部导航
@@ -696,5 +289,6 @@
         }
     });
 </script>
-</body>
-</html>
+
+</block>
+
