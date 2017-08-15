@@ -30,7 +30,7 @@
 		<div class="row cl">
 			<label class="form-label col-2"><span class="c-red">*</span>项目名称：</label>
 			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info.name}" placeholder="请输入项目名称" name="product_name" datatype="*" nullmsg="项目名称不能为空">
+				<input type="text" class="input-text" value="{$info.name}" placeholder="请输入项目名称" name="name" datatype="*" nullmsg="项目名称不能为空">
 			</div>
 			<div class="col-3"> </div>
 		</div>
@@ -83,7 +83,7 @@
 		<div class="row cl">
 			<label class="form-label col-2"><span class="c-red">*</span>项目总额：</label>
 			<div class="formControls col-7">
-				<input type="text" class="input-text" value="{$info.item_totle}" placeholder="" id="" name="item_totle"  datatype="*" nullmsg="请输入项目总额">元
+				<input type="text" class="input-text" value="{$info.item_total}" placeholder="" id="" name="item_total"  datatype="*" nullmsg="请输入项目总额">元
 			</div>
 			<div class="col-3"> </div>
 		</div>
@@ -101,27 +101,27 @@
 
 			<label class="form-label col-2"><span class="c-red">*</span>项目周期：</label>
 			<div class="formControls col-7">
-				<input type="text" name="expression" id="" placeholder="仅文字描述" value="{$info['expression']}" class="input-text" style="width:90%"  datatype="*" nullmsg="请输入项目周期">
+				<input type="text" name="expression"  placeholder="仅文字描述" value="{$info['expression']}" class="input-text" style="width:90%"  datatype="*" nullmsg="请输入项目周期">
 				</div>
 			<div class="col-3"> </div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-2"><span class="c-red">*</span>开始时间：</label>
 			<div class="formControls col-2">
-				<input type="text" name="exp_start" value="{$info['exp_start']?$info['exp_start']|date='Y-m-d H:i:s',###:''}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{ $dp.$D(\'datemax\')||\'%y-%M-%d\'}'})" id="datemin" class="input-text Wdate" style="width:180px;" data>
+				<input type="text" name="exp_start" value="{$info['exp_start']?$info['exp_start']|date='Y-m-d H:i:s',###:''}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{ $dp.$D(\'datemax\')||\'%y-%M-%d\'}'})" id="datemin" class="input-text Wdate" style="width:180px;" data datatype="*" nullmsg="请选择项目开始时间">
 			</div>
 			<label class="form-label col-2"><span class="c-red">*</span>结束时间：</label>
 			<div class="formControls col-2">
-				<input type="text" name="exp_stop" value="{$info['exp_stop']?$info['exp_stop']|date='Y-m-d H:i:s',###:''}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{ $dp.$D(\'datemin\')}'})" id="datemax" class="input-text Wdate" style="width:180px;">
+				<input type="text" name="exp_stop" value="{$info['exp_stop']?$info['exp_stop']|date='Y-m-d H:i:s',###:''}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{ $dp.$D(\'datemin\')}'})" id="datemax" class="input-text Wdate" style="width:180px;" datatype="*" nullmsg="请选择项目结束时间">
 			</div>
 			<div class="col-3"> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-2">是否上架：</label>
+			<label class="form-label col-2">是否上线：</label>
 			<div class="formControls col-2 skin-minimal">
 				<div class="check-box">
-					<input type="checkbox" value="1" <if condition="$info.item_status eq 1">checked</if> id="checkbox-1" name="is_sale">
-					<label for="checkbox-1">&nbsp;</label>
+					<input type="checkbox" value="1" <if condition="$info.item_status eq 1">checked</if> id="checkbox-1" name="item_status">
+					<label >&nbsp;</label>
 				</div>
 			</div>
 			<div class="col-3"> </div>
@@ -136,9 +136,9 @@
 		<div class="row cl">
 			<label class="form-label col-2"><span class="c-red">*</span>图片：</label>
 			<div class="formControls col-7"> 
-			    <img id="thumb_url" src='<if condition="$info['img']">__ROOT__{$info.img}<else/>__PUBLIC__/nopic.jpg</if>' style="height:100px;width:150">
-			  	<input type="hidden"  id="picurl" name="img" value="{$info.img}" datatype="*" nullmsg="请选择缩略图"/> 
-			  	<input type="hidden" name="oldpic" value="{$info.img}" >
+			    <img id="thumb_url" src='<if condition="$info['litpic']" >__ROOT__{$info.litpic}<else/>__PUBLIC__/nopic.jpg</if>' style="height:100px;width:150">
+			  	<input type="hidden"  id="picurl" name="litpic" value="{$info.litpic}" datatype="*" nullmsg="请选择缩略图"/>
+			  	<input type="hidden" name="oldpic" value="{$info.litpic}" >
 			  	<button class="btn btn-success" id="image"  type="button" >选择图片</button>
 			</div>
 			<div class="col-3"> </div>
@@ -146,16 +146,16 @@
 
 
 		<div class="row cl">
-			<label class="form-label col-2">描述：</label>
-			<div class="formControls col-7"> 
-				<script id="editor2" type="text/plain" style="width:100%;height:400px;">{$info.description}</script> 
+			<label class="form-label col-xs-4 col-sm-2">项目简介：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="description" cols="" rows="" class="textarea valid" > {$info.description}</textarea>
+				<p class="textarea-numberbar"><em class="textarea-length">0</em>/500</p>
 			</div>
-			<div class="col-3"> </div>
 		</div>
 		<div class="row cl">
                 <label class="form-label col-2">内容介绍：</label>
             <div class="formControls col-7">
-                <script id="editor1" type="text/plain" style="width:100%;height:400px;">{$info.format}</script>
+                <script id="editor" type="text/plain" style="width:100%;height:400px;">{$info.body|htmlspecialchars_decode}</script>
 			</div>
 			<div class="col-3"> </div>
 		</div>
@@ -214,8 +214,8 @@ $(function(){
 		radioClass: 'iradio-blue',
 		increaseArea: '20%'
 	});
-	var ue = UE.getEditor('editor1',{textarea:"body"});
-	var ue = UE.getEditor('editor2',{textarea:"description"});
+	var ue = UE.getEditor('editor',{textarea:"body"});
+
 });
 KindEditor.ready(function(K) {
 	var editor = K.editor({

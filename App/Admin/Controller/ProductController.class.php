@@ -3,16 +3,32 @@ namespace Admin\Controller;
 use Think\Controller;
 class ProductController extends BaseController {
     public function product(){
+        $list=M("project")->select();
+        $this->assign("list",$list);
         $this->display();
     }
 
     public function productAdd(){
         $pro=M('project');
         if(IS_POST){
+            $data=I("post.");
+            $data["attr_id"]=rtrim( implode(",",$data["attr"]));
+            if($data["item_total"] < $data["surplus"]) $this->ajaxReturn(["status"=>"n","info"=>"剩余额度不能超过总额"]);
+            $data['exp_start']=strtotime($data["exp_start"]);
+            $data['exp_stop']=strtotime($data["exp_stop"]);
+            if($data["id"]>0){
+                if($data["oldimg"] != $data["litpic"]) @unlink(".".$data["oldimg"]);
+                $b=$pro->save($data);
+            } else{
+                $b=$pro->add($data);
+            }
+            $res=getReturn($b);
+            $this->ajaxReturn($res);
                 
         }else{
 
             $info=$pro->find(I('id'));
+            $info["attr_id"]=explode(",",$info["attr_id"]);
             $this->assign("info",$info);
             $ptype=M("project_type")->select();
             $this->assign("category",classify($ptype));

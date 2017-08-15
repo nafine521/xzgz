@@ -143,4 +143,33 @@ class SystemController extends BaseController {
         
     }
 
+    public function basic()
+    {
+
+        if (IS_POST){
+            $data=I("post.");
+
+            // 修改数据时删掉原图片
+            if ($data['basic']['logo']!=$data['basic']['oldimg']){
+                @unlink(".".$data['basic']['oldimg']);
+            };
+            unset($data['basic']['oldimg']);
+            $b=F("basic",$data);
+            if(empty($b)){
+                $this->ajaxReturn(array("status"=>"y","info"=>"操作成功"));
+            }else{
+                $this->ajaxReturn(array("status"=>"n","info"=>"操作失败"));
+            }
+
+        }else{
+            $info=F("basic");
+// var_dump($info);
+            $this->assign("basic",$info['basic']);
+            $this->assign("contact",$info['contact']);
+
+            $this->display();
+        }
+
+    }
+
 }

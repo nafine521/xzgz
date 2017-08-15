@@ -10,7 +10,7 @@
 // +----------------------------------------------------------------------
 
 // 应用入口文件
-
+//define('BUILD_LITE_FILE',true);
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.4.0','<'))  die('require PHP > 5.4.0 !');
 
@@ -24,3 +24,4 @@ define('APP_PATH','./App/');
 require './ThinkPHP/ThinkPHP.php';
 
 // 亲^_^ 后面不需要任何代码了 就是如此简单
+
