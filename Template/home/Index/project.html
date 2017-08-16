@@ -23,8 +23,10 @@
                 </dt>
                 <volist name="pro_type" id="v" key="k">
 
-
-                <dd class="active">
+                <if condition="$pro_type[$key]['id'] eq I('tid')" >
+                    <dt class="nav-tab-hover hover{$k}"></dt>
+                </if>
+                    <dd <if condition="$pro_type[$key]['id'] eq I('tid')" > class="active"</if> >
                     <a href="{:U('',['tid'=>$v['id']])}">
                         <h4>{$v.name}</h4>
                         <span>
@@ -62,16 +64,18 @@
         <!-- 搜索栏 start -->
         <div class="search-bar">
             <ul class="search-list">
+                <volist name="attr" id="v" key="k">
                 <li>
-                    <strong>还款期限</strong>
+                    <strong>{$v.name}</strong>
                     <div class="search-tag-list">
-                        <a href="http://www.xiaozhu168.com/pool-13-0-0-0-0-1-1.html"  class="active">全部</a>
-                        <a href="http://www.xiaozhu168.com/pool-13-1-0-0-0-1-1.html" >1个月内</a>
-                        <a href="http://www.xiaozhu168.com/pool-13-2-0-0-0-1-1.html" >1-3个月</a>
-                        <a href="http://www.xiaozhu168.com/pool-13-3-0-0-0-1-1.html" >3-6个月</a>
-                        <a href="http://www.xiaozhu168.com/pool-13-4-0-0-0-1-1.html" >6-12个月</a>
+                        <a href="{:U('project',array_merge($getq,['attr_id'=>'']))}"  <if  condition="isset($getq['attr_id']) eq false "> class="active" </if> >全部</a>
+                        <volist name="v.children" id="vo">
+                        <a href="{:U('project',array_merge($getq,['attr_id'=>$vo['id']]))}" <if  condition="$getq['attr_id'] eq $vo['id']"> class="active" </if> >{$vo.name}</a>
+                        </volist>
                     </div>
                 </li>
+                </volist>
+
                 <li>
                     <strong>年化利率</strong>
                     <div class="search-tag-list">
@@ -83,16 +87,7 @@
                     </div>
                 </li>
 
-                <!-- 团标无以下判段 -->
-                <li>
-                    <strong>还款方式</strong>
-                    <div class="search-tag-list">
-                        <a href="http://www.xiaozhu168.com/pool-13-0-0-0-0-1-1.html"  class="active">全部</a>
-                        <a href="http://www.xiaozhu168.com/pool-13-0-0-3-0-1-1.html" >一次性还本付息</a>
-                        <a href="http://www.xiaozhu168.com/pool-13-0-0-5-0-1-1.html" >按月付息到期还本</a>
-                        <a href="http://www.xiaozhu168.com/pool-13-0-0-1-0-1-1.html" >等额本息</a>
-                    </div>
-                </li>
+
             </ul>
         </div>
         <!-- 搜索栏 end -->

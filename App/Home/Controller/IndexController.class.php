@@ -205,8 +205,11 @@ class IndexController extends PublicController {
 
     public function project(){
         $type=M("project_type")->select();
-        $this->assign("pro_type",classify($type));
+        $this->assign("pro_type",tree($type));
 
+        $attr=M("attribute")->select();
+        $this->assign("attr",tree($attr));
+        $this->assign("getq",I("get."));
         $this->setPageInfo('产品中心','产品','众多产品供你选择',["tag_list_new"]);
         $this->display();
     }
